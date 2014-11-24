@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="242B3E18-7B29-D01A-5480-4153A3D0A3A7" name="Joueurs">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:46:56 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NumJoueur" id="25BD5D06-E634-DFF4-CF12-304A09776C59">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="E4FE9FED-1CE4-B5B3-8B7F-D0231B724F88">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prenom" id="B6AD2274-425B-657B-D8C8-CCA46E008676">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateNaissance" id="03AD4AA4-FF10-6956-6B26-7E56BC8FA040">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumeroMaillot" id="FA889FAB-E67B-5B28-B79C-490C2708DA14">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Photo" id="A2F29238-D956-4636-091A-1D13924EBA1D">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Position" id="951C22A1-3EB7-8E0D-00F4-E7B6CC0DBF74">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumEquipe" id="25EFDFB8-1CCC-AE91-2C5F-185B2527085A">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<delegate>A0B7B3B5-0C38-81D6-ADC1-0628BE318476</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="469733C5-6F2E-4B44-9BE5-400DB67F59CB" referredColumn="A0B7B3B5-0C38-81D6-ADC1-0628BE318476"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A86378B0-A1B0-4C51-2580-E8C0EDD8FD7F" name="Joueurs_PK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:49:17 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25BD5D06-E634-DFF4-CF12-304A09776C59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74853A17-57AA-66B0-271A-4BA59933319A" name="Joueurs_Equipe_FK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 00:12:07 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25EFDFB8-1CCC-AE91-2C5F-185B2527085A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

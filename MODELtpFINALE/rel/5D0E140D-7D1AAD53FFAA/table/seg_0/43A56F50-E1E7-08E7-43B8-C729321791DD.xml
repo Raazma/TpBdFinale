@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43A56F50-E1E7-08E7-43B8-C729321791DD" name="FicheMatch">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 23:27:14 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NumMatch" id="31CD2155-0EF5-7E9B-8336-61DABEC241C3">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 23:28:30 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<delegate>3D6A977E-3FC1-85A7-1427-3CDEA241E022</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3743A2C4-E951-20A2-E7C5-CEBDE0313663" referredColumn="3D6A977E-3FC1-85A7-1427-3CDEA241E022"/>
+</associations>
+</Column>
+<Column name="ScoreFinaleEquipeV" id="16341395-6AB2-4BAB-8F6C-C70F0FC27CEE">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 23:28:30 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ScoreFinaleEquipeR" id="34282AAF-A55C-7592-ABF1-326A0816FBD6">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 23:28:30 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62D8EAB9-859F-10F7-6A3B-BA759024AC35" name="FicheMatch_Match_FK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 23:28:50 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31CD2155-0EF5-7E9B-8336-61DABEC241C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

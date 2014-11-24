@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="702AC763-B343-CECB-A75F-3AB833793202" name="Division" seqName="seg_0"/>
+   <object objectType="Table" objectID="EF8DF649-9992-71D6-13BC-9E5655A5DDBB" name="Equipe" seqName="seg_0"/>
+   <object objectType="Table" objectID="43A56F50-E1E7-08E7-43B8-C729321791DD" name="FicheMatch" seqName="seg_0"/>
+   <object objectType="Table" objectID="3C7B8430-8791-98B5-D986-0384AE67731C" name="FicheMatchJoueur" seqName="seg_0"/>
+   <object objectType="Table" objectID="242B3E18-7B29-D01A-5480-4153A3D0A3A7" name="Joueurs" seqName="seg_0"/>
+   <object objectType="Table" objectID="46831FAF-C210-D57C-380A-61AC1F09BC8D" name="Match" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9EA29D04-3DC9-11C6-5185-F6406F200765" name="Equipe_Division_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3743A2C4-E951-20A2-E7C5-CEBDE0313663" name="FicheMatch_Match_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3141DE74-12AE-BBD5-4325-2FA7DB30546F" name="FicheMatchJoueur_Joueurs_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F765913F-8A74-0879-0019-C600444A865E" name="FicheMatchJoueur_Match_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="469733C5-6F2E-4B44-9BE5-400DB67F59CB" name="Joueurs_Equipe_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C9412141-C57A-BDA1-9CA8-24C2AA3A5C16" name="Match_Equipe_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A7ED931A-6BE7-5862-1706-77FCFE2CB996" name="Match_Equipe_FKv1" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

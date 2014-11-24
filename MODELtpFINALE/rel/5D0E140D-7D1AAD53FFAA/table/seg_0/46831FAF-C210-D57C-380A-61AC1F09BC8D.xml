@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46831FAF-C210-D57C-380A-61AC1F09BC8D" name="Match">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:31:45 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NumMatch" id="3D6A977E-3FC1-85A7-1427-3CDEA241E022">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:40:55 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EquipeReceveuse" id="BE9915DE-AECC-F2C1-6EB5-8515BE36650C">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:40:55 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<delegate>A0B7B3B5-0C38-81D6-ADC1-0628BE318476</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9412141-C57A-BDA1-9CA8-24C2AA3A5C16" referredColumn="A0B7B3B5-0C38-81D6-ADC1-0628BE318476"/>
+</associations>
+</Column>
+<Column name="EquipeVisiteuse" id="52EB966B-135B-C968-E758-DC9318487A01">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:40:55 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<delegate>A0B7B3B5-0C38-81D6-ADC1-0628BE318476</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7ED931A-6BE7-5862-1706-77FCFE2CB996" referredColumn="A0B7B3B5-0C38-81D6-ADC1-0628BE318476"/>
+</associations>
+</Column>
+<Column name="Dateheure" id="71FE078A-CB85-8CA8-22C7-8AA774F2AF20">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:40:55 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lieu" id="40558271-42B9-7A9F-E771-4AAC8DFC0111">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:40:55 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D6B98F3-7687-3441-95BA-B23224E6812D" name="Match_PK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:40:55 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D6A977E-3FC1-85A7-1427-3CDEA241E022"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6150BD82-4F80-172F-1A42-2A0EDB676A7B" name="Match_Equipe_FK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 00:11:30 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE9915DE-AECC-F2C1-6EB5-8515BE36650C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75B612B0-AA22-BA3D-D63A-7C1CC32109D3" name="Match_Equipe_FKv1">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 00:11:30 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52EB966B-135B-C968-E758-DC9318487A01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

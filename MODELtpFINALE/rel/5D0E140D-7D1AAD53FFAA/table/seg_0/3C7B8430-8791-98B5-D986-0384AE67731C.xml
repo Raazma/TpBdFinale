@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C7B8430-8791-98B5-D986-0384AE67731C" name="FicheMatchJoueur">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:49:52 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NumMatch" id="95A4DDDC-8594-B734-053C-D6FC1C9F1D9A">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:51:51 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<delegate>3D6A977E-3FC1-85A7-1427-3CDEA241E022</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F765913F-8A74-0879-0019-C600444A865E" referredColumn="3D6A977E-3FC1-85A7-1427-3CDEA241E022"/>
+</associations>
+</Column>
+<Column name="NumJoueur" id="0463C92F-5EA3-687E-1191-97DD46FF21F5">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:51:51 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<delegate>25BD5D06-E634-DFF4-CF12-304A09776C59</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3141DE74-12AE-BBD5-4325-2FA7DB30546F" referredColumn="25BD5D06-E634-DFF4-CF12-304A09776C59"/>
+</associations>
+</Column>
+<Column name="NbPasses" id="86DA5ED6-7CE7-E4DB-4E1B-79C4E622AA7C">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:51:51 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NbButs" id="6BAFADD2-65C9-DA1E-ED71-2BACB3E48157">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:51:51 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E49DEEDD-ECAB-5432-301A-6A99737D4434" name="FicheMatchJoueur_Match_FK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 00:11:05 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95A4DDDC-8594-B734-053C-D6FC1C9F1D9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34A82E20-B8B7-5ADE-9F01-1146C431352C" name="FicheMatchJoueur_Joueurs_FK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 00:11:52 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0463C92F-5EA3-687E-1191-97DD46FF21F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

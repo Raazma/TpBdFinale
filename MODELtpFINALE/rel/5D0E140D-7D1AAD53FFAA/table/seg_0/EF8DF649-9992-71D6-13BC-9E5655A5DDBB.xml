@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF8DF649-9992-71D6-13BC-9E5655A5DDBB" name="Equipe">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:43:57 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NumEquipe" id="A0B7B3B5-0C38-81D6-ADC1-0628BE318476">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:45:57 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumDivision" id="F3AC7DA5-F830-7163-E9B6-FA571F9D18E1">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:45:57 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<delegate>5F1CA057-6B8E-E6DB-E79D-9527B93457CA</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA29D04-3DC9-11C6-5185-F6406F200765" referredColumn="5F1CA057-6B8E-E6DB-E79D-9527B93457CA"/>
+</associations>
+</Column>
+<Column name="DateIntroduction" id="65D9E1AC-E22C-94D6-25EC-FA43A055B316">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:45:57 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Logo" id="D4D0C00E-4683-0618-2AE7-EA4FCF918F10">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:45:57 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ville" id="EF9FDB2C-36FD-6E93-652D-E7DD6742E66A">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:45:57 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NomEquipe" id="0D9B3472-886B-39D3-1838-B5B077B8A82C">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 20:41:22 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75730250-3319-64EE-E333-81A666A6DA2C" name="Equipe_PK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-23 19:45:57 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0B7B3B5-0C38-81D6-ADC1-0628BE318476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3A9E8AB-38E3-30CD-E61B-A63EFFD87D5D" name="Equipe_Division_FK">
+<createdBy>fred</createdBy>
+<createdTime>2014-11-24 00:12:19 UTC</createdTime>
+<ownerDesignName>MODELtpFINALE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3AC7DA5-F830-7163-E9B6-FA571F9D18E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
