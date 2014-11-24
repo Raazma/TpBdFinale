@@ -50,6 +50,7 @@ CREATE TABLE Joueurs
     NumEquipe NUMBER (4) NOT NULL
    
   ) ;
+  
 ALTER TABLE Joueurs ADD CONSTRAINT Joueurs_PK PRIMARY KEY ( NumJoueur ) ;
 
 CREATE TABLE MATCH
@@ -60,6 +61,7 @@ CREATE TABLE MATCH
     Dateheure       DATE ,
     Lieu            VARCHAR2 (30)
   ) ;
+  
 ALTER TABLE MATCH ADD CONSTRAINT Match_PK PRIMARY KEY ( NumMatch ) ;
 
 ALTER TABLE Equipe ADD CONSTRAINT Equipe_Division_FK FOREIGN KEY ( NumDivision ) REFERENCES Division ( NumDivision ) ;
@@ -75,7 +77,12 @@ ALTER TABLE MATCH ADD CONSTRAINT Match_Equipe_FK FOREIGN KEY ( EquipeReceveuse )
 ALTER TABLE MATCH ADD CONSTRAINT Match_Equipe_FKv1 FOREIGN KEY ( EquipeVisiteuse ) REFERENCES Equipe ( NumEquipe ) ;
 
 
-CREATE VIEW FichePersonnelle AS
+CREATE SYNONYM SYNJOUEURS FOR JOUEURS;
+GRANT SELECT ON SYNJOUEURS TO PUBLIC;
+GRANT ALL ON SYNJOUEURS TO LEMAIREF;
+
+
+CREATE VIEW FichePersonnelle AS(
 SELECT JOUEURS.NUMJOUEUR,nom,prenom , equipe.nomequipe ,count(fichematchjoueur.nbbuts) as Nombrebuts,count(nbpasses) as nombrepasses
 FROM JOUEURS
 inner join equipe
@@ -84,5 +91,5 @@ inner join Match
 on match.equipereceveuse = equipe.numequipe OR match.equipevisiteuse = equipe.NUMEQUIPE
 inner join fichematchjoueur
 on fichematchjoueur.nummatch = Match.NUMMATCH
-group by JOUEURS.NUMJOUEUR ,nom,prenom , equipe.nomequipe;
+group by JOUEURS.NUMJOUEUR ,nom,prenom , equipe.nomequipe);
 
