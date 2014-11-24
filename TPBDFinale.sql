@@ -81,7 +81,7 @@ CREATE SYNONYM SYNJOUEURS FOR JOUEURS;
 GRANT SELECT ON SYNJOUEURS TO PUBLIC;
 GRANT ALL ON SYNJOUEURS TO LEMAIREF;
 
-
+drop view Fichepersonnelle;
 CREATE VIEW FichePersonnelle AS(
 SELECT JOUEURS.NUMJOUEUR,nom,prenom , equipe.nomequipe ,count(fichematchjoueur.nbbuts) as Nombrebuts,count(nbpasses) as nombrepasses
 FROM JOUEURS
@@ -92,4 +92,10 @@ on match.equipereceveuse = equipe.numequipe OR match.equipevisiteuse = equipe.NU
 inner join fichematchjoueur
 on fichematchjoueur.nummatch = Match.NUMMATCH
 group by JOUEURS.NUMJOUEUR ,nom,prenom , equipe.nomequipe);
+
+CREATE INDEX NUMERODELEQUIPE
+ON JOUEURS(NUMEQUIPE);
+
+CREATE INDEX DATEETHEURE
+ON MATCH (DATEHEURE);
 
