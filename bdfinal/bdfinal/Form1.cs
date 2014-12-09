@@ -20,8 +20,7 @@ namespace bdfinal
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Connect();
-          
+            Connect();        
         }
 
         private void Connect()
@@ -41,9 +40,7 @@ namespace bdfinal
             {
                 MessageBox.Show(ex.Message.ToString());
 
-            }
-        
-         
+            }      
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
