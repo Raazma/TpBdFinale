@@ -31,8 +31,14 @@ namespace bdfinal
             OracleDataAdapter adap = new OracleDataAdapter(commande, oracon);
             adap.Fill(Info, "ResJoueurs");
             BindingSource TheSOUSSE = new BindingSource(Info,"ResJoueurs");
-            Dgv_Joueurs.DataSource = TheSOUSSE;
-             
+            Dgv_Joueurs.DataSource = TheSOUSSE;            
         }
+        private void fillcontrol()
+        {
+            string commande = "Select * from FichePersonnelle";
+            OracleDataAdapter orDataAdaptr = new OracleDataAdapter(commande, oracon);
+        }
+
+        
     }
 }

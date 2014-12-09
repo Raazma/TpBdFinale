@@ -45,7 +45,8 @@ CREATE TABLE FicheMatchJoueur
     NbPasses  NUMBER (2) ,
     NbButs    NUMBER (2)
   ) ;
-
+alter table FICHEMATCHJOUEUR
+add  TempPunition number(3);
 CREATE TABLE Joueurs
   (
     NumJoueur     NUMBER (4) NOT NULL ,
@@ -116,6 +117,9 @@ select * from division;
 
 INSERT INTO EQUIPE (NUMDIVISION, DateIntroduction,VILLE,NOMEQUIPE)
 VALUES(2,'2003-09-03','saskatoune','LesRequins');
+
+INSERT INTO EQUIPE (NUMDIVISION, DateIntroduction,VILLE,NOMEQUIPE)
+VALUES(2,'2000-04-17','Quebec','LesLynx');
 select* from equipe;
 
 delete from equipe where numequipe = 7;
@@ -123,3 +127,33 @@ delete from equipe where numequipe = 7;
 select * from DIVISION;
 
 commit;
+
+select * from joueurs;
+
+NumMatch        NUMBER (4) NOT NULL ,
+    EquipeReceveuse NUMBER (4) NOT NULL ,
+    EquipeVisiteuse NUMBER (4) NOT NULL ,
+    Dateheure       DATE ,
+    Lieu            VARCHAR2 (30) ,
+    ScoreFinaleV    NUMBER (2) ,
+    ScoreFinaleR    NUMBER (2)
+ 
+commit;
+insert into match( EquipeReceveuse,EquipeVisiteuse,  Dateheure, Lieu, ScoreFinaleV, ScoreFinaleR)
+values(11,9,'2014-04-23','Quebec',3,2);
+select * from match;
+
+alter table FICHEMATCHJOUEUR
+add  TempPunition number(3);
+NumMatch  NUMBER (4) NOT NULL ,
+    NumJoueur NUMBER (4) NOT NULL ,
+    NbPasses  NUMBER (2) ,
+    NbButs    NUMBER (2)
+    TempPunition number(3);
+    insert into fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts,tempPunition)
+    Values (1,14,0,0,0);
+ 
+ insert into fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts,tempPunition)
+    Values (1,15,1,0,0);
+    
+    select * from equipe;
