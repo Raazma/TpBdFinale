@@ -33,6 +33,7 @@
             this.affichageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.joueursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifierJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             // 
             this.affichageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.joueursToolStripMenuItem,
+            this.modifierJoueurToolStripMenuItem,
             this.matchToolStripMenuItem});
             this.affichageToolStripMenuItem.Name = "affichageToolStripMenuItem";
             this.affichageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
@@ -68,16 +70,23 @@
             // joueursToolStripMenuItem
             // 
             this.joueursToolStripMenuItem.Name = "joueursToolStripMenuItem";
-            this.joueursToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.joueursToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.joueursToolStripMenuItem.Text = "Joueurs";
             this.joueursToolStripMenuItem.Click += new System.EventHandler(this.joueursToolStripMenuItem_Click);
             // 
             // matchToolStripMenuItem
             // 
             this.matchToolStripMenuItem.Name = "matchToolStripMenuItem";
-            this.matchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.matchToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.matchToolStripMenuItem.Text = "Match";
             this.matchToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
+            // 
+            // modifierJoueurToolStripMenuItem
+            // 
+            this.modifierJoueurToolStripMenuItem.Name = "modifierJoueurToolStripMenuItem";
+            this.modifierJoueurToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.modifierJoueurToolStripMenuItem.Text = "ModifierJoueur";
+            this.modifierJoueurToolStripMenuItem.Click += new System.EventHandler(this.modifierJoueurToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -104,6 +113,7 @@
         private System.Windows.Forms.ToolStripMenuItem affichageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem joueursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifierJoueurToolStripMenuItem;
     }
 }
 

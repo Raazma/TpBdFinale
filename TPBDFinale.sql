@@ -16,9 +16,6 @@ DROP TABLE Match CASCADE CONSTRAINTS;
 --   site :      Oracle Database 11g
 --   type :      Oracle Database 11g
 
-
-
-
 CREATE TABLE Division
   (
     NumDivision     NUMBER (4) NOT NULL ,
@@ -129,8 +126,6 @@ select * from DIVISION;
 commit;
 
 select * from joueurs;
-
-
  
 commit;
 insert into match( EquipeReceveuse,EquipeVisiteuse,  Dateheure, Lieu, ScoreFinaleV, ScoreFinaleR)
@@ -139,11 +134,7 @@ select * from match;
 
 alter table FICHEMATCHJOUEUR
 add  TempPunition number(3);
-NumMatch  NUMBER (4) NOT NULL ,
-    NumJoueur NUMBER (4) NOT NULL ,
-    NbPasses  NUMBER (2) ,
-    NbButs    NUMBER (2)
-    TempPunition number(3);
+
     insert into fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts,tempPunition)
     Values (1,14,0,0,0);
  
@@ -167,3 +158,9 @@ select DATEHEURE from match;
 select * from match where DateHeure = '2014-04-23';
 
 select * from match;
+
+select *
+from joueurs
+where numjoueur in (select numjoueur from FICHEMATCHJOUEUR where nummatch = 1);
+
+select * from FICHEMATCHJOUEUR where nummatch = 1;
