@@ -36,7 +36,6 @@
             this.Lb_Stats = new System.Windows.Forms.Label();
             this.Lb_NbButs = new System.Windows.Forms.Label();
             this.Lb_Passes = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.Btn_Suivant = new System.Windows.Forms.Button();
             this.Cb_Equipe = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Joueurs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +54,9 @@
             // Dgv_Joueurs
             // 
             this.Dgv_Joueurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Joueurs.Location = new System.Drawing.Point(12, 12);
+            this.Dgv_Joueurs.Location = new System.Drawing.Point(413, 47);
             this.Dgv_Joueurs.Name = "Dgv_Joueurs";
-            this.Dgv_Joueurs.Size = new System.Drawing.Size(24, 20);
+            this.Dgv_Joueurs.Size = new System.Drawing.Size(315, 190);
             this.Dgv_Joueurs.TabIndex = 0;
             // 
             // Lb_Num
@@ -115,15 +115,6 @@
             this.Lb_Passes.Name = "Lb_Passes";
             this.Lb_Passes.Size = new System.Drawing.Size(0, 13);
             this.Lb_Passes.TabIndex = 7;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(280, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -201,6 +192,7 @@
             // 
             // Cb_Equipe
             // 
+            this.Cb_Equipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Equipe.FormattingEnabled = true;
             this.Cb_Equipe.Location = new System.Drawing.Point(12, 73);
             this.Cb_Equipe.Name = "Cb_Equipe";
@@ -217,11 +209,20 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "Equipe";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Location = new System.Drawing.Point(280, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_AffJoueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 378);
+            this.ClientSize = new System.Drawing.Size(762, 378);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Cb_Equipe);
             this.Controls.Add(this.Btn_Suivant);

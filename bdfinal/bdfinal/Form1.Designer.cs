@@ -77,6 +77,7 @@
             this.matchToolStripMenuItem.Name = "matchToolStripMenuItem";
             this.matchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.matchToolStripMenuItem.Text = "Match";
+            this.matchToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
             // 
             // Form1
             // 

@@ -104,6 +104,7 @@
             // 
             // Cb_Equipe
             // 
+            this.Cb_Equipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Equipe.FormattingEnabled = true;
             this.Cb_Equipe.Location = new System.Drawing.Point(95, 96);
             this.Cb_Equipe.Name = "Cb_Equipe";
@@ -130,6 +131,7 @@
             // 
             // Cb_Position
             // 
+            this.Cb_Position.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Position.FormattingEnabled = true;
             this.Cb_Position.Items.AddRange(new object[] {
             "Attaquant",

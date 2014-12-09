@@ -130,13 +130,7 @@ commit;
 
 select * from joueurs;
 
-NumMatch        NUMBER (4) NOT NULL ,
-    EquipeReceveuse NUMBER (4) NOT NULL ,
-    EquipeVisiteuse NUMBER (4) NOT NULL ,
-    Dateheure       DATE ,
-    Lieu            VARCHAR2 (30) ,
-    ScoreFinaleV    NUMBER (2) ,
-    ScoreFinaleR    NUMBER (2)
+
  
 commit;
 insert into match( EquipeReceveuse,EquipeVisiteuse,  Dateheure, Lieu, ScoreFinaleV, ScoreFinaleR)
@@ -157,3 +151,19 @@ NumMatch  NUMBER (4) NOT NULL ,
     Values (1,15,1,0,0);
     
     select * from equipe;
+select * from  Fichepersonnelle where nomequipe ='LesLynx';
+
+select * from match;
+
+select numjoueur,nom,prenom
+from joueurs 
+inner join equipe 
+on equipe.numequipe = joueurs.numequipe;
+
+select nummatch from match;
+
+select DATEHEURE from match;
+
+select * from match where DateHeure = '2014-04-23';
+
+select * from match;

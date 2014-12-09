@@ -24,20 +24,26 @@ namespace bdfinal
         {
             InitializeComponent();
             oracon = oraconn;
-            RemplirGridView();
+            RemplirCombobox();
              UpdateControl();
            
         }
         public void RemplirGridView()
         {
-            string commande = "select * from  Fichepersonnelle";
+
+            string commande = "select * from joueurs inner join equipe on equipe.numequipe = joueurs.numequipe where equipe.nomequipe = '" + Cb_Equipe.SelectedItem.ToString() + "'";
             OracleDataAdapter adap = new OracleDataAdapter(commande, oracon);
             adap.Fill(Info, "ResJoueurs");
             BindingSource TheSOUSSE = new BindingSource(Info,"ResJoueurs");
             Dgv_Joueurs.DataSource = TheSOUSSE;
 
-            commande = "SELECT NOMEQUIPE FROM EQUIPE";
+          
+        }
+        private void RemplirCombobox()
+        {
 
+
+           string commande = "SELECT NOMEQUIPE FROM EQUIPE";
             OracleCommand oraclecomm = new OracleCommand(commande, oracon);
             oraclecomm.CommandType = CommandType.Text;
             OracleDataReader oraread = oraclecomm.ExecuteReader();
@@ -47,6 +53,8 @@ namespace bdfinal
                 Cb_Equipe.Items.Add(ligne);
             }
             oraread.Close();
+        
+        
         }
         private void fillcontrol()
         {
@@ -108,7 +116,7 @@ namespace bdfinal
             ClearBinding();
              UpdateControl();
             fillcontrol();
-          
+            RemplirGridView();
         }
 
         private void Form_AffJoueur_Load(object sender, EventArgs e)

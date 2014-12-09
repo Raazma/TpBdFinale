@@ -63,5 +63,11 @@ namespace bdfinal
             Form_AffJoueur form = new Form_AffJoueur(oraconn);
             form.Show();
         }
+
+        private void matchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Match form = new Form_Match(oraconn);
+            form.Show();
+        }
     }
 }
