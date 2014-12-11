@@ -1,15 +1,9 @@
-select * from EQUIPE;
-select * from MATCH;
-select * from joueurs;
 
 insert into match values(2,9,11,'14-04-30','Montréal',2,3);
 
 insert into FICHEMATCHJOUEUR values(1,12,1,2,2);
 insert into FICHEMATCHJOUEUR values(1,13,2,1,0);
 insert into FICHEMATCHJOUEUR values(1,15,0,2,0);
-
-
-select * from equipe;
 
 
 create view ClassementEquipe_Raw
@@ -51,17 +45,7 @@ as
 select sum(Point) as Points,NOMEQUIPE,NUMDIVISION
 from CLASSEMENTEQUIPE_RAW
 group by NOMEQUIPE,NUMDIVISION
-order by sum(Point) desc
-;
-
---Bonne requête pour classement par équipe par division
-select count(nomequipe) as pointage ,nomequipe
-from(
-
-)
-where NUMDIVISION=2
-group by nomequipe
-order by pointage desc
+order by Points desc
 ;
 
 -- Classement Joueurs
@@ -80,10 +64,5 @@ order by point desc
 create view Top3Joueur
 as
 select * from CLASSEMENTJOUEUR where rownum <=3;
-
-select * from TOP3JOUEUR;
-
-select * from FICHEMATCHJOUEUR
-;
 
 commit;
