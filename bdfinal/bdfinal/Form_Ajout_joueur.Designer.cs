@@ -59,6 +59,7 @@
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.Size = new System.Drawing.Size(30, 27);
             this.flashButton1.TabIndex = 19;
+            this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
             // 
             // Fb_Accept
             // 

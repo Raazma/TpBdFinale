@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
+using System.IO;
 
 namespace bdfinal
 {
@@ -53,6 +54,7 @@ namespace bdfinal
                 OracleParameter Ville = new OracleParameter(":Ville", OracleDbType.Varchar2, 30);
                 OracleParameter Nom = new OracleParameter(":nom", OracleDbType.Varchar2, 20);
 
+
                 Numdiv.Value = Cb_Division.SelectedIndex.ToString();
                 Date.Value = DTP_Intro.Value;
                 Ville.Value = Tb_Ville.Text;
@@ -64,6 +66,7 @@ namespace bdfinal
                 int laligne = orcom.ExecuteNonQuery();
 
                 MessageBox.Show(laligne.ToString());
+              
             }
 
         }

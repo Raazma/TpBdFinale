@@ -62,9 +62,11 @@ namespace bdfinal
 
         private void Btn_Modifier_Click(object sender, EventArgs e)
         {
-
-        }
-
-     
+            string commande = "Update equipe set nomequipe ='" + Tb_Name.ToString() + "'," + "ville = '" + Tb_ville.ToString() + "' where numequipe =" + Lb_Num.Text;
+            OracleCommand com = new OracleCommand(commande, orac);
+            com.CommandType = CommandType.Text;
+            int i = com.ExecuteNonQuery();
+            MessageBox.Show(i.ToString() + " Ligne Modifier");
+        }   
     }
 }
