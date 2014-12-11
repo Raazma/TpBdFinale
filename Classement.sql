@@ -1,9 +1,9 @@
 
-insert into match values(2,9,11,'14-04-30','Montréal',2,3);
+--insert into match values(2,9,11,'14-04-30','Montréal',2,3);
 
-insert into FICHEMATCHJOUEUR values(1,12,1,2,2);
-insert into FICHEMATCHJOUEUR values(1,13,2,1,0);
-insert into FICHEMATCHJOUEUR values(1,15,0,2,0);
+--insert into FICHEMATCHJOUEUR values(1,12,1,2,2);
+--insert into FICHEMATCHJOUEUR values(1,13,2,1,0);
+--insert into FICHEMATCHJOUEUR values(1,15,0,2,0);
 
 
 create view ClassementEquipe_Raw
