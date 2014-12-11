@@ -11,7 +11,6 @@ using Oracle.DataAccess.Client;
 
 namespace bdfinal
 {
-
     public partial class Form_Ajout_joueur : Form
     {
         public OracleConnection oracon = new OracleConnection();
@@ -22,7 +21,6 @@ namespace bdfinal
 
         public Form_Ajout_joueur(OracleConnection oraconn)
         {
-
             InitializeComponent();
             oracon = oraconn;
             FillComboBox();
@@ -55,6 +53,7 @@ namespace bdfinal
                 " values(:nom,:prenom,:datenaissance,:numeroMaillot,:position,(SELECT NUMEQUIPE FROM EQUIPE WHERE NOMEQUIPE =:nomE))";
                 OracleCommand oranIns = new OracleCommand(commande, oracon);
 
+
                 OracleParameter Nomparam = new OracleParameter(":nom", OracleDbType.Varchar2, 30);
                 OracleParameter Prenomparam = new OracleParameter(":prenom", OracleDbType.Varchar2, 30);
                 OracleParameter Dateparam = new OracleParameter(":dateNaissance", OracleDbType.Date);
@@ -81,14 +80,14 @@ namespace bdfinal
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
         }
 
-       
-
-      
+        private void flashButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }     
     }
 }
 
