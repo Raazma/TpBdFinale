@@ -15,7 +15,7 @@ namespace bdfinal
     {
         public OracleConnection oracon = new OracleConnection();
         public DataSet Info = new DataSet();
-        
+
         public Form_AffJoueur()
         {
             InitializeComponent();
@@ -30,19 +30,14 @@ namespace bdfinal
         }
         public void RemplirGridView()
         {
-
             string commande = "select * from joueurs inner join equipe on equipe.numequipe = joueurs.numequipe where equipe.nomequipe = '" + Cb_Equipe.SelectedItem.ToString() + "'";
             OracleDataAdapter adap = new OracleDataAdapter(commande, oracon);
             adap.Fill(Info, "ResJoueurs");
             BindingSource TheSOUSSE = new BindingSource(Info,"ResJoueurs");
-            Dgv_Joueurs.DataSource = TheSOUSSE;
-
-          
+            Dgv_Joueurs.DataSource = TheSOUSSE;     
         }
         private void RemplirCombobox()
         {
-
-
            string commande = "SELECT NOMEQUIPE FROM EQUIPE";
             OracleCommand oraclecomm = new OracleCommand(commande, oracon);
             oraclecomm.CommandType = CommandType.Text;
@@ -52,14 +47,11 @@ namespace bdfinal
                 string ligne = oraread.GetString(0);
                 Cb_Equipe.Items.Add(ligne);
             }
-            oraread.Close();
-        
-        
+            oraread.Close();      
         }
+     
         private void fillcontrol()
         {
-
-
             ClearBinding();
             string commande = "select * from  Fichepersonnelle where nomequipe = '" + Cb_Equipe.SelectedItem.ToString() + "'";
                 OracleDataAdapter orDataAdaptr = new OracleDataAdapter(commande, oracon);
@@ -72,8 +64,7 @@ namespace bdfinal
                 Lb_Prenom.DataBindings.Add("TEXT", Info, "resFiches.prenom");
                 Lb_Equipe.DataBindings.Add("TEXT", Info, "resFiches.nomequipe");
                 Lb_NbButs.DataBindings.Add("TEXT", Info, "resFiches.nombrebuts");
-                Lb_Passes.DataBindings.Add("TEXT", Info, "resFiches.nombrepasses");
-           
+                Lb_Passes.DataBindings.Add("TEXT", Info, "resFiches.nombrepasses");       
             
         }
         private void UpdateControl()
@@ -98,14 +89,11 @@ namespace bdfinal
             Lb_Equipe.DataBindings.Clear();
             Lb_NbButs.DataBindings.Clear();
             Lb_Passes.DataBindings.Clear();
-           
-        
         }
         private void Btn_Suivant_Click(object sender, EventArgs e)
         {
-            this.BindingContext[Info, "resFiches"].Position += 1;
+            this.BindingContext[Info, "resFiches"].Position += 1;
         }
-
         private void Btn_Precendent_Click(object sender, EventArgs e)
         {
             this.BindingContext[Info, "resFiches"].Position -= 1;
@@ -123,7 +111,5 @@ namespace bdfinal
         {
 
         }
-
-       
     }
 }

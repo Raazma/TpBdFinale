@@ -44,8 +44,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Btn_Modifier = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pb_Logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,9 +98,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(285, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.label6.Text = "Logo";
             // 
             // Cb_Division
             // 
@@ -133,6 +133,7 @@
             this.Btn_mod_photo.TabIndex = 10;
             this.Btn_mod_photo.Text = "Changer Logo";
             this.Btn_mod_photo.UseVisualStyleBackColor = true;
+            this.Btn_mod_photo.Click += new System.EventHandler(this.Btn_mod_photo_Click);
             // 
             // Btn_Precedent
             // 
@@ -189,14 +190,14 @@
             this.button2.Text = "Effacer";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pb_Logo
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(254, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pb_Logo.Location = new System.Drawing.Point(254, 55);
+            this.pb_Logo.Name = "pb_Logo";
+            this.pb_Logo.Size = new System.Drawing.Size(100, 111);
+            this.pb_Logo.TabIndex = 6;
+            this.pb_Logo.TabStop = false;
             // 
             // Form_Modifier_Equipe
             // 
@@ -213,7 +214,7 @@
             this.Controls.Add(this.Tb_ville);
             this.Controls.Add(this.Tb_Name);
             this.Controls.Add(this.Cb_Division);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb_Logo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -222,7 +223,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form_Modifier_Equipe";
             this.Text = "Form_Modifier_Equipe";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,7 +237,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb_Logo;
         private System.Windows.Forms.ComboBox Cb_Division;
         private System.Windows.Forms.TextBox Tb_Name;
         private System.Windows.Forms.TextBox Tb_ville;

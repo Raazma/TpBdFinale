@@ -58,10 +58,10 @@ namespace bdfinal
 
         private void joueursToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Form_Ajout_joueur form = new Form_Ajout_joueur(oraconn);
-            //form.Show();
-            Form_AffJoueur form = new Form_AffJoueur(oraconn);
+            Form_Ajout_joueur form = new Form_Ajout_joueur(oraconn);
             form.Show();
+            //Form_AffJoueur form = new Form_AffJoueur(oraconn);
+            //form.Show();
         }
 
         private void matchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -87,6 +87,15 @@ namespace bdfinal
 
             Form_Modifier_Equipe form = new Form_Modifier_Equipe(oraconn);
             form.Show();
+        }
+
+        private void classementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Classement Classement=new Form_Classement(oraconn);
+            if(Classement.ShowDialog()==DialogResult.OK)
+            {
+                
+            }
         }
     }
 }

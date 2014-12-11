@@ -39,9 +39,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Lb_Num = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Pb_Logo = new System.Windows.Forms.PictureBox();
             this.Cb_Equipe = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Btn_Precedent = new System.Windows.Forms.Button();
+            this.Btn_Suivant = new System.Windows.Forms.Button();
+            this.Btn_Effacer = new System.Windows.Forms.Button();
+            this.Btn_Modifier = new System.Windows.Forms.Button();
+            this.Btn_Cancel = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Tb_nom
@@ -135,14 +140,14 @@
             this.Lb_Num.TabIndex = 12;
             this.Lb_Num.Text = "label7";
             // 
-            // pictureBox1
+            // Pb_Logo
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(381, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 113);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.Pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pb_Logo.Location = new System.Drawing.Point(381, 12);
+            this.Pb_Logo.Name = "Pb_Logo";
+            this.Pb_Logo.Size = new System.Drawing.Size(137, 113);
+            this.Pb_Logo.TabIndex = 13;
+            this.Pb_Logo.TabStop = false;
             // 
             // Cb_Equipe
             // 
@@ -153,13 +158,67 @@
             this.Cb_Equipe.Size = new System.Drawing.Size(107, 21);
             this.Cb_Equipe.TabIndex = 15;
             // 
+            // Btn_Precedent
+            // 
+            this.Btn_Precedent.Location = new System.Drawing.Point(30, 348);
+            this.Btn_Precedent.Name = "Btn_Precedent";
+            this.Btn_Precedent.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Precedent.TabIndex = 16;
+            this.Btn_Precedent.Text = "Precedent";
+            this.Btn_Precedent.UseVisualStyleBackColor = true;
+            this.Btn_Precedent.Click += new System.EventHandler(this.Btn_Precedent_Click);
+            // 
+            // Btn_Suivant
+            // 
+            this.Btn_Suivant.Location = new System.Drawing.Point(174, 348);
+            this.Btn_Suivant.Name = "Btn_Suivant";
+            this.Btn_Suivant.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Suivant.TabIndex = 17;
+            this.Btn_Suivant.Text = "Suivant";
+            this.Btn_Suivant.UseVisualStyleBackColor = true;
+            this.Btn_Suivant.Click += new System.EventHandler(this.Btn_Suivant_Click);
+            // 
+            // Btn_Effacer
+            // 
+            this.Btn_Effacer.Location = new System.Drawing.Point(310, 180);
+            this.Btn_Effacer.Name = "Btn_Effacer";
+            this.Btn_Effacer.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Effacer.TabIndex = 18;
+            this.Btn_Effacer.Text = "Effacer";
+            this.Btn_Effacer.UseVisualStyleBackColor = true;
+            this.Btn_Effacer.Click += new System.EventHandler(this.Btn_Effacer_Click);
+            // 
+            // Btn_Modifier
+            // 
+            this.Btn_Modifier.Location = new System.Drawing.Point(310, 235);
+            this.Btn_Modifier.Name = "Btn_Modifier";
+            this.Btn_Modifier.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Modifier.TabIndex = 19;
+            this.Btn_Modifier.Text = "Modifier";
+            this.Btn_Modifier.UseVisualStyleBackColor = true;
+            this.Btn_Modifier.Click += new System.EventHandler(this.Btn_Modifier_Click);
+            // 
+            // Btn_Cancel
+            // 
+            this.Btn_Cancel.Location = new System.Drawing.Point(310, 348);
+            this.Btn_Cancel.Name = "Btn_Cancel";
+            this.Btn_Cancel.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Cancel.TabIndex = 20;
+            this.Btn_Cancel.Text = "Cancel";
+            this.Btn_Cancel.UseVisualStyleBackColor = true;
+            // 
             // Form_Modif_Joueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 403);
+            this.Controls.Add(this.Btn_Cancel);
+            this.Controls.Add(this.Btn_Modifier);
+            this.Controls.Add(this.Btn_Effacer);
+            this.Controls.Add(this.Btn_Suivant);
+            this.Controls.Add(this.Btn_Precedent);
             this.Controls.Add(this.Cb_Equipe);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Pb_Logo);
             this.Controls.Add(this.Lb_Num);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -173,7 +232,7 @@
             this.Controls.Add(this.Tb_nom);
             this.Name = "Form_Modif_Joueur";
             this.Text = "Form_Modif_Joueur";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,7 +251,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label Lb_Num;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Pb_Logo;
         private System.Windows.Forms.ComboBox Cb_Equipe;
+        private System.Windows.Forms.Button Btn_Precedent;
+        private System.Windows.Forms.Button Btn_Suivant;
+        private System.Windows.Forms.Button Btn_Effacer;
+        private System.Windows.Forms.Button Btn_Modifier;
+        private System.Windows.Forms.Button Btn_Cancel;
     }
 }
