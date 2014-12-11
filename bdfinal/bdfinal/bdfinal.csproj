@@ -72,6 +72,12 @@
     <Compile Include="Form_Ajout_joueur.Designer.cs">
       <DependentUpon>Form_Ajout_joueur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Classement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Classement.Designer.cs">
+      <DependentUpon>Form_Classement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Match.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Ajout_joueur.resx">
       <DependentUpon>Form_Ajout_joueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Classement.resx">
+      <DependentUpon>Form_Classement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Match.resx">
       <DependentUpon>Form_Match.cs</DependentUpon>
