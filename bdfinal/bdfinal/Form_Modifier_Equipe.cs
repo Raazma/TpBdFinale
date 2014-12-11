@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
+using System.IO;
+
 
 namespace bdfinal
 {
@@ -64,9 +66,18 @@ namespace bdfinal
 
         private void Btn_Modifier_Click(object sender, EventArgs e)
         {
-            string commande = "Update equipe set nomequipe ='" + Tb_Name.Text + "'," + "ville = '" + Tb_ville.Text + "' where numequipe =" + Lb_Num.Text;
+            FileStream Streamp = new FileStream(filename, FileMode.Open, FileAccess.Read);
+            byte[] buffer1 = new byte[Streamp.Length];
+            Streamp.Read(buffer1, 0, System.Convert.ToInt32(Streamp.Length));
+            Streamp.Close();
+
+            string commande = "Update equipe set nomequipe ='" + Tb_Name.Text + "'," + "ville = '" + Tb_ville.Text + "' , logo = :TheLogo" + " where numequipe =" + Lb_Num.Text ;
             OracleCommand com = new OracleCommand(commande, orac);
             com.CommandType = CommandType.Text;
+            OracleParameter lelogo = new OracleParameter(":TheLogo" , OracleDbType.Blob);
+            lelogo.Value = buffer1;
+            com.Parameters.Add(lelogo);
+    
             int i = com.ExecuteNonQuery();
             MessageBox.Show(i.ToString() + " Ligne Modifier");
         }
@@ -77,9 +88,8 @@ namespace bdfinal
 
             if(form.ShowDialog() == DialogResult.OK)
             {
-            
-               
-            
+                filename = form.FileName;
+                 
             
             }
         }   

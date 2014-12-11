@@ -74,7 +74,6 @@ namespace bdfinal
                 com.CommandType = CommandType.Text;
                int i =  com.ExecuteNonQuery();
                MessageBox.Show(i.ToString() + " Ligne Modifier");
-           
         }
 
         private void Btn_Effacer_Click(object sender, EventArgs e)

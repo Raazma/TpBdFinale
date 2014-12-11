@@ -74,14 +74,13 @@ namespace bdfinal
                 orcom.Parameters.Add(Ville);
                 orcom.Parameters.Add(Nom);
                 
-
                 int laligne = orcom.ExecuteNonQuery();
 
                 MessageBox.Show(laligne.ToString());
               
             }
-
         }
+
         private void Form_Ajout_equipe_Load(object sender, EventArgs e)
         {
 
@@ -96,7 +95,7 @@ namespace bdfinal
             if(form.ShowDialog() == DialogResult.OK)
             {
                  filename = form.FileName;
-           
+                    
            
             }
 
