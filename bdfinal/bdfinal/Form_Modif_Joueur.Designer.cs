@@ -39,14 +39,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Lb_Num = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Pb_Logo = new System.Windows.Forms.PictureBox();
             this.Cb_Equipe = new System.Windows.Forms.ComboBox();
             this.Btn_Precedent = new System.Windows.Forms.Button();
             this.Btn_Suivant = new System.Windows.Forms.Button();
             this.Btn_Effacer = new System.Windows.Forms.Button();
             this.Btn_Modifier = new System.Windows.Forms.Button();
             this.Btn_Cancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Tb_nom
@@ -140,14 +140,14 @@
             this.Lb_Num.TabIndex = 12;
             this.Lb_Num.Text = "label7";
             // 
-            // pictureBox1
+            // Pb_Logo
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(381, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 113);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.Pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pb_Logo.Location = new System.Drawing.Point(381, 12);
+            this.Pb_Logo.Name = "Pb_Logo";
+            this.Pb_Logo.Size = new System.Drawing.Size(137, 113);
+            this.Pb_Logo.TabIndex = 13;
+            this.Pb_Logo.TabStop = false;
             // 
             // Cb_Equipe
             // 
@@ -218,7 +218,7 @@
             this.Controls.Add(this.Btn_Suivant);
             this.Controls.Add(this.Btn_Precedent);
             this.Controls.Add(this.Cb_Equipe);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Pb_Logo);
             this.Controls.Add(this.Lb_Num);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -232,7 +232,7 @@
             this.Controls.Add(this.Tb_nom);
             this.Name = "Form_Modif_Joueur";
             this.Text = "Form_Modif_Joueur";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,7 +251,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label Lb_Num;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Pb_Logo;
         private System.Windows.Forms.ComboBox Cb_Equipe;
         private System.Windows.Forms.Button Btn_Precedent;
         private System.Windows.Forms.Button Btn_Suivant;

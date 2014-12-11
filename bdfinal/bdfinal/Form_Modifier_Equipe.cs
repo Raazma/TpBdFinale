@@ -19,14 +19,12 @@ namespace bdfinal
         {
             InitializeComponent();
         }
-
         public Form_Modifier_Equipe(OracleConnection ora)
         {
             InitializeComponent();
             orac = ora;
             FilleComboBox();
         }
-
         private void FilleComboBox()
         {
             string commande = "SELECT nom from division";
@@ -47,7 +45,9 @@ namespace bdfinal
             Lb_Num.DataBindings.Add("text",theSet, "ResEquipes.numequipe");
             Tb_Name.DataBindings.Add("text", theSet, "ResEquipes.nomequipe");
             Tb_ville.DataBindings.Add("text", theSet, "ResEquipes.ville");
-
+            pb_Logo.DataBindings.Add("image", theSet, "ResEquipes.Logo", true);
+           pb_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+           
             MessageBox.Show(orac.State.ToString());
         }
 
@@ -63,7 +63,7 @@ namespace bdfinal
 
         private void Btn_Modifier_Click(object sender, EventArgs e)
         {
-            string commande = "Update equipe set nomequipe ='" + Tb_Name.ToString() + "'," + "ville = '" + Tb_ville.ToString() + "' where numequipe =" + Lb_Num.Text;
+            string commande = "Update equipe set nomequipe ='" + Tb_Name.Text + "'," + "ville = '" + Tb_ville.Text + "' where numequipe =" + Lb_Num.Text;
             OracleCommand com = new OracleCommand(commande, orac);
             com.CommandType = CommandType.Text;
             int i = com.ExecuteNonQuery();

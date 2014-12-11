@@ -68,6 +68,7 @@ namespace bdfinal
                 Posparam.Value = Cb_Position.SelectedItem.ToString();
                 NomEparam.Value = Cb_Equipe.SelectedItem.ToString();
 
+
                 oranIns.Parameters.Add(Nomparam);
                 oranIns.Parameters.Add(Prenomparam);
                 oranIns.Parameters.Add(Dateparam);
