@@ -164,3 +164,5 @@ from joueurs
 where numjoueur in (select numjoueur from FICHEMATCHJOUEUR where nummatch = 1);
 
 select * from FICHEMATCHJOUEUR where nummatch = 1;
+
+select * from joueurs;

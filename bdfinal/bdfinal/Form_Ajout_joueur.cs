@@ -22,7 +22,6 @@ namespace bdfinal
 
         public Form_Ajout_joueur(OracleConnection oraconn)
         {
-
             InitializeComponent();
             oracon = oraconn;
             FillComboBox();
@@ -85,11 +84,7 @@ namespace bdfinal
 
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-       
-
-      
+        }     
     }
 }
 
