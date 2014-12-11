@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FlashButton">
-      <HintPath>..\..\..\..\Interface PM\UserControl &amp; TextFile\FlashButton.dll</HintPath>
+      <HintPath>FlashButton\bin\Debug\FlashButton.dll</HintPath>
     </Reference>
     <Reference Include="Oracle.DataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
     <Reference Include="System" />

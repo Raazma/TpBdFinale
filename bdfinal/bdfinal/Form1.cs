@@ -88,5 +88,14 @@ namespace bdfinal
             Form_Modifier_Equipe form = new Form_Modifier_Equipe(oraconn);
             form.Show();
         }
+
+        private void classementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Classement Classement=new Form_Classement();
+            if(Classement.ShowDialog()==DialogResult.OK)
+            {
+                
+            }
+        }
     }
 }
