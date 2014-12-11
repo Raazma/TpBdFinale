@@ -168,3 +168,25 @@ select * from FICHEMATCHJOUEUR where nummatch = 1;
 select * from joueurs;
 
 select * from equipe;
+select * from joueurs;
+  NumEquipe        NUMBER (4) NOT NULL ,
+    NumDivision      NUMBER (4) NOT NULL ,
+    DateIntroduction DATE ,
+    Logo BLOB ,
+    Ville     VARCHAR2 (30) ,
+    NomEquipe VARCHAR2 (20)
+insert into equipe (NumDivision,DateIntroduction,Ville,NomEquipe)
+values(1,'2000-04-14','Chibougamo','The Team');
+commit;
+select * from equipe;
+
+update equipe
+set NOMEQUIPE = 'test',ville = 'testencore'
+where numequipe = 11;
+
+
+select * from FicheMatchJoueur;
+
+select * from equipe;
+commit;
+select * from CLASSEMENTEQUIPE;

@@ -15,6 +15,7 @@ namespace bdfinal
     {
         OracleConnection orac = new OracleConnection();
         DataSet theSet = new DataSet();
+        string filename;
         public Form_Modifier_Equipe()
         {
             InitializeComponent();
@@ -37,7 +38,7 @@ namespace bdfinal
                Cb_Division.Items.Add(ligne);
             }
             oraread.Close();
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //fille les autre box et label
             commande = "select * from equipe";
             OracleDataAdapter adp = new OracleDataAdapter(commande, orac);
@@ -46,7 +47,7 @@ namespace bdfinal
             Tb_Name.DataBindings.Add("text", theSet, "ResEquipes.nomequipe");
             Tb_ville.DataBindings.Add("text", theSet, "ResEquipes.ville");
             pb_Logo.DataBindings.Add("image", theSet, "ResEquipes.Logo", true);
-           pb_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pb_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
            
             MessageBox.Show(orac.State.ToString());
         }
@@ -68,6 +69,19 @@ namespace bdfinal
             com.CommandType = CommandType.Text;
             int i = com.ExecuteNonQuery();
             MessageBox.Show(i.ToString() + " Ligne Modifier");
+        }
+
+        private void Btn_mod_photo_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog form = new OpenFileDialog();
+
+            if(form.ShowDialog() == DialogResult.OK)
+            {
+            
+               
+            
+            
+            }
         }   
     }
 }

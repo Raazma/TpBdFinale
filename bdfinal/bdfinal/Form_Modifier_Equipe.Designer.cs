@@ -133,6 +133,7 @@
             this.Btn_mod_photo.TabIndex = 10;
             this.Btn_mod_photo.Text = "Changer Logo";
             this.Btn_mod_photo.UseVisualStyleBackColor = true;
+            this.Btn_mod_photo.Click += new System.EventHandler(this.Btn_mod_photo_Click);
             // 
             // Btn_Precedent
             // 
