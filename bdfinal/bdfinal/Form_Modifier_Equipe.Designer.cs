@@ -34,7 +34,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Cb_Division = new System.Windows.Forms.ComboBox();
             this.Tb_Name = new System.Windows.Forms.TextBox();
             this.Tb_ville = new System.Windows.Forms.TextBox();
@@ -43,8 +42,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Modifier = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,15 +102,6 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "label6";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(254, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // Cb_Division
             // 
             this.Cb_Division.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -151,6 +142,7 @@
             this.Btn_Precedent.TabIndex = 11;
             this.Btn_Precedent.Text = "Precedent";
             this.Btn_Precedent.UseVisualStyleBackColor = true;
+            this.Btn_Precedent.Click += new System.EventHandler(this.Btn_Precedent_Click);
             // 
             // button3
             // 
@@ -160,6 +152,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Suivant";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label7
             // 
@@ -177,14 +170,15 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(80, 20);
             this.dateTimePicker1.TabIndex = 14;
             // 
-            // button1
+            // Btn_Modifier
             // 
-            this.button1.Location = new System.Drawing.Point(288, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Modifier";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_Modifier.Location = new System.Drawing.Point(288, 302);
+            this.Btn_Modifier.Name = "Btn_Modifier";
+            this.Btn_Modifier.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Modifier.TabIndex = 15;
+            this.Btn_Modifier.Text = "Modifier";
+            this.Btn_Modifier.UseVisualStyleBackColor = true;
+            this.Btn_Modifier.Click += new System.EventHandler(this.Btn_Modifier_Click);
             // 
             // button2
             // 
@@ -195,13 +189,22 @@
             this.button2.Text = "Effacer";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Location = new System.Drawing.Point(254, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_Modifier_Equipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 368);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Btn_Modifier);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
@@ -242,7 +245,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_Modifier;
         private System.Windows.Forms.Button button2;
     }
 }

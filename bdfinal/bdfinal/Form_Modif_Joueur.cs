@@ -12,7 +12,8 @@ using Oracle.DataAccess.Client;
 namespace bdfinal
 {
     public partial class Form_Modif_Joueur : Form
-    {    OracleConnection orac = new OracleConnection();
+    {  
+     OracleConnection orac = new OracleConnection();
     DataSet source = new DataSet();
         public Form_Modif_Joueur()
         {

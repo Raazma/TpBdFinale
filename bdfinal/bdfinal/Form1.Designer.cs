@@ -34,9 +34,10 @@
             this.joueursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajoutEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.ajoutEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +67,8 @@
             this.joueursToolStripMenuItem,
             this.modifierJoueurToolStripMenuItem,
             this.matchToolStripMenuItem,
-            this.ajoutEquipeToolStripMenuItem});
+            this.ajoutEquipeToolStripMenuItem,
+            this.modifEquipeToolStripMenuItem});
             this.affichageToolStripMenuItem.Name = "affichageToolStripMenuItem";
             this.affichageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.affichageToolStripMenuItem.Text = "Affichage";
@@ -92,6 +94,13 @@
             this.matchToolStripMenuItem.Text = "Match";
             this.matchToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
             // 
+            // ajoutEquipeToolStripMenuItem
+            // 
+            this.ajoutEquipeToolStripMenuItem.Name = "ajoutEquipeToolStripMenuItem";
+            this.ajoutEquipeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.ajoutEquipeToolStripMenuItem.Text = "Ajout Equipe";
+            this.ajoutEquipeToolStripMenuItem.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -110,12 +119,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Lien ver les autre form en panel ou quelque chose";
             // 
-            // ajoutEquipeToolStripMenuItem
+            // modifEquipeToolStripMenuItem
             // 
-            this.ajoutEquipeToolStripMenuItem.Name = "ajoutEquipeToolStripMenuItem";
-            this.ajoutEquipeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.ajoutEquipeToolStripMenuItem.Text = "Ajout Equipe";
-            this.ajoutEquipeToolStripMenuItem.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
+            this.modifEquipeToolStripMenuItem.Name = "modifEquipeToolStripMenuItem";
+            this.modifEquipeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.modifEquipeToolStripMenuItem.Text = "Modif Equipe";
+            this.modifEquipeToolStripMenuItem.Click += new System.EventHandler(this.modifEquipeToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -148,6 +157,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem ajoutEquipeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifEquipeToolStripMenuItem;
     }
 }
 

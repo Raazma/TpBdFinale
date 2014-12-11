@@ -18,7 +18,6 @@ namespace bdfinal
         {
             InitializeComponent();
         }
-
         public Form_Ajout_equipe(  OracleConnection oracc)
         {
             InitializeComponent();
@@ -47,7 +46,7 @@ namespace bdfinal
             {
 
                 string commande = "insert into equipe(NumDivision,DateIntroduction,Ville,NomEquipe)" +
-                                               "Values((select numdiv where nom equipe = :NumDiv ), :Date , :Ville , :nom)";
+                                                   "Values((select numdiv where nom equipe = :NumDiv ), :Date , :Ville , :nom)";
                 OracleCommand orcom = new OracleCommand(commande, orac);
                 OracleParameter Numdiv = new OracleParameter(":NumDiv", OracleDbType.Int32);
                 OracleParameter Date = new OracleParameter(":Date", OracleDbType.Date);
@@ -68,7 +67,6 @@ namespace bdfinal
             }
 
         }
-
         private void Form_Ajout_equipe_Load(object sender, EventArgs e)
         {
 
