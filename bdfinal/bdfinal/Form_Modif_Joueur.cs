@@ -85,6 +85,11 @@ namespace bdfinal
             com.CommandType = CommandType.Text;
             int i = com.ExecuteNonQuery();
             MessageBox.Show(i.ToString() + " Ligne effacer");
+
+           //string commande = "delete from joueurs where numjoueur = " + Lb_Num.Text;
+           // com = new OracleCommand(commande, orac);
+           // i = com.ExecuteNonQuery();
+           // MessageBox.Show(i.ToString() + " Ligne effacer");
            
         } 
     }

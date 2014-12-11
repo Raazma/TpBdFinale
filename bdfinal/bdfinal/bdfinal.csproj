@@ -66,6 +66,12 @@
     <Compile Include="Form_Ajout_equipe.Designer.cs">
       <DependentUpon>Form_Ajout_equipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Ajout_Fiche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Ajout_Fiche.Designer.cs">
+      <DependentUpon>Form_Ajout_Fiche.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Ajout_joueur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Ajout_equipe.resx">
       <DependentUpon>Form_Ajout_equipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Ajout_Fiche.resx">
+      <DependentUpon>Form_Ajout_Fiche.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Ajout_joueur.resx">
       <DependentUpon>Form_Ajout_joueur.cs</DependentUpon>
