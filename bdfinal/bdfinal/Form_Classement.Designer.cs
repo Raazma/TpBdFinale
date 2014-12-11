@@ -68,6 +68,7 @@
             this.CB_Classement.Name = "CB_Classement";
             this.CB_Classement.Size = new System.Drawing.Size(182, 24);
             this.CB_Classement.TabIndex = 0;
+            this.CB_Classement.SelectedIndexChanged += new System.EventHandler(this.CB_Classement_SelectedIndexChanged);
             // 
             // Form_Classement
             // 
@@ -78,6 +79,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form_Classement";
             this.Text = "Classements";
+            this.Load += new System.EventHandler(this.Form_Classement_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
