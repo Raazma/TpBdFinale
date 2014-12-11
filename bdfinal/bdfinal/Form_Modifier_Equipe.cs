@@ -39,7 +39,7 @@ namespace bdfinal
                Cb_Division.Items.Add(ligne);
             }
             oraread.Close();
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //fille les autre box et label
             commande = "select * from equipe";
             OracleDataAdapter adp = new OracleDataAdapter(commande, orac);
@@ -47,7 +47,8 @@ namespace bdfinal
             Lb_Num.DataBindings.Add("text",theSet, "ResEquipes.numequipe");
             Tb_Name.DataBindings.Add("text", theSet, "ResEquipes.nomequipe");
             Tb_ville.DataBindings.Add("text", theSet, "ResEquipes.ville");
-        
+
+            MessageBox.Show(orac.State.ToString());
         }
 
         private void button3_Click(object sender, EventArgs e)

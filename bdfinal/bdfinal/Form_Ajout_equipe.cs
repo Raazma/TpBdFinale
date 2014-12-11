@@ -46,23 +46,23 @@ namespace bdfinal
             if (Cb_Division.SelectedItem != null)
             {
 
-                string commande = "insert into equipe(NumDivision,DateIntroduction,Ville,NomEquipe)" +
-                                                   "Values((select numdiv where nom equipe = :NumDiv ), :Date , :Ville , :nom)";
+                string commande = "insert into  equipe( NumDivision ,DateIntroduction,Ville,NomEquipe) Values((select numdivision from equipe where nom equipe = :NumDiv ), :Date , :Ville , :nom)";
                 OracleCommand orcom = new OracleCommand(commande, orac);
+
                 OracleParameter Numdiv = new OracleParameter(":NumDiv", OracleDbType.Int32);
                 OracleParameter Date = new OracleParameter(":Date", OracleDbType.Date);
                 OracleParameter Ville = new OracleParameter(":Ville", OracleDbType.Varchar2, 30);
                 OracleParameter Nom = new OracleParameter(":nom", OracleDbType.Varchar2, 20);
 
 
-                Numdiv.Value = Cb_Division.SelectedIndex.ToString();
+                Numdiv.Value = Cb_Division.SelectedItem.ToString();
                 Date.Value = DTP_Intro.Value;
                 Ville.Value = Tb_Ville.Text;
                 Nom.Value = Tb_Nom.Text;
-                Numdiv.Value = Cb_Division.SelectedItem.ToString();
                 orcom.Parameters.Add(Numdiv);
                 orcom.Parameters.Add(Ville);
                 orcom.Parameters.Add(Nom);
+
                 int laligne = orcom.ExecuteNonQuery();
 
                 MessageBox.Show(laligne.ToString());
