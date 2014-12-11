@@ -17,6 +17,8 @@ namespace bdfinal
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+          //  Application.Run(new Form_Ajout_equipe());
+           
            
          //  Application.Run(new Form_Ajout_joueur());
         }

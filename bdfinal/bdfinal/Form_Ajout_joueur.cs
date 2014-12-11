@@ -74,8 +74,7 @@ namespace bdfinal
                 oranIns.Parameters.Add(Numparam);
                 oranIns.Parameters.Add(Posparam);
                 oranIns.Parameters.Add(NomEparam);
-
-               
+              
                 int laligne = oranIns.ExecuteNonQuery();
                 MessageBox.Show(laligne.ToString());
             }

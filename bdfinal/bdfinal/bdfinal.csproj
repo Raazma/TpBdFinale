@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FlashButton">
-      <HintPath>..\..\..\UserControl &amp; TextFile\FlashButton.dll</HintPath>
+      <HintPath>..\..\..\..\Interface PM\UserControl &amp; TextFile\FlashButton.dll</HintPath>
     </Reference>
     <Reference Include="Oracle.DataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
     <Reference Include="System" />
@@ -60,6 +60,12 @@
     <Compile Include="Form_AffJoueur.Designer.cs">
       <DependentUpon>Form_AffJoueur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Ajout_equipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Ajout_equipe.Designer.cs">
+      <DependentUpon>Form_Ajout_equipe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Ajout_joueur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,12 @@
     </Compile>
     <Compile Include="Form_Match.Designer.cs">
       <DependentUpon>Form_Match.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modifier_Equipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modifier_Equipe.Designer.cs">
+      <DependentUpon>Form_Modifier_Equipe.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Modif_Joueur.cs">
       <SubType>Form</SubType>
@@ -86,11 +98,17 @@
     <EmbeddedResource Include="Form_AffJoueur.resx">
       <DependentUpon>Form_AffJoueur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_Ajout_equipe.resx">
+      <DependentUpon>Form_Ajout_equipe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Ajout_joueur.resx">
       <DependentUpon>Form_Ajout_joueur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Match.resx">
       <DependentUpon>Form_Match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modifier_Equipe.resx">
+      <DependentUpon>Form_Modifier_Equipe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Modif_Joueur.resx">
       <DependentUpon>Form_Modif_Joueur.cs</DependentUpon>

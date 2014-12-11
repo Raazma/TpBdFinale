@@ -32,8 +32,12 @@
             this.ajouterJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.affichageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.joueursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.matchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajoutEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.modifEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +66,9 @@
             this.affichageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.joueursToolStripMenuItem,
             this.modifierJoueurToolStripMenuItem,
-            this.matchToolStripMenuItem});
+            this.matchToolStripMenuItem,
+            this.ajoutEquipeToolStripMenuItem,
+            this.modifEquipeToolStripMenuItem});
             this.affichageToolStripMenuItem.Name = "affichageToolStripMenuItem";
             this.affichageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.affichageToolStripMenuItem.Text = "Affichage";
@@ -74,13 +80,6 @@
             this.joueursToolStripMenuItem.Text = "Joueurs";
             this.joueursToolStripMenuItem.Click += new System.EventHandler(this.joueursToolStripMenuItem_Click);
             // 
-            // matchToolStripMenuItem
-            // 
-            this.matchToolStripMenuItem.Name = "matchToolStripMenuItem";
-            this.matchToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.matchToolStripMenuItem.Text = "Match";
-            this.matchToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
-            // 
             // modifierJoueurToolStripMenuItem
             // 
             this.modifierJoueurToolStripMenuItem.Name = "modifierJoueurToolStripMenuItem";
@@ -88,11 +87,52 @@
             this.modifierJoueurToolStripMenuItem.Text = "ModifierJoueur";
             this.modifierJoueurToolStripMenuItem.Click += new System.EventHandler(this.modifierJoueurToolStripMenuItem_Click);
             // 
+            // matchToolStripMenuItem
+            // 
+            this.matchToolStripMenuItem.Name = "matchToolStripMenuItem";
+            this.matchToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.matchToolStripMenuItem.Text = "Match";
+            this.matchToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
+            // 
+            // ajoutEquipeToolStripMenuItem
+            // 
+            this.ajoutEquipeToolStripMenuItem.Name = "ajoutEquipeToolStripMenuItem";
+            this.ajoutEquipeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.ajoutEquipeToolStripMenuItem.Text = "Ajout Equipe";
+            this.ajoutEquipeToolStripMenuItem.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(40, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(387, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "On doit trouver dequoi de beau a mettre ici une image on quelque chose debeau";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(107, 204);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(243, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Lien ver les autre form en panel ou quelque chose";
+            // 
+            // modifEquipeToolStripMenuItem
+            // 
+            this.modifEquipeToolStripMenuItem.Name = "modifEquipeToolStripMenuItem";
+            this.modifEquipeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.modifEquipeToolStripMenuItem.Text = "Modif Equipe";
+            this.modifEquipeToolStripMenuItem.Click += new System.EventHandler(this.modifEquipeToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 390);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Main_menu);
             this.MainMenuStrip = this.Main_menu;
             this.Name = "Form1";
@@ -114,6 +154,10 @@
         private System.Windows.Forms.ToolStripMenuItem joueursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifierJoueurToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem ajoutEquipeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifEquipeToolStripMenuItem;
     }
 }
 

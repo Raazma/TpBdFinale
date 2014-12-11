@@ -25,12 +25,9 @@ namespace bdfinal
             Combo_box();
         }
 
-
         private void Combo_box()
         {
-
             string commande = "select nummatch from match";
-
             OracleCommand oraclecomm = new OracleCommand(commande, orac);
             oraclecomm.CommandType = CommandType.Text;
             OracleDataReader oraread = oraclecomm.ExecuteReader();
@@ -40,6 +37,7 @@ namespace bdfinal
                 Cb_NumMatch.Items.Add(ligne.ToString());
             }
             oraread.Close();
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             commande = "select DATEHEURE from match";
             try
@@ -70,23 +68,22 @@ namespace bdfinal
            DGV_Match.DataSource = TheSOUSSE;
         }
 
+
         private void Cb_NumMatch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-             
+        {          
             string commande = "select *  from joueurs where numjoueur in (select numjoueur from FICHEMATCHJOUEUR where nummatch =" + Cb_NumMatch.SelectedItem.ToString() + ")";
             OracleDataAdapter adap = new OracleDataAdapter(commande, orac);
             DataSet MelsBitch = new DataSet();
             adap.Fill(MelsBitch, "ResMatch");
-            BindingSource TheSOUSSE = new BindingSource(MelsBitch, "Resmatch");
+            BindingSource TheSOUSSE = new BindingSource(MelsBitch, "ResMatch");
             DGV_Joueurs.DataSource = TheSOUSSE;
-
-
-            commande = "select *  from match where nummatch = " + Cb_NumMatch.SelectedItem.ToString();
+     
+            commande = "select * from match where nummatch =" + Cb_NumMatch.SelectedItem.ToString();
             OracleDataAdapter adapp = new OracleDataAdapter(commande, orac);
             DataSet leset = new DataSet();
-            adapp.Fill(leset, "ResMatch");
-            BindingSource data = new BindingSource(leset, "Resmatch");
-            DGV_Match.DataSource = leset;
+            adapp.Fill(leset, "resMatchs");
+            BindingSource data = new BindingSource(leset, "resMatchs");
+            DGV_Match.DataSource = data;
         }
     }
 }
