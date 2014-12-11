@@ -36,6 +36,7 @@
             this.matchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ajoutEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,9 +65,10 @@
             this.affichageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.joueursToolStripMenuItem,
             this.modifierJoueurToolStripMenuItem,
-            this.matchToolStripMenuItem});
+            this.matchToolStripMenuItem,
+            this.ajoutEquipeToolStripMenuItem});
             this.affichageToolStripMenuItem.Name = "affichageToolStripMenuItem";
-            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.affichageToolStripMenuItem.Text = "Affichage";
             // 
             // joueursToolStripMenuItem
@@ -108,6 +110,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Lien ver les autre form en panel ou quelque chose";
             // 
+            // ajoutEquipeToolStripMenuItem
+            // 
+            this.ajoutEquipeToolStripMenuItem.Name = "ajoutEquipeToolStripMenuItem";
+            this.ajoutEquipeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.ajoutEquipeToolStripMenuItem.Text = "Ajout Equipe";
+            this.ajoutEquipeToolStripMenuItem.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +147,7 @@
         private System.Windows.Forms.ToolStripMenuItem modifierJoueurToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem ajoutEquipeToolStripMenuItem;
     }
 }
 

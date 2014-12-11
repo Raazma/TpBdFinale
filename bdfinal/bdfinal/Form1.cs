@@ -75,5 +75,11 @@ namespace bdfinal
             Form_Modif_Joueur form = new Form_Modif_Joueur(oraconn);
             form.Show();
         }
+
+        private void ajoutEquipeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Ajout_equipe form = new Form_Ajout_equipe(oraconn);
+            form.Show();
+        }
     }
 }
