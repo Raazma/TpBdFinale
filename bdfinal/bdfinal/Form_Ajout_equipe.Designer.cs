@@ -39,13 +39,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_ChoisirLogo = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BT_Ajouter = new System.Windows.Forms.Button();
+            this.Info = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BT_Annule = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Info.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tb_Ville
             // 
-            this.Tb_Ville.Location = new System.Drawing.Point(289, 149);
+            this.Tb_Ville.Location = new System.Drawing.Point(143, 84);
             this.Tb_Ville.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_Ville.Name = "Tb_Ville";
             this.Tb_Ville.Size = new System.Drawing.Size(132, 22);
@@ -53,7 +58,7 @@
             // 
             // Tb_Nom
             // 
-            this.Tb_Nom.Location = new System.Drawing.Point(289, 213);
+            this.Tb_Nom.Location = new System.Drawing.Point(143, 148);
             this.Tb_Nom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_Nom.Name = "Tb_Nom";
             this.Tb_Nom.Size = new System.Drawing.Size(132, 22);
@@ -62,38 +67,38 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 94);
+            this.label1.Location = new System.Drawing.Point(49, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 17);
+            this.label1.Size = new System.Drawing.Size(94, 17);
             this.label1.TabIndex = 5;
-            this.label1.Text = "NumDivision";
+            this.label1.Text = "NumDivision :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 222);
+            this.label2.Location = new System.Drawing.Point(20, 151);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 17);
+            this.label2.Size = new System.Drawing.Size(123, 17);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Nom de L\'equipe";
+            this.label2.Text = "Nom de L\'equipe :";
             // 
             // Ville
             // 
             this.Ville.AutoSize = true;
-            this.Ville.Location = new System.Drawing.Point(92, 158);
+            this.Ville.Location = new System.Drawing.Point(101, 87);
             this.Ville.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Ville.Name = "Ville";
-            this.Ville.Size = new System.Drawing.Size(34, 17);
+            this.Ville.Size = new System.Drawing.Size(42, 17);
             this.Ville.TabIndex = 7;
-            this.Ville.Text = "Ville";
+            this.Ville.Text = "Ville :";
             // 
             // Cb_Division
             // 
             this.Cb_Division.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Division.FormattingEnabled = true;
-            this.Cb_Division.Location = new System.Drawing.Point(277, 84);
+            this.Cb_Division.Location = new System.Drawing.Point(143, 24);
             this.Cb_Division.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cb_Division.Name = "Cb_Division";
             this.Cb_Division.Size = new System.Drawing.Size(160, 24);
@@ -101,7 +106,7 @@
             // 
             // DTP_Intro
             // 
-            this.DTP_Intro.Location = new System.Drawing.Point(220, 283);
+            this.DTP_Intro.Location = new System.Drawing.Point(143, 216);
             this.DTP_Intro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DTP_Intro.Name = "DTP_Intro";
             this.DTP_Intro.Size = new System.Drawing.Size(239, 22);
@@ -110,17 +115,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 290);
+            this.label3.Location = new System.Drawing.Point(19, 221);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 17);
+            this.label3.Size = new System.Drawing.Size(124, 17);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Date Introduction";
+            this.label3.Text = "Date Introduction :";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(575, 49);
+            this.pictureBox1.Location = new System.Drawing.Point(53, 27);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 166);
@@ -129,50 +134,84 @@
             // 
             // Btn_ChoisirLogo
             // 
-            this.Btn_ChoisirLogo.Location = new System.Drawing.Point(575, 247);
+            this.Btn_ChoisirLogo.Location = new System.Drawing.Point(53, 201);
             this.Btn_ChoisirLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_ChoisirLogo.Name = "Btn_ChoisirLogo";
             this.Btn_ChoisirLogo.Size = new System.Drawing.Size(175, 28);
             this.Btn_ChoisirLogo.TabIndex = 15;
-            this.Btn_ChoisirLogo.Text = "Choisir Logo";
+            this.Btn_ChoisirLogo.Text = "Choisir Logo...";
             this.Btn_ChoisirLogo.UseVisualStyleBackColor = true;
             this.Btn_ChoisirLogo.Click += new System.EventHandler(this.Btn_ChoisirLogo_Click);
             // 
-            // button2
+            // BT_Ajouter
             // 
-            this.button2.Location = new System.Drawing.Point(248, 370);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 28);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Ajouter";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BT_Ajouter.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.BT_Ajouter.Location = new System.Drawing.Point(530, 297);
+            this.BT_Ajouter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_Ajouter.Name = "BT_Ajouter";
+            this.BT_Ajouter.Size = new System.Drawing.Size(135, 28);
+            this.BT_Ajouter.TabIndex = 16;
+            this.BT_Ajouter.Text = "Ajouter";
+            this.BT_Ajouter.UseVisualStyleBackColor = true;
+            this.BT_Ajouter.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Info
+            // 
+            this.Info.Controls.Add(this.label1);
+            this.Info.Controls.Add(this.Tb_Ville);
+            this.Info.Controls.Add(this.Tb_Nom);
+            this.Info.Controls.Add(this.label2);
+            this.Info.Controls.Add(this.label3);
+            this.Info.Controls.Add(this.Ville);
+            this.Info.Controls.Add(this.DTP_Intro);
+            this.Info.Controls.Add(this.Cb_Division);
+            this.Info.Location = new System.Drawing.Point(30, 25);
+            this.Info.Name = "Info";
+            this.Info.Size = new System.Drawing.Size(462, 265);
+            this.Info.TabIndex = 17;
+            this.Info.TabStop = false;
+            this.Info.Text = "Info";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.Btn_ChoisirLogo);
+            this.groupBox1.Location = new System.Drawing.Point(498, 25);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(294, 241);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Logo";
+            // 
+            // BT_Annule
+            // 
+            this.BT_Annule.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BT_Annule.Location = new System.Drawing.Point(694, 297);
+            this.BT_Annule.Name = "BT_Annule";
+            this.BT_Annule.Size = new System.Drawing.Size(98, 28);
+            this.BT_Annule.TabIndex = 19;
+            this.BT_Annule.Text = "Annuler";
+            this.BT_Annule.UseVisualStyleBackColor = true;
             // 
             // Form_Ajout_equipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Btn_ChoisirLogo);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.DTP_Intro);
-            this.Controls.Add(this.Cb_Division);
-            this.Controls.Add(this.Ville);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Tb_Nom);
-            this.Controls.Add(this.Tb_Ville);
+            this.ClientSize = new System.Drawing.Size(816, 343);
+            this.Controls.Add(this.BT_Annule);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.BT_Ajouter);
+            this.Controls.Add(this.Info);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_Ajout_equipe";
-            this.Text = "Form_Ajout_equipe";
+            this.Text = "Ajout d\'équipe";
             this.Load += new System.EventHandler(this.Form_Ajout_equipe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Info.ResumeLayout(false);
+            this.Info.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -188,6 +227,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn_ChoisirLogo;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BT_Ajouter;
+        private System.Windows.Forms.GroupBox Info;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button BT_Annule;
     }
 }
