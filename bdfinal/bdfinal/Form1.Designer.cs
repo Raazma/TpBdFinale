@@ -40,13 +40,15 @@
             this.classementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // Main_menu
             // 
             this.Main_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ajouterJoueurToolStripMenuItem});
+            this.ajouterJoueurToolStripMenuItem,
+            this.toolStripTextBox1});
             this.Main_menu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.Main_menu.Location = new System.Drawing.Point(0, 0);
             this.Main_menu.Name = "Main_menu";
@@ -74,7 +76,7 @@
             this.modifEquipeToolStripMenuItem,
             this.classementToolStripMenuItem});
             this.affichageToolStripMenuItem.Name = "affichageToolStripMenuItem";
-            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
             this.affichageToolStripMenuItem.Text = "Affichage";
             // 
             // joueursToolStripMenuItem
@@ -139,6 +141,11 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Lien ver les autre form en panel ou quelque chose";
             // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(12, 24);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -174,6 +181,7 @@
         private System.Windows.Forms.ToolStripMenuItem ajoutEquipeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifEquipeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem classementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripTextBox1;
     }
 }
 

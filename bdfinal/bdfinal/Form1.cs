@@ -34,11 +34,11 @@ namespace bdfinal
             {
                 oraconn.ConnectionString = chainedeconnexion;
                 oraconn.Open();
-                MessageBox.Show(oraconn.State.ToString());
+                //MessageBox.Show(oraconn.State.ToString());
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
+               // MessageBox.Show(ex.Message.ToString());
 
             }      
         }
@@ -46,7 +46,7 @@ namespace bdfinal
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             oraconn.Close();
-            MessageBox.Show(oraconn.State.ToString());
+           // MessageBox.Show(oraconn.State.ToString());
         }
 
         private void ajouterJoueurToolStripMenuItem_Click(object sender, EventArgs e)
