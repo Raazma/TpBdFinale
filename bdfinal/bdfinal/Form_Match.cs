@@ -63,8 +63,7 @@ namespace bdfinal
             string commande = "select * from match where Dateheure = ' " + Convert.ToDateTime(Cb_Date.SelectedItem.ToString()).ToShortDateString() +"'"; // where DateHeure = '" + Cb_Date.SelectedItem.ToString() + "'";
 
            
-            OracleDataAdapter adap = new OracleDataAdapter(commande, orac);
-             
+            OracleDataAdapter adap = new OracleDataAdapter(commande, orac);            
             DataSet Mels= new DataSet();
             adap.Fill(Mels, "ResMatch");
             BindingSource TheSOUSSE = new BindingSource(Mels, "Resmatch");
