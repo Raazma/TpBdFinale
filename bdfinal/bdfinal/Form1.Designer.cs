@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Main_menu = new System.Windows.Forms.MenuStrip();
             this.ajouterJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.affichageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,9 +37,9 @@
             this.matchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifEquipeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.classementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.classementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +74,7 @@
             this.modifEquipeToolStripMenuItem,
             this.classementToolStripMenuItem});
             this.affichageToolStripMenuItem.Name = "affichageToolStripMenuItem";
-            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
             this.affichageToolStripMenuItem.Text = "Affichage";
             // 
             // joueursToolStripMenuItem
@@ -111,6 +112,13 @@
             this.modifEquipeToolStripMenuItem.Text = "Modif Equipe...";
             this.modifEquipeToolStripMenuItem.Click += new System.EventHandler(this.modifEquipeToolStripMenuItem_Click);
             // 
+            // classementToolStripMenuItem
+            // 
+            this.classementToolStripMenuItem.Name = "classementToolStripMenuItem";
+            this.classementToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.classementToolStripMenuItem.Text = "Classement...";
+            this.classementToolStripMenuItem.Click += new System.EventHandler(this.classementToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -131,13 +139,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Lien ver les autre form en panel ou quelque chose";
             // 
-            // classementToolStripMenuItem
-            // 
-            this.classementToolStripMenuItem.Name = "classementToolStripMenuItem";
-            this.classementToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
-            this.classementToolStripMenuItem.Text = "Classement...";
-            this.classementToolStripMenuItem.Click += new System.EventHandler(this.classementToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -146,8 +147,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Main_menu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.Main_menu;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);

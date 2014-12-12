@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Ajout_joueur));
             this.flashButton1 = new FlashButton.FlashButton();
             this.Fb_Accept = new FlashButton.FlashButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,9 +56,10 @@
             this.flashButton1.ImageDisable = global::bdfinal.Properties.Resources.ICON_Annuler_Disable;
             this.flashButton1.ImageNeutral = global::bdfinal.Properties.Resources.ICON_Annuler_Neutral;
             this.flashButton1.ImageOver = global::bdfinal.Properties.Resources.ICON_Annuler_Over;
-            this.flashButton1.Location = new System.Drawing.Point(383, 292);
+            this.flashButton1.Location = new System.Drawing.Point(511, 359);
+            this.flashButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.flashButton1.Name = "flashButton1";
-            this.flashButton1.Size = new System.Drawing.Size(30, 27);
+            this.flashButton1.Size = new System.Drawing.Size(40, 33);
             this.flashButton1.TabIndex = 19;
             this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
             // 
@@ -70,36 +72,40 @@
             this.Fb_Accept.ImageDisable = global::bdfinal.Properties.Resources.ICON_Accepter_Disable;
             this.Fb_Accept.ImageNeutral = global::bdfinal.Properties.Resources.ICON_Accepter_Neutral;
             this.Fb_Accept.ImageOver = global::bdfinal.Properties.Resources.ICON_Accepter_Over;
-            this.Fb_Accept.Location = new System.Drawing.Point(296, 292);
+            this.Fb_Accept.Location = new System.Drawing.Point(395, 359);
+            this.Fb_Accept.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Fb_Accept.Name = "Fb_Accept";
-            this.Fb_Accept.Size = new System.Drawing.Size(35, 27);
+            this.Fb_Accept.Size = new System.Drawing.Size(47, 33);
             this.Fb_Accept.TabIndex = 18;
             this.Fb_Accept.Click += new System.EventHandler(this.Fb_Accept_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 208);
+            this.label3.Location = new System.Drawing.Point(17, 256);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 13);
+            this.label3.Size = new System.Drawing.Size(128, 17);
             this.label3.TabIndex = 11;
             this.label3.Text = "Date de Naissance";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 65);
+            this.label2.Location = new System.Drawing.Point(45, 80);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 10;
             this.label2.Text = "Prenom";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(34, 104);
+            this.label7.Location = new System.Drawing.Point(45, 128);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.Size = new System.Drawing.Size(52, 17);
             this.label7.TabIndex = 15;
             this.label7.Text = "Equipe";
             // 
@@ -107,26 +113,29 @@
             // 
             this.Cb_Equipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Equipe.FormattingEnabled = true;
-            this.Cb_Equipe.Location = new System.Drawing.Point(95, 96);
+            this.Cb_Equipe.Location = new System.Drawing.Point(127, 118);
+            this.Cb_Equipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cb_Equipe.Name = "Cb_Equipe";
-            this.Cb_Equipe.Size = new System.Drawing.Size(88, 21);
+            this.Cb_Equipe.Size = new System.Drawing.Size(116, 24);
             this.Cb_Equipe.TabIndex = 8;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(34, 136);
+            this.label8.Location = new System.Drawing.Point(45, 167);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 13);
+            this.label8.Size = new System.Drawing.Size(135, 17);
             this.label8.TabIndex = 16;
             this.label8.Text = "Numero du chandail";
             // 
             // Position
             // 
             this.Position.AutoSize = true;
-            this.Position.Location = new System.Drawing.Point(34, 167);
+            this.Position.Location = new System.Drawing.Point(45, 206);
+            this.Position.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Position.Name = "Position";
-            this.Position.Size = new System.Drawing.Size(44, 13);
+            this.Position.Size = new System.Drawing.Size(58, 17);
             this.Position.TabIndex = 17;
             this.Position.Text = "Position";
             // 
@@ -138,46 +147,52 @@
             "Attaquant",
             "Defenseur",
             "Gardien"});
-            this.Cb_Position.Location = new System.Drawing.Point(95, 167);
+            this.Cb_Position.Location = new System.Drawing.Point(127, 206);
+            this.Cb_Position.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cb_Position.Name = "Cb_Position";
-            this.Cb_Position.Size = new System.Drawing.Size(102, 21);
+            this.Cb_Position.Size = new System.Drawing.Size(135, 24);
             this.Cb_Position.TabIndex = 3;
             // 
             // Tb_Prenom
             // 
-            this.Tb_Prenom.Location = new System.Drawing.Point(83, 62);
+            this.Tb_Prenom.Location = new System.Drawing.Point(111, 76);
+            this.Tb_Prenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_Prenom.Name = "Tb_Prenom";
-            this.Tb_Prenom.Size = new System.Drawing.Size(100, 20);
+            this.Tb_Prenom.Size = new System.Drawing.Size(132, 22);
             this.Tb_Prenom.TabIndex = 1;
             // 
             // Tb_Nom
             // 
-            this.Tb_Nom.Location = new System.Drawing.Point(83, 26);
+            this.Tb_Nom.Location = new System.Drawing.Point(111, 32);
+            this.Tb_Nom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_Nom.Name = "Tb_Nom";
-            this.Tb_Nom.Size = new System.Drawing.Size(100, 20);
+            this.Tb_Nom.Size = new System.Drawing.Size(132, 22);
             this.Tb_Nom.TabIndex = 0;
             // 
             // Dt_Fete
             // 
-            this.Dt_Fete.Location = new System.Drawing.Point(117, 208);
+            this.Dt_Fete.Location = new System.Drawing.Point(156, 256);
+            this.Dt_Fete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Dt_Fete.Name = "Dt_Fete";
-            this.Dt_Fete.Size = new System.Drawing.Size(113, 20);
+            this.Dt_Fete.Size = new System.Drawing.Size(149, 22);
             this.Dt_Fete.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 29);
+            this.label1.Location = new System.Drawing.Point(45, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(37, 17);
             this.label1.TabIndex = 9;
             this.label1.Text = "Nom";
             // 
             // Tb_Num
             // 
-            this.Tb_Num.Location = new System.Drawing.Point(141, 129);
+            this.Tb_Num.Location = new System.Drawing.Point(188, 159);
+            this.Tb_Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_Num.Name = "Tb_Num";
-            this.Tb_Num.Size = new System.Drawing.Size(42, 20);
+            this.Tb_Num.Size = new System.Drawing.Size(55, 22);
             this.Tb_Num.TabIndex = 7;
             // 
             // groupBox1
@@ -196,22 +211,26 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.Cb_Position);
             this.groupBox1.ForeColor = System.Drawing.Color.Turquoise;
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(262, 273);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(349, 336);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Info Joueur";
             // 
             // Form_Ajout_joueur
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::bdfinal.Properties.Resources.patFond;
-            this.ClientSize = new System.Drawing.Size(440, 343);
+            this.ClientSize = new System.Drawing.Size(587, 422);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.flashButton1);
             this.Controls.Add(this.Fb_Accept);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_Ajout_joueur";
             this.Text = "Form_Ajout_joueur";
             this.Load += new System.EventHandler(this.Form_Ajout_joueur_Load);
