@@ -40,6 +40,8 @@ namespace bdfinal
                Cb_Division.Items.Add(ligne);
             }
             oraread.Close();
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //fille les autre box et label
             commande = "select * from equipe";
