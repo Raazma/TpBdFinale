@@ -56,6 +56,11 @@ CREATE TABLE Joueurs
     NumEquipe NUMBER (4) NOT NULL
   ) ;
 ALTER TABLE Joueurs ADD CONSTRAINT Joueurs_PK PRIMARY KEY ( NumJoueur ) ;
+alter table joueurs 
+drop column photo ;
+alter table joueurs 
+add  photo VARCHAR2 (50) ;
+commit;
 
 CREATE TABLE MATCH
   (
@@ -102,6 +107,7 @@ ON JOUEURS(NUMEQUIPE);
 
 CREATE INDEX DATEETHEURE
 ON MATCH (DATEHEURE);
+
 ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY MM DD';
 
 INSERT INTO DIVISION (NOM,DateInscription)
@@ -190,3 +196,5 @@ select * from FicheMatchJoueur;
 select * from equipe;
 commit;
 select * from CLASSEMENTEQUIPE;
+
+select * from match;
