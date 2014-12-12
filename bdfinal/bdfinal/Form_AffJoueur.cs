@@ -30,7 +30,7 @@ namespace bdfinal
         }
         public void RemplirGridView()
         {
-            string commande = "select * from joueurs inner join equipe on equipe.numequipe = joueurs.numequipe where equipe.nomequipe = '" + Cb_Equipe.SelectedItem.ToString() + "'";
+            string commande = "select NUMEROMAILLOT, NOM, PRENOM, POSITION from joueurs inner join equipe on equipe.numequipe = joueurs.numequipe where equipe.nomequipe = '" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
             OracleDataAdapter adap = new OracleDataAdapter(commande, oracon);
             adap.Fill(Info, "ResJoueurs");
             BindingSource TheSOUSSE = new BindingSource(Info,"ResJoueurs");
@@ -45,7 +45,7 @@ namespace bdfinal
             while (oraread.Read())
             {
                 string ligne = oraread.GetString(0);
-                Cb_Equipe.Items.Add(ligne);
+                LBX_ChoixEquipe.Items.Add(ligne);
             }
             oraread.Close();      
         }
@@ -53,7 +53,7 @@ namespace bdfinal
         private void fillcontrol()
         {
             ClearBinding();
-            string commande = "select * from  Fichepersonnelle where nomequipe = '" + Cb_Equipe.SelectedItem.ToString() + "'";
+            string commande = "select * from  Fichepersonnelle where nomequipe = '" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
                 OracleDataAdapter orDataAdaptr = new OracleDataAdapter(commande, oracon);
 
                 orDataAdaptr.Fill(Info, "resFiches");
@@ -69,7 +69,7 @@ namespace bdfinal
         }
         private void UpdateControl()
         {
-            if (Cb_Equipe.SelectedItem == null)
+            if (LBX_ChoixEquipe.SelectedItem == null)
             {
                 Btn_Suivant.Enabled =false;
                 Btn_Precendent.Enabled = false;
@@ -108,6 +108,11 @@ namespace bdfinal
         }
 
         private void Form_AffJoueur_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

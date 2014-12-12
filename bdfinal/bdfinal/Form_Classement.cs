@@ -49,17 +49,20 @@ namespace bdfinal
                     //Classement Joueurs
                 case 1:
                     CB_Division.Visible = false;
+                    LB_Division.Visible = false;
                     Fill_DGV_Classement_Joueurs();
                     break;
                     //Classement Top 3 Joueurs
                 case 2:
                     CB_Division.Visible = false;
+                    LB_Division.Visible = false;
                     Fill_DGV_Classement_Joueurs_Top3();
                     break;
                     //Par défaut Classement Équipe avec division 1
                 default:
                     CB_Division.Visible = true;
-                    //Fill_DGV_Classement_Equipe();
+                    LB_Division.Visible = true;
+                    Fill_DGV_Classement_Equipe();
                     break;
             }
 
