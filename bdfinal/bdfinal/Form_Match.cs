@@ -60,11 +60,14 @@ namespace bdfinal
 
         private void Cb_Date_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string commande = "select * from match where Dateheure = '" + Cb_Date.SelectedItem. ToString() + "'"  ;// where DateHeure = '" + Cb_Date.SelectedItem.ToString() + "'";
+            string commande = "select * from match where Dateheure = ' " + Convert.ToDateTime(Cb_Date.SelectedItem.ToString()).ToShortDateString() +"'"; // where DateHeure = '" + Cb_Date.SelectedItem.ToString() + "'";
+
+           
             OracleDataAdapter adap = new OracleDataAdapter(commande, orac);
-            DataSet MelsBitch = new DataSet();
-            adap.Fill(MelsBitch, "ResMatch");
-            BindingSource TheSOUSSE = new BindingSource(MelsBitch, "Resmatch");
+             
+            DataSet Mels= new DataSet();
+            adap.Fill(Mels, "ResMatch");
+            BindingSource TheSOUSSE = new BindingSource(Mels, "Resmatch");
            DGV_Match.DataSource = TheSOUSSE;
         }
 
@@ -73,9 +76,9 @@ namespace bdfinal
         {          
             string commande = "select *  from joueurs where numjoueur in (select numjoueur from FICHEMATCHJOUEUR where nummatch =" + Cb_NumMatch.SelectedItem.ToString() + ")";
             OracleDataAdapter adap = new OracleDataAdapter(commande, orac);
-            DataSet MelsBitch = new DataSet();
-            adap.Fill(MelsBitch, "ResMatch");
-            BindingSource TheSOUSSE = new BindingSource(MelsBitch, "ResMatch");
+            DataSet Mels = new DataSet();
+            adap.Fill(Mels, "ResMatch");
+            BindingSource TheSOUSSE = new BindingSource(Mels, "ResMatch");
             DGV_Joueurs.DataSource = TheSOUSSE;
      
             commande = "select * from match where nummatch =" + Cb_NumMatch.SelectedItem.ToString();
