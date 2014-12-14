@@ -15,6 +15,7 @@ namespace bdfinal
     {
         public OracleConnection oracon = new OracleConnection();
         public DataSet Info = new DataSet();
+        public DataSet Info2 = new DataSet();
 
         public Form_AffJoueur()
         {
@@ -26,6 +27,9 @@ namespace bdfinal
             oracon = oraconn;
             RemplirCombobox();
              UpdateControl();
+            
+             
+            
            
         }
         public void RemplirGridView()
@@ -34,7 +38,9 @@ namespace bdfinal
             OracleDataAdapter adap = new OracleDataAdapter(commande, oracon);
             adap.Fill(Info, "ResJoueurs");
             BindingSource TheSOUSSE = new BindingSource(Info,"ResJoueurs");
-            Dgv_Joueurs.DataSource = TheSOUSSE;     
+            Dgv_Joueurs.DataSource = TheSOUSSE;
+        
+
         }
         private void RemplirCombobox()
         {
@@ -57,6 +63,10 @@ namespace bdfinal
                 OracleDataAdapter orDataAdaptr = new OracleDataAdapter(commande, oracon);
 
                 orDataAdaptr.Fill(Info, "resFiches");
+
+              string commandephoto = "select photo from joueurs";
+              OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
+              adapp.Fill(Info, "ResFiches");
                 BindingSource TheSOUSSE = new BindingSource(Info, "resFiches");
 
                 Lb_Num.DataBindings.Add("TEXT", Info, "resFiches.numJoueur");
@@ -67,8 +77,9 @@ namespace bdfinal
                 Lb_Passes.DataBindings.Add("TEXT", Info, "resFiches.nombrepasses");
                 Pb_Equipe.DataBindings.Add("image",Info,"resFiches.logo",true);
                 this.Pb_Equipe.SizeMode = PictureBoxSizeMode.StretchImage;
-               
-            
+                fillpicturebox();
+             
+                          
         }
         private void UpdateControl()
         {
@@ -97,21 +108,46 @@ namespace bdfinal
             
         private void Btn_Suivant_Click(object sender, EventArgs e)
         {
-            this.BindingContext[Info, "resFiches"].Position += 1;
+            if (this.BindingContext[Info, "resFiches"].Position + 1 < 5)
+            {
+                this.BindingContext[Info, "resFiches"].Position += 1;
+                fillpicturebox();
+            }
         }
         private void Btn_Precendent_Click(object sender, EventArgs e)
         {
+           
             this.BindingContext[Info, "resFiches"].Position -= 1;
+            fillpicturebox();
         }
 
         private void Cb_Equipe_SelectedIndexChanged(object sender, EventArgs e)
         {
             ClearBinding();
+          
              UpdateControl();
-            fillcontrol();
+            fillcontrol();  
+            fillpicturebox();
             RemplirGridView();
-        }
 
+        }
+        private void fillpicturebox()
+        {
+            Info2.Clear();
+            Tb_Lien.DataBindings.Clear();
+            string commandephoto = "select photo from joueurs where numjoueur = " + Lb_Num.Text;
+            OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
+            adapp.Fill(Info2, "ResPhoto");
+            Tb_Lien.DataBindings.Add("text", Info2, "Resphoto.photo");
+
+            Pb_Joueur.ImageLocation = Tb_Lien.Text;
+            this.Pb_Joueur.SizeMode = PictureBoxSizeMode.StretchImage;
+            
+        
+        
+        
+        
+        }
         private void Form_AffJoueur_Load(object sender, EventArgs e)
         {
 
