@@ -40,9 +40,14 @@
             this.ajoutFicheDeJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voirPartieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.classementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FB_EditPlayer = new FlashButton.FlashButton();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.flashButton1 = new FlashButton.FlashButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -73,14 +78,14 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
             this.ajouterToolStripMenuItem.Text = "Ajouter...";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterJoueurToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
             this.modifierToolStripMenuItem.Text = "Modifier...";
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierJoueurToolStripMenuItem_Click);
             // 
@@ -96,14 +101,14 @@
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(175, 24);
             this.ajouterToolStripMenuItem1.Text = "Ajouter...";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem1
             // 
             this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
-            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(175, 24);
             this.modifierToolStripMenuItem1.Text = "Modifier...";
             this.modifierToolStripMenuItem1.Click += new System.EventHandler(this.modifEquipeToolStripMenuItem_Click);
             // 
@@ -133,7 +138,7 @@
             // voirPartieToolStripMenuItem
             // 
             this.voirPartieToolStripMenuItem.Name = "voirPartieToolStripMenuItem";
-            this.voirPartieToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.voirPartieToolStripMenuItem.Size = new System.Drawing.Size(229, 24);
             this.voirPartieToolStripMenuItem.Text = "Voir Partie...";
             this.voirPartieToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
             // 
@@ -143,6 +148,20 @@
             this.classementsToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.classementsToolStripMenuItem.Text = "Classements...";
             this.classementsToolStripMenuItem.Click += new System.EventHandler(this.classementToolStripMenuItem_Click);
+            // 
+            // FB_EditPlayer
+            // 
+            this.FB_EditPlayer.BackgroundImage = global::bdfinal.Properties.Resources.Edit_Player_Profile_icon;
+            this.FB_EditPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FB_EditPlayer.ImageClick = global::bdfinal.Properties.Resources.Edit_Player_Profile_clickDisabled_icon;
+            this.FB_EditPlayer.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_Profile_clickDisabled_icon;
+            this.FB_EditPlayer.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_Profile_icon;
+            this.FB_EditPlayer.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_Profile_Hover_icon;
+            this.FB_EditPlayer.Location = new System.Drawing.Point(7, 22);
+            this.FB_EditPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FB_EditPlayer.Name = "FB_EditPlayer";
+            this.FB_EditPlayer.Size = new System.Drawing.Size(75, 70);
+            this.FB_EditPlayer.TabIndex = 1;
             // 
             // toolStripMenuItem3
             // 
@@ -162,15 +181,52 @@
             this.toolStripMenuItem4.Text = " ";
             this.toolStripMenuItem4.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.flashButton1);
+            this.groupBox1.Controls.Add(this.FB_EditPlayer);
+            this.groupBox1.Location = new System.Drawing.Point(12, 31);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(169, 101);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Joueurs";
+            // 
+            // flashButton1
+            // 
+            this.flashButton1.BackgroundImage = global::bdfinal.Properties.Resources.Edit_Player_Profile_icon;
+            this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flashButton1.ImageClick = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
+            this.flashButton1.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
+            this.flashButton1.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_icon;
+            this.flashButton1.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_Hover_icon;
+            this.flashButton1.Location = new System.Drawing.Point(90, 22);
+            this.flashButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flashButton1.Name = "flashButton1";
+            this.flashButton1.Size = new System.Drawing.Size(75, 70);
+            this.flashButton1.TabIndex = 2;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(184, 32);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 100);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(582, 316);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,6 +263,10 @@
         private System.Windows.Forms.ToolStripMenuItem classementsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private FlashButton.FlashButton FB_EditPlayer;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private FlashButton.FlashButton flashButton1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

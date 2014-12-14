@@ -343,6 +343,24 @@
   <ItemGroup>
     <None Include="Resources\1418632013_info-16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418639499_user_profile_edit-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Player_Profile_Hover_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Player_Profile_Hover_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Player_ProfileAdd_ClickDisabled_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Player_ProfileAdd_Hover_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Player_ProfileAdd_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
