@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="aPropos_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1418629592_question_mark-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ICON_Accepter_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ICON_Accepter_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -249,6 +252,12 @@
   </data>
   <data name="ICON_Trier_Descendant_Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ICON_Trier-Descendant_Over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1418632013_info-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Option_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1418629700_cog-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="patFond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\patFond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

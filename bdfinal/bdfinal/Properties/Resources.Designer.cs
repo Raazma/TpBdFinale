@@ -63,6 +63,16 @@ namespace bdfinal.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aPropos_Icon {
+            get {
+                object obj = ResourceManager.GetObject("aPropos_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_Accepter_Click {
             get {
                 object obj = ResourceManager.GetObject("ICON_Accepter_Click", resourceCulture);
@@ -496,6 +506,26 @@ namespace bdfinal.Properties {
         internal static System.Drawing.Bitmap ICON_Trier_Descendant_Over {
             get {
                 object obj = ResourceManager.GetObject("ICON_Trier_Descendant_Over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Info_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Info_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Option_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Option_Icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

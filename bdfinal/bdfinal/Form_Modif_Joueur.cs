@@ -102,18 +102,7 @@ namespace bdfinal
         }
 
         
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form_Url form = new Form_Url(orac);
-            if (form.ShowDialog() == DialogResult.OK)
-            { 
-            
-            
-            
-            
-            }
-            
-        }
+       
 
         private void tb_Lien_TextChanged(object sender, EventArgs e)
         {
