@@ -175,12 +175,7 @@ select * from joueurs;
 
 select * from equipe;
 select * from joueurs;
-  NumEquipe        NUMBER (4) NOT NULL ,
-    NumDivision      NUMBER (4) NOT NULL ,
-    DateIntroduction DATE ,
-    Logo BLOB ,
-    Ville     VARCHAR2 (30) ,
-    NomEquipe VARCHAR2 (20)
+ 
 insert into equipe (NumDivision,DateIntroduction,Ville,NomEquipe)
 values(1,'2000-04-14','Chibougamo','The Team');
 commit;
@@ -198,3 +193,174 @@ commit;
 select * from CLASSEMENTEQUIPE;
 
 select * from match;
+
+select * from fichematchjoueur;
+
+delete from fichematchjoueur where nummatch = 1;
+select * from joueurs;
+delete from joueurs where numequipe = 9;
+
+select * from match;
+delete from match where nummatch = 1;
+
+select * from equipe;
+
+delete from equipe where numdivision = 2;
+
+ NumEquipe        NUMBER (4) NOT NULL ,
+    NumDivision      NUMBER (4) NOT NULL ,
+    DateIntroduction DATE ,
+    Logo BLOB ,
+    Ville     VARCHAR2 (30) ,
+    NomEquipe VARCHAR2 (20)
+--Insertion divison 1
+INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
+values (1 , '1995-02-13', 'Quebec','Bulls');
+INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
+values (1 , '1992-06-06', 'Lanaudiere','Husky');
+INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
+values (1 , '1990-10-12', 'Trois-Riviere','PitBull');
+INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
+values (1 , '1991-07-13', 'Shawiningan','Dragon');
+
+--Insertion division 2
+INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
+values (2 , '1994-01-19', 'Montreal Nord','Eagles');
+INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
+values (2 , '1993-12-23', 'Lavaltrie','Darksiders');
+INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
+values (2 , '1991-01-11', 'Tox Ville','Tox');
+INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
+values (2 , '1992-09-15', 'Small Ville','SuperMan');
+
+
+--Joueurs equipe division 1
+ 
+ --Equipe 1   
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Parker','Peter','1994-04-30',13,'Attaquant',21 );
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Patoche','Alain','1990-12-28',22,'Attaquant',21 );
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('TravailFort','Il','1992-09-22',48,'Defenseur',21 );
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('LaRebelle','Ginette','1991-10-13',66,'Defenseur',21 );
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Salty','Mels','1993-03-10',89,'Gardien',21 );
+
+--Equipe 2
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Bourgeau','Xavier','1992-01-22',09,'Attaquant',23);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Kent','Clark','1992-10-03',55,'Attaquant',23);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Juteux','Poirier','1992-11-20',13,'Defenseur',23 );
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Trie','Max','1990-02-22',89,'Defenseur',23 );
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Sylverstio','Davido','1990-11-13',70,'Gardien',23 );
+
+--Equipe 3
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Lemaire','Francis','1991-08-28',33,'Attaquant',25 );
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('St-Laurent','Daren','1993-06-17',27,'Attaquant',25);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Subban','Pk','1992-05-16',75,'Defenseur',25);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Anti','Aalto','1990-07-16',44,'Defenseur',25);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Adams','Greg','1991-10-14',39,'Gardien',25);
+
+--equipe 4
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Abric','Peter','1992-09-13',56,'Attaquant',27);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Michel','Yvan','1990-04-06',99,'Attaquant',27);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Wayne','Bruce','1992-09-05',21,'Defenseur',27);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Lisa','Mona','1991-12-29',22,'Defenseur',27);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Aiken','Don','1990-03-07',77,'Gardien',27);
+
+--Equipe 5
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Alexender','Bob','1990-11-12',90,'Attaquant',29);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Potter','Harry','1991-10-12',89,'Attaquant',29);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Granger','Hermione','1991-07-18',54,'Defenseur',29);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Wesley','Ron','1994-07-12',11,'Defenseur',29);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Lebelle','Simeone','1990-01-05',29,'Gardien',29);
+
+--equipe 6
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('DeBretagne','Leduc','1992-12-27',19,'Attaquant',31);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('LeMagnifique','Gatsby','1992-05-20',30,'Attaquant',31);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Osborn','Harry','1992-02-18',31,'Defenseur',31);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Alexender','Bob','1990-03-19',90,'Defenseur',31);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('LePasGentil','LeGros','1991-04-24',20,'Gardien',31);
+
+--equipe 7
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Boy','Yolo','1991-09-21',01,'Attaquant',33);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Choisi','JeTe','1991-04-20',77,'Attaquant',33);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Fort','Trop','1996-02-11',11,'Defenseur',33);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Man','Spider','1990-05-11',19,'Defenseur',33);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Hulk','The','1989-11-20',99,'Gardien',33);
+
+--Equipe 8
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Baggins','Bilbo','1990-12-24',19,'Attaquant',35);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('Baggins','Frodon','1991-12-24',49,'Attaquant',35);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('LeGris','Gandalf','1677-12-24',22,'Defenseur',35);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('TheRock','Gimli','1800-01-23',19,'Defenseur',35);
+
+INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
+Values ('TheElf','Legolas','1980-12-24',97,'Gardien',35);
