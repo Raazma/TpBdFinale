@@ -381,11 +381,84 @@ values(6,23,0,0);
 
 INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
 values (25,27,'2014-02-25','Trois-Riviere',0,1,'20:00');
+ select numjoueur,position from joueurs where numequipe = 25;
+    --equipevisiteuse
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,34,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,35,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,36,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,37,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,38,0,0);
+--
+--equipe receveuse
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,29,1,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,30,0,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,31,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,32,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(7,33,0,0);
 
 INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
 values (29,31,'2014-03-03','Montreal',3,1,'21:00');
+ select numjoueur,position from joueurs where numequipe = 29;
+    --equipevisiteuse
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,45,1,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,46,1,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,47,0,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,48,1,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,49,0,0);
+--
+--equipe receveuse
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,40,1,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,41,0,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,42,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,43,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(8,44,0,0);
 
 INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
 values (33,35,'2014-03-07','Shawinigan',2,1,'21:00');
+ select numjoueur,position from joueurs where numequipe = 33;
+    --equipevisiteuse
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,55,1,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,56,1,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,57,0,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,58,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,59,0,0);
+--
+--equipe receveuse
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,50,1,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,51,0,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,52,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,53,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(9,54,0,0);
 
+commit;
 select * from match;
