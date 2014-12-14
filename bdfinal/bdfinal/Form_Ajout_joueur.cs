@@ -102,7 +102,8 @@ namespace bdfinal
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
+            //Pb_Photo.ImageLocation = Tb_Lien.Text;
+            //this.Pb_Photo.SizeMode = PictureBoxSizeMode.StretchImage;
         }     
     }
 }
