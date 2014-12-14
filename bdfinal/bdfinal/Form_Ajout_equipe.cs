@@ -26,8 +26,7 @@ namespace bdfinal
         {
             InitializeComponent();
             orac = oracc;
-            FilledComboBox();
-           
+            FilledComboBox();         
         }
 
         private void FilledComboBox()
@@ -83,7 +82,6 @@ namespace bdfinal
 
         private void Form_Ajout_equipe_Load(object sender, EventArgs e)
         {
-
 
         }
 

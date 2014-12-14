@@ -49,8 +49,8 @@ namespace bdfinal
         {
             try
             {
-                string commande = "Insert into Joueurs(Nom,Prenom,Datenaissance,NumeroMaillot,Position,NumEquipe)" +
-                " values(:nom,:prenom,:datenaissance,:numeroMaillot,:position,(SELECT NUMEQUIPE FROM EQUIPE WHERE NOMEQUIPE =:nomE))";
+                string commande = "Insert into Joueurs(Nom,Prenom,Datenaissance,NumeroMaillot,photo,Position,NumEquipe)" +
+                " values(:nom,:prenom,:datenaissance,:numeroMaillot,:thephoto,:position,(SELECT NUMEQUIPE FROM EQUIPE WHERE NOMEQUIPE =:nomE))";
                 OracleCommand oranIns = new OracleCommand(commande, oracon);
 
 
@@ -60,6 +60,7 @@ namespace bdfinal
                 OracleParameter Numparam = new OracleParameter(":numeromaillot", OracleDbType.Int32);
                 OracleParameter Posparam = new OracleParameter(":position", OracleDbType.Varchar2, 10);
                 OracleParameter NomEparam = new OracleParameter(":nomE", OracleDbType.Varchar2, 20);
+                OracleParameter lienPhoto = new OracleParameter("thephoto", OracleDbType.Varchar2, 200);
 
                 Nomparam.Value = Tb_Nom.Text;
                 Prenomparam.Value = Tb_Prenom.Text;
@@ -67,6 +68,7 @@ namespace bdfinal
                 Numparam.Value = Tb_Num.Text;
                 Posparam.Value = Cb_Position.SelectedItem.ToString();
                 NomEparam.Value = Cb_Equipe.SelectedItem.ToString();
+                lienPhoto.Value = tb_Lien.Text;
 
 
                 oranIns.Parameters.Add(Nomparam);
@@ -75,6 +77,7 @@ namespace bdfinal
                 oranIns.Parameters.Add(Numparam);
                 oranIns.Parameters.Add(Posparam);
                 oranIns.Parameters.Add(NomEparam);
+                oranIns.Parameters.Add(lienPhoto);
               
                 int laligne = oranIns.ExecuteNonQuery();
                 MessageBox.Show(laligne.ToString());
@@ -104,6 +107,12 @@ namespace bdfinal
         {
             //Pb_Photo.ImageLocation = Tb_Lien.Text;
             //this.Pb_Photo.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void tb_Lien_TextChanged(object sender, EventArgs e)
+        {
+            pictureBox1.ImageLocation = tb_Lien.Text;
+            this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }     
     }
 }
