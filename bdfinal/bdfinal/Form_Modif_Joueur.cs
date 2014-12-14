@@ -37,6 +37,7 @@ namespace bdfinal
             Tb_Prenom.DataBindings.Add("text", source, "ResJoueurs.prenom");
             Tb_NumChandail.DataBindings.Add("text", source, "ResJoueurs.NumeroMaillot");
             Tb_Position.DataBindings.Add("text", source, "ResJoueurs.Position");
+            Dtp_Naissance.DataBindings.Add("Value", source, "ResJoueurs.DateNaissance");
         }
         private void FilComboBox()
         {
@@ -68,10 +69,14 @@ namespace bdfinal
                                   ", prenom = '" + Tb_Prenom.Text + "'" +
                                        ",numeromaillot = '" + Tb_NumChandail.Text + "'" +
                                           ",Position = '" + Tb_Position.Text + "'" +
+                                          " ,  DateNaissance = :LaDate" +
                                             "where numjoueur = " + Lb_Num.Text;
 
                 OracleCommand com = new OracleCommand(commande,orac);
+                OracleParameter ladate = new OracleParameter(":LaDate", OracleDbType.Date);
+                ladate.Value = Dtp_Naissance.Value;
                 com.CommandType = CommandType.Text;
+                com.Parameters.Add(ladate);
                int i =  com.ExecuteNonQuery();
                MessageBox.Show(i.ToString() + " Ligne Modifier");
         }

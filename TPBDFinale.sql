@@ -22,6 +22,7 @@ CREATE TABLE Division
     Nom             VARCHAR2 (40) ,
     DateInscription DATE
   ) ;
+  d
 ALTER TABLE Division ADD CONSTRAINT Division_PK PRIMARY KEY ( NumDivision ) ;
 
 CREATE TABLE Equipe
@@ -33,6 +34,7 @@ CREATE TABLE Equipe
     Ville     VARCHAR2 (30) ,
     NomEquipe VARCHAR2 (20)
   ) ;
+  
 ALTER TABLE Equipe ADD CONSTRAINT Equipe_PK PRIMARY KEY ( NumEquipe ) ;
 
 CREATE TABLE FicheMatchJoueur
@@ -44,6 +46,7 @@ CREATE TABLE FicheMatchJoueur
   ) ;
 alter table FICHEMATCHJOUEUR
 add  TempPunition number(3);
+
 CREATE TABLE Joueurs
   (
     NumJoueur     NUMBER (4) NOT NULL ,
@@ -55,6 +58,7 @@ CREATE TABLE Joueurs
     Position  VARCHAR2 (10) ,
     NumEquipe NUMBER (4) NOT NULL
   ) ;
+  
 ALTER TABLE Joueurs ADD CONSTRAINT Joueurs_PK PRIMARY KEY ( NumJoueur ) ;
 alter table joueurs 
 drop column photo ;
@@ -71,7 +75,8 @@ CREATE TABLE MATCH
     Lieu            VARCHAR2 (30) ,
     ScoreFinaleV    NUMBER (2) ,
     ScoreFinaleR    NUMBER (2)
-  ) ;
+  );
+  
 ALTER TABLE MATCH ADD CONSTRAINT Match_PK PRIMARY KEY ( NumMatch ) ;
 
 ALTER TABLE Equipe ADD CONSTRAINT Equipe_Division_FK FOREIGN KEY ( NumDivision ) REFERENCES Division ( NumDivision ) ;
@@ -100,7 +105,7 @@ INNER JOIN MATCH
 ON MATCH.EQUIPERECEVEUSE = EQUIPE.NUMEQUIPE OR MATCH.EQUIPEVISITEUSE =EQUIPE.NUMEQUIPE
 INNER JOIN FICHEMATCHJOUEUR
 ON FICHEMATCHJOUEUR.NUMMATCH = MATCH.NUMMATCH
-GROUP BY JOUEURS.NUMJOUEUR ,NOM,PRENOM , EQUIPE.NOMEQUIPE);
+GROUP BY JOUEURS.NUMJOUEUR ,NOM,PRENOM , EQUIPE.NOMEQUIPE );
 
 CREATE INDEX NUMERODELEQUIPE
 ON JOUEURS(NUMEQUIPE);
@@ -295,7 +300,6 @@ INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumE
 Values ('Lebelle','Simeone','1990-01-05',29,'Gardien',29);
 
 --equipe 6
-
 INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
 Values ('DeBretagne','Leduc','1992-12-27',19,'Attaquant',31);
 
@@ -462,3 +466,7 @@ values(9,54,0,0);
 
 commit;
 select * from match;
+
+select * from fichepersonelle;
+
+select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe = 'Husky';

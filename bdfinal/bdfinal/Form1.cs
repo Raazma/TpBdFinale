@@ -97,5 +97,17 @@ namespace bdfinal
                 
             }
         }
+
+        private void ajoutJoueurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Ajout_joueur form = new Form_Ajout_joueur(oraconn);
+            form.Show();
+        }
+
+        private void ajoutDivisionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Division form = new Division(oraconn);
+            form.Show();
+        }
     }
 }
