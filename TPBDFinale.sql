@@ -99,8 +99,8 @@ GRANT ALL ON SYNJOUEURS TO LEMAIREF;
 drop view Fichepersonnelle;
 CREATE VIEW FichePersonnelle AS(
 select J.NUMJOUEUR,
-sum(FMJ.NBBUTS) as NbBut,
-sum(FMJ.NBPASSES) as NBPasse,
+sum(FMJ.NBBUTS) as NbButs,
+sum(FMJ.NBPASSES) as NBPasses,
 J.NOM,
 J.PRENOM, E.NOMEQUIPE
 from FICHEMATCHJOUEUR FMJ
