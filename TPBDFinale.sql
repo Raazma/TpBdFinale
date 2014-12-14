@@ -65,7 +65,7 @@ drop column photo ;
 alter table joueurs 
 add  photo VARCHAR2 (50) ;
 commit;
-alter table joueurs modify photo varchar2(90);
+alter table joueurs modify photo varchar2(400);
 
 CREATE TABLE MATCH
   (
@@ -473,7 +473,12 @@ select * from match;
 select * from fichepersonelle;
 select * from division;
 Update division set nom ='LAVAL' WHERE numdivision = 2;
+
+update joueurs set photo = 'http://im.ziffdavisinternational.com/t/ign_za/articlepage/s/sir-ian-mckellen-says-goodbye-to-gandalf/sir-ian-mckellen-says-goodbye-to-gandalf_pys4.1920.jpg' where numjoueur = 57;
 commit;
+update joueurs set photo = 'http://img2.wikia.nocookie.net/__cb20060228022700/lotr/images/a/a5/Lotr_movie_gimli.jpg' where numjoueur = 58;
+update joueurs set photo = 'http://img2.timeinc.net/ew/i/2013/FMP/Gallery/Hobbit-The-Desolation-of-Smaug.jpg' where numjoueur = 59;
+
 select * from joueurs;
 select * from equipe;
 select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe = 'Husky';
