@@ -39,9 +39,9 @@
             this.partiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutFicheDeJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voirPartieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.classementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.classementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,14 +73,14 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.ajouterToolStripMenuItem.Text = "Ajouter...";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterJoueurToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.modifierToolStripMenuItem.Text = "Modifier...";
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierJoueurToolStripMenuItem_Click);
             // 
@@ -96,14 +96,14 @@
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(175, 24);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(144, 24);
             this.ajouterToolStripMenuItem1.Text = "Ajouter...";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem1
             // 
             this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
-            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(175, 24);
+            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(144, 24);
             this.modifierToolStripMenuItem1.Text = "Modifier...";
             this.modifierToolStripMenuItem1.Click += new System.EventHandler(this.modifEquipeToolStripMenuItem_Click);
             // 
@@ -136,6 +136,13 @@
             this.voirPartieToolStripMenuItem.Text = "Voir Partie...";
             this.voirPartieToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
             // 
+            // classementsToolStripMenuItem
+            // 
+            this.classementsToolStripMenuItem.Name = "classementsToolStripMenuItem";
+            this.classementsToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.classementsToolStripMenuItem.Text = "Classements...";
+            this.classementsToolStripMenuItem.Click += new System.EventHandler(this.classementToolStripMenuItem_Click);
+            // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Image = global::bdfinal.Properties.Resources.Option_Icon;
@@ -152,19 +159,13 @@
             this.toolStripMenuItem4.Size = new System.Drawing.Size(33, 24);
             this.toolStripMenuItem4.Text = " ";
             // 
-            // classementsToolStripMenuItem
-            // 
-            this.classementsToolStripMenuItem.Name = "classementsToolStripMenuItem";
-            this.classementsToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
-            this.classementsToolStripMenuItem.Text = "Classements...";
-            this.classementsToolStripMenuItem.Click += new System.EventHandler(this.classementToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(543, 255);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

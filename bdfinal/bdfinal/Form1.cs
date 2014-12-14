@@ -91,11 +91,14 @@ namespace bdfinal
 
         private void classementToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             Form_Classement Classement=new Form_Classement(oraconn);
-            if(Classement.ShowDialog()==DialogResult.OK)
+            if (Classement.ShowDialog() == DialogResult.OK)
             {
-                
+
             }
+
+            
         }
 
         private void ajoutJoueurToolStripMenuItem_Click(object sender, EventArgs e)
