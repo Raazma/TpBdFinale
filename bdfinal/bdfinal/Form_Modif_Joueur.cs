@@ -38,6 +38,11 @@ namespace bdfinal
             Tb_NumChandail.DataBindings.Add("text", source, "ResJoueurs.NumeroMaillot");
             Tb_Position.DataBindings.Add("text", source, "ResJoueurs.Position");
             Dtp_Naissance.DataBindings.Add("Value", source, "ResJoueurs.DateNaissance");
+            tb_Lien.DataBindings.Add("text", source, "ResJoueurs.photo");
+            Pb_Logo.ImageLocation = tb_Lien.Text;
+            this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+           
+
         }
         private void FilComboBox()
         {
@@ -56,33 +61,35 @@ namespace bdfinal
         private void Btn_Suivant_Click(object sender, EventArgs e)
         {
             this.BindingContext[source, "ResJoueurs"].Position += 1;
+            Pb_Logo.ImageLocation = tb_Lien.Text;
+            this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void Btn_Precedent_Click(object sender, EventArgs e)
         {
             this.BindingContext[source, "ResJoueurs"].Position -= 1;
+            Pb_Logo.ImageLocation = tb_Lien.Text;
+            this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void Btn_Modifier_Click(object sender, EventArgs e)
         {
-            string commande = "Update Joueurs SET nom = '" + Tb_nom.Text + "'" +
-                                  ", prenom = '" + Tb_Prenom.Text + "'" +
-                                       ",numeromaillot = '" + Tb_NumChandail.Text + "'" +
-                                          ",Position = '" + Tb_Position.Text + "'" +
-                                          " ,  DateNaissance = :LaDate" +
-                                            "where numjoueur = " + Lb_Num.Text;
+            string commande = "Update Joueurs SET nom = '" + Tb_nom.Text + "'" + ", prenom = '" + Tb_Prenom.Text + "'" + ", DateNaissance = :LaDate " + ",numeromaillot = '" + 
+                             Tb_NumChandail.Text + "'" + " ,photo = '" +tb_Lien.Text + "',Position = '" + Tb_Position.Text + "'" +  "where numjoueur = " + Lb_Num.Text;
 
-                OracleCommand com = new OracleCommand(commande,orac);
-                OracleParameter ladate = new OracleParameter(":LaDate", OracleDbType.Date);
-                ladate.Value = Dtp_Naissance.Value;
-                com.CommandType = CommandType.Text;
-                com.Parameters.Add(ladate);
+               OracleCommand com = new OracleCommand(commande,orac);
+               OracleParameter ladate = new OracleParameter(":LaDate", OracleDbType.Date);
+               ladate.Value = Dtp_Naissance.Value;
+               com.CommandType = CommandType.Text;
+               com.Parameters.Add(ladate);
                int i =  com.ExecuteNonQuery();
                MessageBox.Show(i.ToString() + " Ligne Modifier");
         }
 
         private void Btn_Effacer_Click(object sender, EventArgs e)
         {
+           
+         
             string commande = "delete from joueurs where numjoueur = " + Lb_Num.Text;
 
             OracleCommand com = new OracleCommand(commande, orac);
@@ -90,11 +97,28 @@ namespace bdfinal
             int i = com.ExecuteNonQuery();
             MessageBox.Show(i.ToString() + " Ligne effacer");
 
-           //string commande = "delete from joueurs where numjoueur = " + Lb_Num.Text;
-           // com = new OracleCommand(commande, orac);
-           // i = com.ExecuteNonQuery();
-           // MessageBox.Show(i.ToString() + " Ligne effacer");
            
+           
+        }
+
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_Url form = new Form_Url(orac);
+            if (form.ShowDialog() == DialogResult.OK)
+            { 
+            
+            
+            
+            
+            }
+            
+        }
+
+        private void tb_Lien_TextChanged(object sender, EventArgs e)
+        {
+            Pb_Logo.ImageLocation = tb_Lien.Text;
+            this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
         } 
     }
 }

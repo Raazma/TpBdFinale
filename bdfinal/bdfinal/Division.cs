@@ -55,6 +55,7 @@ namespace bdfinal
             adp.Fill(Imsetting, "ResDiv");
             Tb_Nom.DataBindings.Add("text", Imsetting, "ResDiv.Nom");
             Dtp_Date.DataBindings.Add("Value", Imsetting, "ResDiv.DateInscription");
+            Lb_num.DataBindings.Add("text", Imsetting, "ResDiv.NumDivision");
 
         }
 
@@ -66,6 +67,21 @@ namespace bdfinal
         private void Btn_Precedent_Click(object sender, EventArgs e)
         {
             this.BindingContext[Imsetting, "ResDiv"].Position -= 1;
+        }
+
+        private void Btn_Modifier_Click(object sender, EventArgs e)
+        {
+         
+            string commande = "update division set nom ='" + Tb_Nom.Text +"', DateInscription = :LaDate where numdivision =" + Lb_num.Text;
+            OracleParameter ladate = new OracleParameter(":LaDate", OracleDbType.Date);
+            OracleCommand com = new OracleCommand(commande, oracon);
+            ladate.Value = Dtp_Date.Value;
+            com.Parameters.Add(ladate);
+            int i = com.ExecuteNonQuery();
+
+            MessageBox.Show(i.ToString() + " Ligne modifier");
+            
+
         }
 
     }

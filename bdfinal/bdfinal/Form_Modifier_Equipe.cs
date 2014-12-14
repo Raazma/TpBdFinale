@@ -97,14 +97,9 @@ namespace bdfinal
             {
                 string commande = "Update equipe set nomequipe ='" + Tb_Name.Text + "'," + "ville = '" + Tb_ville.Text  + "', DateIntroduction = :Ladate" + " where numequipe =" + Lb_Num.Text;
                 OracleCommand com = new OracleCommand(commande, orac);
-                com.CommandType = CommandType.Text;
-             
-                OracleParameter ladate = new OracleParameter(":Ladate", OracleDbType.Date);
-
-               
-               
+                com.CommandType = CommandType.Text;             
+                OracleParameter ladate = new OracleParameter(":Ladate", OracleDbType.Date);                        
                 ladate.Value = Dtp_date.Value;
-
                 com.Parameters.Add(ladate);
 
                 int i = com.ExecuteNonQuery();
@@ -119,9 +114,19 @@ namespace bdfinal
             if(form.ShowDialog() == DialogResult.OK)
             {
                 filename = form.FileName;
-                 
-            
+                         
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string commande = "Delete from equipe where numequipe =" + Lb_Num.Text;
+            OracleCommand com = new OracleCommand(commande, orac);
+            com.CommandType = CommandType.Text;
+
+           
+            int i = com.ExecuteNonQuery();
+            MessageBox.Show(i.ToString() + " Ligne Effacer");
         }   
     }
 }

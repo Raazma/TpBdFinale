@@ -38,6 +38,7 @@
             this.btn_Nouveau = new System.Windows.Forms.Button();
             this.Btn_Precedent = new System.Windows.Forms.Button();
             this.Btn_Suivant = new System.Windows.Forms.Button();
+            this.Lb_num = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Tb_Nom
@@ -99,10 +100,11 @@
             this.Btn_Modifier.TabIndex = 6;
             this.Btn_Modifier.Text = " Modifier";
             this.Btn_Modifier.UseVisualStyleBackColor = true;
+            this.Btn_Modifier.Click += new System.EventHandler(this.Btn_Modifier_Click);
             // 
             // btn_Nouveau
             // 
-            this.btn_Nouveau.Location = new System.Drawing.Point(16, 228);
+            this.btn_Nouveau.Location = new System.Drawing.Point(8, 194);
             this.btn_Nouveau.Name = "btn_Nouveau";
             this.btn_Nouveau.Size = new System.Drawing.Size(75, 23);
             this.btn_Nouveau.TabIndex = 7;
@@ -130,11 +132,21 @@
             this.Btn_Suivant.UseVisualStyleBackColor = true;
             this.Btn_Suivant.Click += new System.EventHandler(this.Btn_Suivant_Click);
             // 
+            // Lb_num
+            // 
+            this.Lb_num.AutoSize = true;
+            this.Lb_num.Enabled = false;
+            this.Lb_num.Location = new System.Drawing.Point(27, 199);
+            this.Lb_num.Name = "Lb_num";
+            this.Lb_num.Size = new System.Drawing.Size(0, 13);
+            this.Lb_num.TabIndex = 10;
+            // 
             // Division
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(322, 312);
+            this.Controls.Add(this.Lb_num);
             this.Controls.Add(this.Btn_Suivant);
             this.Controls.Add(this.Btn_Precedent);
             this.Controls.Add(this.btn_Nouveau);
@@ -164,5 +176,6 @@
         private System.Windows.Forms.Button btn_Nouveau;
         private System.Windows.Forms.Button Btn_Precedent;
         private System.Windows.Forms.Button Btn_Suivant;
+        private System.Windows.Forms.Label Lb_num;
     }
 }

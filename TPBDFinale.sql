@@ -65,6 +65,7 @@ drop column photo ;
 alter table joueurs 
 add  photo VARCHAR2 (50) ;
 commit;
+alter table joueurs modify photo varchar2(90);
 
 CREATE TABLE MATCH
   (
@@ -467,6 +468,12 @@ values(9,54,0,0);
 commit;
 select * from match;
 
-select * from fichepersonelle;
 
+
+select * from fichepersonelle;
+select * from division;
+Update division set nom ='LAVAL' WHERE numdivision = 2;
+commit;
+select * from joueurs;
+select * from equipe;
 select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe = 'Husky';

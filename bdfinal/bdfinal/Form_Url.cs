@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.DataAccess.Client;
 
 namespace bdfinal
 {
     public partial class Form_Url : Form
     {
-        public Form_Url()
+        OracleConnection orac = new OracleConnection();
+        public Form_Url(OracleConnection oraco)
         {
             InitializeComponent();
+            orac = oraco;
         }
     }
 }

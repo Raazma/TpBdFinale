@@ -49,6 +49,8 @@
             this.Btn_Cancel = new System.Windows.Forms.Button();
             this.Dtp_Naissance = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
+            this.tb_Lien = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,7 +185,7 @@
             // 
             // Btn_Effacer
             // 
-            this.Btn_Effacer.Location = new System.Drawing.Point(310, 180);
+            this.Btn_Effacer.Location = new System.Drawing.Point(290, 206);
             this.Btn_Effacer.Name = "Btn_Effacer";
             this.Btn_Effacer.Size = new System.Drawing.Size(75, 23);
             this.Btn_Effacer.TabIndex = 18;
@@ -193,7 +195,7 @@
             // 
             // Btn_Modifier
             // 
-            this.Btn_Modifier.Location = new System.Drawing.Point(310, 235);
+            this.Btn_Modifier.Location = new System.Drawing.Point(290, 250);
             this.Btn_Modifier.Name = "Btn_Modifier";
             this.Btn_Modifier.Size = new System.Drawing.Size(75, 23);
             this.Btn_Modifier.TabIndex = 19;
@@ -226,11 +228,30 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Date Naissance";
             // 
+            // tb_Lien
+            // 
+            this.tb_Lien.Location = new System.Drawing.Point(381, 148);
+            this.tb_Lien.Name = "tb_Lien";
+            this.tb_Lien.Size = new System.Drawing.Size(121, 20);
+            this.tb_Lien.TabIndex = 23;
+            this.tb_Lien.TextChanged += new System.EventHandler(this.tb_Lien_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(287, 151);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 13);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Lien de la photo";
+            // 
             // Form_Modif_Joueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 403);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.tb_Lien);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Dtp_Naissance);
             this.Controls.Add(this.Btn_Cancel);
@@ -282,5 +303,7 @@
         private System.Windows.Forms.Button Btn_Cancel;
         private System.Windows.Forms.DateTimePicker Dtp_Naissance;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tb_Lien;
+        private System.Windows.Forms.Label label8;
     }
 }

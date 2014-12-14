@@ -1,10 +1,8 @@
  
 
- -form ajout supresion joueur modif ( modif date , photo);
-- form ajout modif supression equipe( supresion a implanter + modif date);
-- form ajout division supression division ( a implanter )
+- form ajout division supression division ( srupression  )
 
--consulation joueur ( binder les logo et photo); 
+-consulation joueur ( binder photo); 
 
 -form de consultation de match (arranger la combo box date);
 
