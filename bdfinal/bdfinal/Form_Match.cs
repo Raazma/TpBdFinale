@@ -90,13 +90,30 @@ namespace bdfinal
 
         private void Dtp_Match_ValueChanged(object sender, EventArgs e)
         {
-            string commande = "Select * from match where dateheure >= '" + Dtp_Match.Value+ "'";
-            OracleDataAdapter adap = new OracleDataAdapter(commande, orac);
+
+            string commande = "Select * from match where dateheure >= :ladate";
+            OracleCommand com = new OracleCommand(commande, orac);
+            OracleParameter ladate = new OracleParameter(":ladate", OracleDbType.Date);
+            ladate.Value = Dtp_Match.Value;
+            com.Parameters.Add(ladate);
+            OracleDataAdapter adapp = new OracleDataAdapter(com);
+            DataSet leset = new DataSet(); 
+            adapp.Fill(leset, "resMatchs");
+            BindingSource data = new BindingSource(leset, "resMatchs");
+            DGV_Match.DataSource = data;
+
+
+
+            commande = "select *  from joueurs where numjoueur in (select numjoueur from FICHEMATCHJOUEUR where nummatch in (select nummatch from match where dateheure >=:ladate))";
+            OracleCommand lacom = new OracleCommand(commande, orac);
+            OracleParameter theDate = new OracleParameter(":ladate", OracleDbType.Date);
+            theDate.Value = Dtp_Match.Value;
+            lacom.Parameters.Add(theDate);
+            OracleDataAdapter adap = new OracleDataAdapter(lacom);
             DataSet Mels = new DataSet();
             adap.Fill(Mels, "ResMatch");
             BindingSource TheSOUSSE = new BindingSource(Mels, "ResMatch");
-            DGV_Match.DataSource = TheSOUSSE;
-     
+            DGV_Joueurs.DataSource = TheSOUSSE;
         }
     }
 }
