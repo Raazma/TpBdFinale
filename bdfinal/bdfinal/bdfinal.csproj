@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Division.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Division.Designer.cs">
+      <DependentUpon>Division.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,8 +114,17 @@
     <Compile Include="Form_Modif_Joueur.Designer.cs">
       <DependentUpon>Form_Modif_Joueur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Url.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Url.Designer.cs">
+      <DependentUpon>Form_Url.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Division.resx">
+      <DependentUpon>Division.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Modif_Joueur.resx">
       <DependentUpon>Form_Modif_Joueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Url.resx">
+      <DependentUpon>Form_Url.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
