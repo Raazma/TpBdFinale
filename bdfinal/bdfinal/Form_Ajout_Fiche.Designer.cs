@@ -29,23 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Ajout_Fiche));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Cb_Numatch = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_Nbut = new System.Windows.Forms.TextBox();
+            this.Tb_nbpasse = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.Cb_Numjoueur = new System.Windows.Forms.ComboBox();
+            this.Btn_cancel = new System.Windows.Forms.Button();
+            this.Btn_Ajouter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // Cb_Numatch
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(111, 45);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
+            this.Cb_Numatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cb_Numatch.FormattingEnabled = true;
+            this.Cb_Numatch.Location = new System.Drawing.Point(111, 45);
+            this.Cb_Numatch.Name = "Cb_Numatch";
+            this.Cb_Numatch.Size = new System.Drawing.Size(121, 21);
+            this.Cb_Numatch.TabIndex = 0;
             // 
             // label1
             // 
@@ -56,19 +59,19 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Num Match";
             // 
-            // textBox1
+            // tb_Nbut
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(61, 20);
-            this.textBox1.TabIndex = 4;
+            this.tb_Nbut.Location = new System.Drawing.Point(140, 134);
+            this.tb_Nbut.Name = "tb_Nbut";
+            this.tb_Nbut.Size = new System.Drawing.Size(61, 20);
+            this.tb_Nbut.TabIndex = 4;
             // 
-            // textBox2
+            // Tb_nbpasse
             // 
-            this.textBox2.Location = new System.Drawing.Point(291, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(79, 20);
-            this.textBox2.TabIndex = 5;
+            this.Tb_nbpasse.Location = new System.Drawing.Point(291, 134);
+            this.Tb_nbpasse.Name = "Tb_nbpasse";
+            this.Tb_nbpasse.Size = new System.Drawing.Size(79, 20);
+            this.Tb_nbpasse.TabIndex = 5;
             // 
             // label3
             // 
@@ -97,27 +100,49 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Nbbut";
             // 
-            // comboBox2
+            // Cb_Numjoueur
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(123, 89);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 12;
+            this.Cb_Numjoueur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cb_Numjoueur.FormattingEnabled = true;
+            this.Cb_Numjoueur.Location = new System.Drawing.Point(123, 89);
+            this.Cb_Numjoueur.Name = "Cb_Numjoueur";
+            this.Cb_Numjoueur.Size = new System.Drawing.Size(121, 21);
+            this.Cb_Numjoueur.TabIndex = 12;
+            // 
+            // Btn_cancel
+            // 
+            this.Btn_cancel.Location = new System.Drawing.Point(271, 178);
+            this.Btn_cancel.Name = "Btn_cancel";
+            this.Btn_cancel.Size = new System.Drawing.Size(75, 26);
+            this.Btn_cancel.TabIndex = 13;
+            this.Btn_cancel.Text = "Annuler";
+            this.Btn_cancel.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Ajouter
+            // 
+            this.Btn_Ajouter.Location = new System.Drawing.Point(157, 181);
+            this.Btn_Ajouter.Name = "Btn_Ajouter";
+            this.Btn_Ajouter.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Ajouter.TabIndex = 14;
+            this.Btn_Ajouter.Text = "Ajouter";
+            this.Btn_Ajouter.UseVisualStyleBackColor = true;
+            this.Btn_Ajouter.Click += new System.EventHandler(this.Btn_Ajouter_Click);
             // 
             // Form_Ajout_Fiche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 238);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.Btn_Ajouter);
+            this.Controls.Add(this.Btn_cancel);
+            this.Controls.Add(this.Cb_Numjoueur);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Tb_nbpasse);
+            this.Controls.Add(this.tb_Nbut);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.Cb_Numatch);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Ajout_Fiche";
             this.Text = "Form_Ajout_Fiche";
@@ -128,14 +153,16 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Cb_Numatch;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_Nbut;
+        private System.Windows.Forms.TextBox Tb_nbpasse;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox Cb_Numjoueur;
+        private System.Windows.Forms.Button Btn_cancel;
+        private System.Windows.Forms.Button Btn_Ajouter;
 
     }
 }

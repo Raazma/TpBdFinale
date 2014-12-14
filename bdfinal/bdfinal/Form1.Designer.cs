@@ -57,7 +57,7 @@
             this.toolStripMenuItem4});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(582, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(582, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,20 +67,20 @@
             this.ajouterToolStripMenuItem,
             this.modifierToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(70, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(59, 20);
             this.toolStripMenuItem2.Text = "Joueurs";
             // 
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter...";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterJoueurToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.modifierToolStripMenuItem.Text = "Modifier...";
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierJoueurToolStripMenuItem_Click);
             // 
@@ -90,27 +90,27 @@
             this.ajouterToolStripMenuItem1,
             this.modifierToolStripMenuItem1});
             this.équipeToolStripMenuItem.Name = "équipeToolStripMenuItem";
-            this.équipeToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.équipeToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.équipeToolStripMenuItem.Text = "Équipes";
             // 
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(144, 24);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
             this.ajouterToolStripMenuItem1.Text = "Ajouter...";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem1
             // 
             this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
-            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(144, 24);
+            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
             this.modifierToolStripMenuItem1.Text = "Modifier...";
             this.modifierToolStripMenuItem1.Click += new System.EventHandler(this.modifEquipeToolStripMenuItem_Click);
             // 
             // divisionToolStripMenuItem
             // 
             this.divisionToolStripMenuItem.Name = "divisionToolStripMenuItem";
-            this.divisionToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.divisionToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.divisionToolStripMenuItem.Text = "Divisions...";
             this.divisionToolStripMenuItem.Click += new System.EventHandler(this.ajoutDivisionToolStripMenuItem_Click);
             // 
@@ -120,26 +120,27 @@
             this.ajoutFicheDeJoueurToolStripMenuItem,
             this.voirPartieToolStripMenuItem});
             this.partiesToolStripMenuItem.Name = "partiesToolStripMenuItem";
-            this.partiesToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.partiesToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.partiesToolStripMenuItem.Text = "Parties";
             // 
             // ajoutFicheDeJoueurToolStripMenuItem
             // 
             this.ajoutFicheDeJoueurToolStripMenuItem.Name = "ajoutFicheDeJoueurToolStripMenuItem";
-            this.ajoutFicheDeJoueurToolStripMenuItem.Size = new System.Drawing.Size(229, 24);
+            this.ajoutFicheDeJoueurToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.ajoutFicheDeJoueurToolStripMenuItem.Text = "Ajout Fiche de Joueur...";
+            this.ajoutFicheDeJoueurToolStripMenuItem.Click += new System.EventHandler(this.ajoutFicheDeJoueurToolStripMenuItem_Click);
             // 
             // voirPartieToolStripMenuItem
             // 
             this.voirPartieToolStripMenuItem.Name = "voirPartieToolStripMenuItem";
-            this.voirPartieToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.voirPartieToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.voirPartieToolStripMenuItem.Text = "Voir Partie...";
             this.voirPartieToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
             // 
             // classementsToolStripMenuItem
             // 
             this.classementsToolStripMenuItem.Name = "classementsToolStripMenuItem";
-            this.classementsToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.classementsToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.classementsToolStripMenuItem.Text = "Classements...";
             this.classementsToolStripMenuItem.Click += new System.EventHandler(this.classementToolStripMenuItem_Click);
             // 
@@ -148,7 +149,7 @@
             this.toolStripMenuItem3.Image = global::bdfinal.Properties.Resources.Option_Icon;
             this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(28, 24);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(28, 20);
             this.toolStripMenuItem3.Text = " ";
             this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
@@ -157,7 +158,7 @@
             this.toolStripMenuItem4.Image = global::bdfinal.Properties.Resources.Info_Icon;
             this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(25, 24);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(22, 20);
             this.toolStripMenuItem4.Text = " ";
             this.toolStripMenuItem4.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
