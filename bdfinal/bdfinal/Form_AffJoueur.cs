@@ -26,10 +26,7 @@ namespace bdfinal
             InitializeComponent();
             oracon = oraconn;
             RemplirCombobox();
-             UpdateControl();
-            
-             
-            
+             UpdateControl();         
            
         }
         public void RemplirGridView()
