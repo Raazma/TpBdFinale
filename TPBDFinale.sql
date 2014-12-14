@@ -110,11 +110,7 @@ ON MATCH (DATEHEURE);
 
 ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY MM DD';
 
-INSERT INTO DIVISION (NOM,DateInscription)
-VALUES('LAURENTIDE','1990-10-23');
 
-INSERT INTO DIVISION (NOM,DateInscription)
-VALUES('LAVAL','1992-10-14');
 
 select * from division;
 
@@ -186,33 +182,13 @@ set NOMEQUIPE = 'test',ville = 'testencore'
 where numequipe = 11;
 
 
-select * from FicheMatchJoueur;
+--Division
+INSERT INTO DIVISION (NOM,DateInscription)
+VALUES('LAURENTIDE','1990-10-23');
 
-select * from equipe;
-commit;
-select * from CLASSEMENTEQUIPE;
+INSERT INTO DIVISION (NOM,DateInscription)
+VALUES('LAVAL','1992-10-14');
 
-select * from match;
-
-select * from fichematchjoueur;
-
-delete from fichematchjoueur where nummatch = 1;
-select * from joueurs;
-delete from joueurs where numequipe = 9;
-
-select * from match;
-delete from match where nummatch = 1;
-
-select * from equipe;
-
-delete from equipe where numdivision = 2;
-
- NumEquipe        NUMBER (4) NOT NULL ,
-    NumDivision      NUMBER (4) NOT NULL ,
-    DateIntroduction DATE ,
-    Logo BLOB ,
-    Ville     VARCHAR2 (30) ,
-    NomEquipe VARCHAR2 (20)
 --Insertion divison 1
 INSERT INTO EQUIPE (NUMDIVISION , DateIntroduction ,Ville , NomEquipe)
 values (1 , '1995-02-13', 'Quebec','Bulls');
@@ -300,6 +276,8 @@ Values ('Lisa','Mona','1991-12-29',22,'Defenseur',27);
 INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
 Values ('Aiken','Don','1990-03-07',77,'Gardien',27);
 
+
+--Insertion Division 2
 --Equipe 5
 INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
 Values ('Alexender','Bob','1990-11-12',90,'Attaquant',29);
@@ -364,3 +342,50 @@ Values ('TheRock','Gimli','1800-01-23',19,'Defenseur',35);
 
 INSERT INTO JOUEURS (Nom, Prenom, DateNaissance, NumeroMaillot , Position , NumEquipe)
 Values ('TheElf','Legolas','1980-12-24',97,'Gardien',35);
+
+
+--Insertion des Match
+
+    
+    select * from equipe;
+alter table match
+modify Heure Varchar2(5);
+INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
+values (21,23,'2014-02-21','Quebec',4,2,'14:00');
+--fiche joueur match
+ 
+    select numjoueur,position from joueurs where numequipe = 21;
+    --equipevisiteuse
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,24,1,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,25,2,1);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,26,0,2);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,27,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,28,0,0);
+
+--equipe receveuse
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,19,0,2);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,20,1,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,21,1,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,22,0,0);
+INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
+values(6,23,0,0);
+
+INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
+values (25,27,'2014-02-25','Trois-Riviere',0,1,'20:00');
+
+INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
+values (29,31,'2014-03-03','Montreal',3,1,'21:00');
+
+INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
+values (33,35,'2014-03-07','Shawinigan',2,1,'21:00');
+
+select * from match;
