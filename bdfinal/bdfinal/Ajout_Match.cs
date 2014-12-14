@@ -37,6 +37,39 @@ namespace bdfinal
             }
             oraread.Close();
         }
+
+        private void btn_Accept_Click(object sender, EventArgs e)
+        {
+            string commande = "INSERT INTO MATCH (EQUIPERECEVEUSE , EQUIPEVISITEUSE , DATEHEURE , LIEU , SCOREFINALEV,SCOREFINALER,HEURE)" +
+                            "  VALUES ((select numequipe from equipe where nomequipe =:ER),(select numequipe from equipe where nomequipe =:EV),:DT,:LIEU ,:SFR ,:SFV , :H) ";
+            OracleCommand com = new OracleCommand (commande , oracon);
+            OracleParameter er = new OracleParameter(":ER",OracleDbType.Varchar2);
+            OracleParameter  ev   = new OracleParameter(":EV",OracleDbType.Varchar2);               
+            OracleParameter dt  = new OracleParameter(":DT",OracleDbType.Date);
+            OracleParameter  lieu  = new OracleParameter(":LIEU",OracleDbType.Varchar2,30);
+            OracleParameter sfr = new OracleParameter(":SFR", OracleDbType.Int32);
+            OracleParameter    sfv = new OracleParameter (":ER",OracleDbType.Int32);
+            OracleParameter h = new OracleParameter(":H", OracleDbType.Varchar2, 5);
+
+            er.Value = Cb_equipeR.SelectedItem.ToString();
+            ev.Value = Cb_EquipeV.SelectedItem.ToString();
+            dt.Value = Dtp_date.Value;
+            lieu.Value = Tb_ville.Text;
+            sfr.Value = Tb_ScoreR.Text;
+            sfv.Value = Tb_ScoreV.Text;
+            h.Value = Tb_Heure.Text;
+
+            com.Parameters.Add(er);
+            com.Parameters.Add(ev);
+            com.Parameters.Add(dt);
+            com.Parameters.Add(lieu);
+            com.Parameters.Add(sfr);
+            com.Parameters.Add(sfv);
+            com.Parameters.Add(h);
+          int i =  com.ExecuteNonQuery();
+          MessageBox.Show(i.ToString() + " Ligne inserer");
+             
+        }
         
         }
        
