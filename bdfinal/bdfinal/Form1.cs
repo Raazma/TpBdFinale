@@ -34,7 +34,7 @@ namespace bdfinal
             {
                 oraconn.ConnectionString = chainedeconnexion;
                 oraconn.Open();
-                //MessageBox.Show(oraconn.State.ToString());
+               // MessageBox.Show(oraconn.State.ToString());
             }
             catch (Exception ex)
             {
