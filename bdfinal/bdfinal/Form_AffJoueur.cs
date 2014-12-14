@@ -53,7 +53,7 @@ namespace bdfinal
         private void fillcontrol()
         {
             ClearBinding();
-            string commande = "select * from  Fichepersonnelle where nomequipe = '" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
+            string commande = "select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe ='" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
                 OracleDataAdapter orDataAdaptr = new OracleDataAdapter(commande, oracon);
 
                 orDataAdaptr.Fill(Info, "resFiches");
@@ -64,7 +64,10 @@ namespace bdfinal
                 Lb_Prenom.DataBindings.Add("TEXT", Info, "resFiches.prenom");
                 Lb_Equipe.DataBindings.Add("TEXT", Info, "resFiches.nomequipe");
                 Lb_NbButs.DataBindings.Add("TEXT", Info, "resFiches.nombrebuts");
-                Lb_Passes.DataBindings.Add("TEXT", Info, "resFiches.nombrepasses");       
+                Lb_Passes.DataBindings.Add("TEXT", Info, "resFiches.nombrepasses");
+                Pb_Equipe.DataBindings.Add("image",Info,"resFiches.logo",true);
+                this.Pb_Equipe.SizeMode = PictureBoxSizeMode.StretchImage;
+               
             
         }
         private void UpdateControl()
@@ -89,7 +92,9 @@ namespace bdfinal
             Lb_Equipe.DataBindings.Clear();
             Lb_NbButs.DataBindings.Clear();
             Lb_Passes.DataBindings.Clear();
+            Pb_Equipe.DataBindings.Clear();
         }
+            
         private void Btn_Suivant_Click(object sender, EventArgs e)
         {
             this.BindingContext[Info, "resFiches"].Position += 1;
