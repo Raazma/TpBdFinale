@@ -138,7 +138,11 @@ namespace bdfinal
                 int i = com.ExecuteNonQuery();
                 MessageBox.Show(i.ToString() + " Ligne effacer");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
 
+            }
            
            
         }
