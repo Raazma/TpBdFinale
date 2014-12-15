@@ -94,6 +94,9 @@ namespace bdfinal
 
                 int i = oraclecomm.ExecuteNonQuery();
                 MessageBox.Show(i.ToString() + " Ligne Inserer");
+
+                tb_Nbut.Clear();
+                Tb_nbpasse.Clear();
             }
             catch (Exception ex)
             {

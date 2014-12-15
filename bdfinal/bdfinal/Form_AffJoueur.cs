@@ -61,7 +61,7 @@ namespace bdfinal
                     LBX_ChoixEquipe.Items.Add(ligne);
                 }
                 oraread.Close();
-                LBX_ChoixEquipe.SelectedIndex = 0;
+                //LBX_ChoixEquipe.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -73,7 +73,8 @@ namespace bdfinal
         private void fillcontrol()
         {
                 ClearBinding();
-                string commande = "select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe ='" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
+                //string commande = "select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe ='" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
+                string commande = "select joueurs.numjoueur,joueurs.nom,joueurs.prenom, equipe.nomequipe, equipe.logo, fichepersonnelle.nombrepasses, Fichepersonnelle.nombrebuts  from joueurs inner join equipe on joueurs.numequipe = equipe.numequipe left join fichepersonnelle on fichepersonnelle.numjoueur = joueurs.numjoueur where equipe.nomequipe='" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
                 OracleDataAdapter orDataAdaptr = new OracleDataAdapter(commande, oracon);
 
                 orDataAdaptr.Fill(Info, "resFiches");
@@ -120,11 +121,10 @@ namespace bdfinal
             
         private void Btn_Suivant_Click(object sender, EventArgs e)
         {
-            if (this.BindingContext[Info, "resFiches"].Position + 1 < 5)
-            {
+           
                 this.BindingContext[Info, "resFiches"].Position += 1;
                 fillpicturebox();
-            }
+            
         }
         private void Btn_Precendent_Click(object sender, EventArgs e)
         {       
@@ -145,6 +145,7 @@ namespace bdfinal
         {
             try
             {
+              
                     Info2.Clear();
                     Tb_Lien.DataBindings.Clear();
                     string commandephoto = "select photo from joueurs where numjoueur = " + Lb_Num.Text;
@@ -154,12 +155,12 @@ namespace bdfinal
 
                     Pb_Joueur.ImageLocation = Tb_Lien.Text;
                     this.Pb_Joueur.SizeMode = PictureBoxSizeMode.StretchImage;
-                
+                   
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
-
+                Pb_Joueur.ImageLocation = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPSqBSzzwKGb16b93VeVwo5ipBbFToFwEsknOP6oFs2MpiXbNWEDbgdlTI";
+                this.Pb_Joueur.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             
         }

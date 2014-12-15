@@ -52,14 +52,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Pb_Logo = new System.Windows.Forms.PictureBox();
+            this.dgv_del = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_del)).BeginInit();
             this.SuspendLayout();
             // 
             // Tb_nom
             // 
             this.Tb_nom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_nom.Location = new System.Drawing.Point(120, 148);
+            this.Tb_nom.Location = new System.Drawing.Point(69, 97);
             this.Tb_nom.Name = "Tb_nom";
             this.Tb_nom.Size = new System.Drawing.Size(119, 20);
             this.Tb_nom.TabIndex = 1;
@@ -67,7 +69,7 @@
             // Tb_Prenom
             // 
             this.Tb_Prenom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_Prenom.Location = new System.Drawing.Point(120, 209);
+            this.Tb_Prenom.Location = new System.Drawing.Point(69, 141);
             this.Tb_Prenom.Name = "Tb_Prenom";
             this.Tb_Prenom.Size = new System.Drawing.Size(119, 20);
             this.Tb_Prenom.TabIndex = 2;
@@ -75,7 +77,7 @@
             // Tb_NumChandail
             // 
             this.Tb_NumChandail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_NumChandail.Location = new System.Drawing.Point(120, 270);
+            this.Tb_NumChandail.Location = new System.Drawing.Point(69, 185);
             this.Tb_NumChandail.Name = "Tb_NumChandail";
             this.Tb_NumChandail.Size = new System.Drawing.Size(119, 20);
             this.Tb_NumChandail.TabIndex = 3;
@@ -83,7 +85,7 @@
             // Tb_Position
             // 
             this.Tb_Position.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_Position.Location = new System.Drawing.Point(120, 331);
+            this.Tb_Position.Location = new System.Drawing.Point(69, 381);
             this.Tb_Position.Name = "Tb_Position";
             this.Tb_Position.Size = new System.Drawing.Size(119, 20);
             this.Tb_Position.TabIndex = 4;
@@ -92,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(-2, 35);
+            this.label1.Location = new System.Drawing.Point(-53, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 13);
             this.label1.TabIndex = 6;
@@ -103,7 +105,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(-2, 145);
+            this.label2.Location = new System.Drawing.Point(-53, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 26);
             this.label2.TabIndex = 7;
@@ -114,7 +116,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(-2, 206);
+            this.label3.Location = new System.Drawing.Point(-53, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 26);
             this.label3.TabIndex = 8;
@@ -125,9 +127,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(-2, 267);
+            this.label4.Location = new System.Drawing.Point(-53, 182);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 26);
+            this.label4.Size = new System.Drawing.Size(116, 178);
             this.label4.TabIndex = 9;
             this.label4.Text = "Num Chandail :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -136,7 +138,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(-2, 328);
+            this.label5.Location = new System.Drawing.Point(-53, 378);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 29);
             this.label5.TabIndex = 10;
@@ -147,7 +149,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(-2, 83);
+            this.label6.Location = new System.Drawing.Point(-53, 49);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(116, 27);
             this.label6.TabIndex = 11;
@@ -158,7 +160,7 @@
             // 
             this.Lb_Num.AutoSize = true;
             this.Lb_Num.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Lb_Num.Location = new System.Drawing.Point(120, 35);
+            this.Lb_Num.Location = new System.Drawing.Point(69, 18);
             this.Lb_Num.Name = "Lb_Num";
             this.Lb_Num.Size = new System.Drawing.Size(119, 13);
             this.Lb_Num.TabIndex = 12;
@@ -170,7 +172,7 @@
             this.Cb_Equipe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Cb_Equipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Equipe.FormattingEnabled = true;
-            this.Cb_Equipe.Location = new System.Drawing.Point(120, 86);
+            this.Cb_Equipe.Location = new System.Drawing.Point(69, 52);
             this.Cb_Equipe.Name = "Cb_Equipe";
             this.Cb_Equipe.Size = new System.Drawing.Size(119, 21);
             this.Cb_Equipe.TabIndex = 15;
@@ -178,7 +180,7 @@
             // Btn_Precedent
             // 
             this.Btn_Precedent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Btn_Precedent.Location = new System.Drawing.Point(-2, 459);
+            this.Btn_Precedent.Location = new System.Drawing.Point(-53, 475);
             this.Btn_Precedent.Name = "Btn_Precedent";
             this.Btn_Precedent.Size = new System.Drawing.Size(116, 23);
             this.Btn_Precedent.TabIndex = 16;
@@ -189,7 +191,7 @@
             // Btn_Suivant
             // 
             this.Btn_Suivant.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Btn_Suivant.Location = new System.Drawing.Point(120, 459);
+            this.Btn_Suivant.Location = new System.Drawing.Point(69, 475);
             this.Btn_Suivant.Name = "Btn_Suivant";
             this.Btn_Suivant.Size = new System.Drawing.Size(119, 23);
             this.Btn_Suivant.TabIndex = 17;
@@ -199,7 +201,7 @@
             // 
             // Btn_Effacer
             // 
-            this.Btn_Effacer.Location = new System.Drawing.Point(335, 331);
+            this.Btn_Effacer.Location = new System.Drawing.Point(384, 381);
             this.Btn_Effacer.Name = "Btn_Effacer";
             this.Btn_Effacer.Size = new System.Drawing.Size(75, 23);
             this.Btn_Effacer.TabIndex = 18;
@@ -209,7 +211,7 @@
             // 
             // Btn_Modifier
             // 
-            this.Btn_Modifier.Location = new System.Drawing.Point(335, 395);
+            this.Btn_Modifier.Location = new System.Drawing.Point(384, 428);
             this.Btn_Modifier.Name = "Btn_Modifier";
             this.Btn_Modifier.Size = new System.Drawing.Size(75, 23);
             this.Btn_Modifier.TabIndex = 19;
@@ -219,17 +221,18 @@
             // 
             // Btn_Cancel
             // 
-            this.Btn_Cancel.Location = new System.Drawing.Point(335, 459);
+            this.Btn_Cancel.Location = new System.Drawing.Point(384, 475);
             this.Btn_Cancel.Name = "Btn_Cancel";
             this.Btn_Cancel.Size = new System.Drawing.Size(75, 23);
             this.Btn_Cancel.TabIndex = 20;
             this.Btn_Cancel.Text = "Cancel";
             this.Btn_Cancel.UseVisualStyleBackColor = true;
+            this.Btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
             // 
             // Dtp_Naissance
             // 
             this.Dtp_Naissance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Dtp_Naissance.Location = new System.Drawing.Point(120, 395);
+            this.Dtp_Naissance.Location = new System.Drawing.Point(69, 428);
             this.Dtp_Naissance.Name = "Dtp_Naissance";
             this.Dtp_Naissance.Size = new System.Drawing.Size(119, 20);
             this.Dtp_Naissance.TabIndex = 21;
@@ -238,7 +241,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(-2, 392);
+            this.label7.Location = new System.Drawing.Point(-53, 425);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(116, 29);
             this.label7.TabIndex = 22;
@@ -248,7 +251,7 @@
             // tb_Lien
             // 
             this.tb_Lien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tb_Lien.Location = new System.Drawing.Point(335, 209);
+            this.tb_Lien.Location = new System.Drawing.Point(384, 141);
             this.tb_Lien.Name = "tb_Lien";
             this.tb_Lien.Size = new System.Drawing.Size(165, 20);
             this.tb_Lien.TabIndex = 23;
@@ -258,9 +261,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(240, 206);
+            this.label8.Location = new System.Drawing.Point(138, 138);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 26);
+            this.label8.Size = new System.Drawing.Size(240, 26);
             this.label8.TabIndex = 24;
             this.label8.Text = "Lien de la photo :";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -297,9 +300,10 @@
             this.tableLayoutPanel1.Controls.Add(this.Btn_Effacer, 5, 11);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Modifier, 5, 13);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Cancel, 5, 15);
+            this.tableLayoutPanel1.Controls.Add(this.dgv_del, 4, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 17;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
@@ -326,12 +330,20 @@
             // 
             this.Pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Pb_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pb_Logo.Location = new System.Drawing.Point(335, 38);
+            this.Pb_Logo.Location = new System.Drawing.Point(384, 21);
             this.Pb_Logo.Name = "Pb_Logo";
             this.tableLayoutPanel1.SetRowSpan(this.Pb_Logo, 6);
-            this.Pb_Logo.Size = new System.Drawing.Size(165, 165);
+            this.Pb_Logo.Size = new System.Drawing.Size(165, 114);
             this.Pb_Logo.TabIndex = 13;
             this.Pb_Logo.TabStop = false;
+            // 
+            // dgv_del
+            // 
+            this.dgv_del.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_del.Location = new System.Drawing.Point(138, 185);
+            this.dgv_del.Name = "dgv_del";
+            this.dgv_del.Size = new System.Drawing.Size(240, 172);
+            this.dgv_del.TabIndex = 25;
             // 
             // Form_Modif_Joueur
             // 
@@ -346,6 +358,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_del)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -375,5 +388,6 @@
         private System.Windows.Forms.TextBox tb_Lien;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.DataGridView dgv_del;
     }
 }

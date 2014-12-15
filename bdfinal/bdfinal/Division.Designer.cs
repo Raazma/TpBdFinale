@@ -52,7 +52,7 @@
             this.Tb_Nom.Location = new System.Drawing.Point(144, 27);
             this.Tb_Nom.Name = "Tb_Nom";
             this.Tb_Nom.Size = new System.Drawing.Size(105, 20);
-            this.Tb_Nom.TabIndex = 0;
+            this.Tb_Nom.TabIndex = 1;
             // 
             // Dtp_Date
             // 
@@ -61,7 +61,7 @@
             this.Dtp_Date.Location = new System.Drawing.Point(144, 77);
             this.Dtp_Date.Name = "Dtp_Date";
             this.Dtp_Date.Size = new System.Drawing.Size(105, 20);
-            this.Dtp_Date.TabIndex = 1;
+            this.Dtp_Date.TabIndex = 3;
             // 
             // label1
             // 
@@ -71,7 +71,7 @@
             this.label1.Location = new System.Drawing.Point(33, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 26);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Nom de la Division :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -83,7 +83,7 @@
             this.label2.Location = new System.Drawing.Point(33, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 26);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Date introduction :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -92,16 +92,17 @@
             this.Btn_Cancel.Location = new System.Drawing.Point(255, 180);
             this.Btn_Cancel.Name = "Btn_Cancel";
             this.Btn_Cancel.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Cancel.TabIndex = 4;
+            this.Btn_Cancel.TabIndex = 9;
             this.Btn_Cancel.Text = "Cancel";
             this.Btn_Cancel.UseVisualStyleBackColor = true;
+            this.Btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
             // 
             // Btn_Enregister
             // 
             this.Btn_Enregister.Location = new System.Drawing.Point(33, 180);
             this.Btn_Enregister.Name = "Btn_Enregister";
             this.Btn_Enregister.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Enregister.TabIndex = 5;
+            this.Btn_Enregister.TabIndex = 7;
             this.Btn_Enregister.Text = "Enregistrer";
             this.Btn_Enregister.UseVisualStyleBackColor = true;
             this.Btn_Enregister.Click += new System.EventHandler(this.Btn_Enregister_Click);
@@ -111,7 +112,7 @@
             this.Btn_Modifier.Location = new System.Drawing.Point(144, 180);
             this.Btn_Modifier.Name = "Btn_Modifier";
             this.Btn_Modifier.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Modifier.TabIndex = 6;
+            this.Btn_Modifier.TabIndex = 8;
             this.Btn_Modifier.Text = " Modifier";
             this.Btn_Modifier.UseVisualStyleBackColor = true;
             this.Btn_Modifier.Click += new System.EventHandler(this.Btn_Modifier_Click);
@@ -121,7 +122,7 @@
             this.btn_Nouveau.Location = new System.Drawing.Point(33, 127);
             this.btn_Nouveau.Name = "btn_Nouveau";
             this.btn_Nouveau.Size = new System.Drawing.Size(75, 23);
-            this.btn_Nouveau.TabIndex = 7;
+            this.btn_Nouveau.TabIndex = 4;
             this.btn_Nouveau.Text = "Nouveau";
             this.btn_Nouveau.UseVisualStyleBackColor = true;
             this.btn_Nouveau.Click += new System.EventHandler(this.btn_Nouveau_Click);
@@ -131,7 +132,7 @@
             this.Btn_Precedent.Location = new System.Drawing.Point(144, 127);
             this.Btn_Precedent.Name = "Btn_Precedent";
             this.Btn_Precedent.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Precedent.TabIndex = 8;
+            this.Btn_Precedent.TabIndex = 5;
             this.Btn_Precedent.Text = "Precedent";
             this.Btn_Precedent.UseVisualStyleBackColor = true;
             this.Btn_Precedent.Click += new System.EventHandler(this.Btn_Precedent_Click);
@@ -141,7 +142,7 @@
             this.Btn_Suivant.Location = new System.Drawing.Point(255, 127);
             this.Btn_Suivant.Name = "Btn_Suivant";
             this.Btn_Suivant.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Suivant.TabIndex = 9;
+            this.Btn_Suivant.TabIndex = 6;
             this.Btn_Suivant.Text = "Suivant";
             this.Btn_Suivant.UseVisualStyleBackColor = true;
             this.Btn_Suivant.Click += new System.EventHandler(this.Btn_Suivant_Click);
@@ -179,7 +180,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 6, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -194,13 +195,13 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(366, 284);
-            this.tableLayoutPanel1.TabIndex = 11;
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // BT_Supprimer
             // 
             this.BT_Supprimer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BT_Supprimer.Location = new System.Drawing.Point(143, 232);
-            this.BT_Supprimer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BT_Supprimer.Margin = new System.Windows.Forms.Padding(2);
             this.BT_Supprimer.Name = "BT_Supprimer";
             this.BT_Supprimer.Size = new System.Drawing.Size(77, 23);
             this.BT_Supprimer.TabIndex = 10;

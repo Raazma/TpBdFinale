@@ -476,7 +476,8 @@ values(9,54,0,0);
 commit;
 select * from match;
 
-
+select * from equipe;
+SELECT NUMEQUIPE FROM EQUIPE WHERE NOMEQUIPE = 'TEST';
 
 select * from fichepersonelle;
 select * from division;

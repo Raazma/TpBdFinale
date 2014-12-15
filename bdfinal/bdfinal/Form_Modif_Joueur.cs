@@ -33,6 +33,7 @@ namespace bdfinal
             {
                 string commande = "select * from joueurs";
                 OracleDataAdapter adp = new OracleDataAdapter(commande, orac);
+
                 adp.Fill(source, "ResJoueurs");
                 Lb_Num.DataBindings.Add("text", source, "ResJoueurs.numjoueur");
                 Tb_nom.DataBindings.Add("text", source, "ResJoueurs.nom");
@@ -43,6 +44,7 @@ namespace bdfinal
                 tb_Lien.DataBindings.Add("text", source, "ResJoueurs.photo");
                 Pb_Logo.ImageLocation = tb_Lien.Text;
                 this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+                dgv_del.DataSource = source.Tables[0];
             }
             catch (Exception ex)
             {
@@ -78,7 +80,8 @@ namespace bdfinal
         {
             try
             {
-                this.BindingContext[source, "ResJoueurs"].Position += 1;
+                MessageBox.Show(this.BindingContext[source, "ResJoueurs"].Count.ToString() + ", " + this.BindingContext[source, "ResJoueurs"].Position.ToString());
+                this.BindingContext[source, "ResJoueurs"].Position += this.BindingContext[source, "ResJoueurs"].Count - 1;//1;
                 Pb_Logo.ImageLocation = tb_Lien.Text;
                 this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
             }
@@ -154,6 +157,11 @@ namespace bdfinal
         {
             Pb_Logo.ImageLocation = tb_Lien.Text;
             this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void Btn_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         } 
     }
 }

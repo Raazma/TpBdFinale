@@ -45,6 +45,8 @@ namespace bdfinal
                     Cb_Equipe.Items.Add(ligne);
                 }
                 oraread.Close();
+                Cb_Equipe.SelectedIndex = 0;
+                Cb_Position.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -57,8 +59,8 @@ namespace bdfinal
         {
             try
             {
-                string commande = "Insert into Joueurs(Nom,Prenom,Datenaissance,NumeroMaillot,photo,Position,NumEquipe)" +
-                " values(:nom,:prenom,:datenaissance,:numeroMaillot,:thephoto,:position,(SELECT NUMEQUIPE FROM EQUIPE WHERE NOMEQUIPE =:nomE))";
+                string commande = "Insert into Joueurs(Nom,Prenom,Datenaissance,NumeroMaillot ,Position,NumEquipe, Photo)" +
+                " values(:nom,:prenom,:datenaissance,:numeroMaillot, :position,(SELECT NUMEQUIPE FROM EQUIPE WHERE NOMEQUIPE = :nomE), :pic)";
                 OracleCommand oranIns = new OracleCommand(commande, oracon);
 
 
@@ -67,8 +69,8 @@ namespace bdfinal
                 OracleParameter Dateparam = new OracleParameter(":dateNaissance", OracleDbType.Date);
                 OracleParameter Numparam = new OracleParameter(":numeromaillot", OracleDbType.Int32);
                 OracleParameter Posparam = new OracleParameter(":position", OracleDbType.Varchar2, 10);
-                OracleParameter NomEparam = new OracleParameter(":nomE", OracleDbType.Varchar2, 20);
-                OracleParameter lienPhoto = new OracleParameter("thephoto", OracleDbType.Varchar2, 200);
+                OracleParameter NomEparam = new OracleParameter(":nomE", OracleDbType.Varchar2,20);
+                OracleParameter lienPhoto = new OracleParameter(":pic", OracleDbType.Varchar2, 400);
 
                 Nomparam.Value = Tb_Nom.Text;
                 Prenomparam.Value = Tb_Prenom.Text;
