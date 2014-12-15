@@ -101,6 +101,7 @@
             this.DGV_Match.Location = new System.Drawing.Point(59, 89);
             this.DGV_Match.Margin = new System.Windows.Forms.Padding(4);
             this.DGV_Match.Name = "DGV_Match";
+            this.DGV_Match.RowHeadersVisible = false;
             this.DGV_Match.Size = new System.Drawing.Size(389, 200);
             this.DGV_Match.TabIndex = 4;
             // 
@@ -112,6 +113,7 @@
             this.DGV_Joueurs.Location = new System.Drawing.Point(59, 318);
             this.DGV_Joueurs.Margin = new System.Windows.Forms.Padding(4);
             this.DGV_Joueurs.Name = "DGV_Joueurs";
+            this.DGV_Joueurs.RowHeadersVisible = false;
             this.DGV_Joueurs.Size = new System.Drawing.Size(389, 200);
             this.DGV_Joueurs.TabIndex = 5;
             // 
