@@ -112,5 +112,11 @@ namespace bdfinal
             Division form = new Division(oraconn);
             form.Show();
         }
+
+        private void ajoutFicheDeJoueurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Ajout_Fiche form = new Form_Ajout_Fiche(oraconn);
+            form.Show();
+        }
     }
 }
