@@ -43,6 +43,7 @@ namespace bdfinal
                     Cb_Division.Items.Add(ligne);
                 }
                 oraread.Close();
+                Cb_Division.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -86,6 +87,9 @@ namespace bdfinal
                     int laligne = orcom.ExecuteNonQuery();
 
                     MessageBox.Show(laligne.ToString());
+
+                    Tb_Nom.Clear();
+                    Tb_Nom.Clear();
                 }
                 catch (Exception ex)
                 {
@@ -109,11 +113,17 @@ namespace bdfinal
             if(form.ShowDialog() == DialogResult.OK)
             {
                  filename = form.FileName;
-                    
+                 pictureBox1.ImageLocation = filename;
+                 pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
            
             }
 
 
+        }
+
+        private void BT_Annule_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         

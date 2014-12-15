@@ -36,6 +36,7 @@ namespace bdfinal
                     Cb_Numatch.Items.Add(ligne.ToString());
                 }
                 oraread.Close();
+                Cb_Numatch.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -61,6 +62,7 @@ namespace bdfinal
                     Cb_Numjoueur.Items.Add(ligne.ToString());
                 }
                 oraread.Close();
+                Cb_Numjoueur.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -98,6 +100,11 @@ namespace bdfinal
                 MessageBox.Show(ex.Message.ToString());
 
             }
+        }
+
+        private void Btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -146,6 +146,9 @@ namespace bdfinal
             if(form.ShowDialog() == DialogResult.OK)
             {
                 filename = form.FileName;
+
+                pb_Logo.ImageLocation = filename;
+                pb_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
                          
             }
         }

@@ -61,6 +61,7 @@ namespace bdfinal
                     LBX_ChoixEquipe.Items.Add(ligne);
                 }
                 oraread.Close();
+                LBX_ChoixEquipe.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -71,8 +72,6 @@ namespace bdfinal
      
         private void fillcontrol()
         {
-            try
-            {
                 ClearBinding();
                 string commande = "select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe ='" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
                 OracleDataAdapter orDataAdaptr = new OracleDataAdapter(commande, oracon);
@@ -83,24 +82,16 @@ namespace bdfinal
                 OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
                 adapp.Fill(Info, "ResFiches");
                 BindingSource TheSOUSSE = new BindingSource(Info, "resFiches");
-
-                Lb_Num.DataBindings.Add("TEXT", Info, "resFiches.numJoueur");
-                Lb_Nom.DataBindings.Add("TEXT", Info, "resFiches.nom");
-                Lb_Prenom.DataBindings.Add("TEXT", Info, "resFiches.prenom");
-                Lb_Equipe.DataBindings.Add("TEXT", Info, "resFiches.nomequipe");
-                Lb_NbButs.DataBindings.Add("TEXT", Info, "resFiches.nombrebuts");
-                Lb_Passes.DataBindings.Add("TEXT", Info, "resFiches.nombrepasses");
-                Pb_Equipe.DataBindings.Add("image", Info, "resFiches.logo", true);
-                this.Pb_Equipe.SizeMode = PictureBoxSizeMode.StretchImage;
-                fillpicturebox();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
-
-            }
-             
-                          
+            
+                    Lb_Num.DataBindings.Add("TEXT", Info, "resFiches.numJoueur");
+                    Lb_Nom.DataBindings.Add("TEXT", Info, "resFiches.nom");
+                    Lb_Prenom.DataBindings.Add("TEXT", Info, "resFiches.prenom");
+                    Lb_Equipe.DataBindings.Add("TEXT", Info, "resFiches.nomequipe");
+                    Lb_NbButs.DataBindings.Add("TEXT", Info, "resFiches.nombrebuts");
+                    Lb_Passes.DataBindings.Add("TEXT", Info, "resFiches.nombrepasses");
+                    Pb_Equipe.DataBindings.Add("image", Info, "resFiches.logo", true);
+                    this.Pb_Equipe.SizeMode = PictureBoxSizeMode.StretchImage;
+                    fillpicturebox();                                     
         }
         private void UpdateControl()
         {
@@ -136,17 +127,15 @@ namespace bdfinal
             }
         }
         private void Btn_Precendent_Click(object sender, EventArgs e)
-        {
-           
+        {       
             this.BindingContext[Info, "resFiches"].Position -= 1;
             fillpicturebox();
         }
 
         private void Cb_Equipe_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ClearBinding();
-          
-             UpdateControl();
+            ClearBinding();         
+            UpdateControl();
             fillcontrol();  
             fillpicturebox();
             RemplirGridView();
@@ -156,25 +145,23 @@ namespace bdfinal
         {
             try
             {
-                Info2.Clear();
-                Tb_Lien.DataBindings.Clear();
-                string commandephoto = "select photo from joueurs where numjoueur = " + Lb_Num.Text;
-                OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
-                adapp.Fill(Info2, "ResPhoto");
-                Tb_Lien.DataBindings.Add("text", Info2, "Resphoto.photo");
+                    Info2.Clear();
+                    Tb_Lien.DataBindings.Clear();
+                    string commandephoto = "select photo from joueurs where numjoueur = " + Lb_Num.Text;
+                    OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
+                    adapp.Fill(Info2, "ResPhoto");
+                    Tb_Lien.DataBindings.Add("text", Info2, "Resphoto.photo");
 
-                Pb_Joueur.ImageLocation = Tb_Lien.Text;
-                this.Pb_Joueur.SizeMode = PictureBoxSizeMode.StretchImage;
+                    Pb_Joueur.ImageLocation = Tb_Lien.Text;
+                    this.Pb_Joueur.SizeMode = PictureBoxSizeMode.StretchImage;
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
 
             }
-        
-        
-        
-        
+            
         }
         private void Form_AffJoueur_Load(object sender, EventArgs e)
         {

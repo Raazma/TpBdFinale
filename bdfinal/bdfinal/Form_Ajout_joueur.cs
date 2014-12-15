@@ -86,9 +86,16 @@ namespace bdfinal
                 oranIns.Parameters.Add(Posparam);
                 oranIns.Parameters.Add(NomEparam);
                 oranIns.Parameters.Add(lienPhoto);
-              
+             
                 int laligne = oranIns.ExecuteNonQuery();
                 MessageBox.Show(laligne.ToString());
+
+                tb_Lien.Clear();
+                Tb_Prenom.Clear();
+                Tb_Num.Clear();
+                Tb_Nom.Clear();
+                 
+
             }
             catch (Exception ex)
             {
