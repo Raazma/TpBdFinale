@@ -40,14 +40,17 @@
             this.ajoutFicheDeJoueurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voirPartieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.classementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.FB_EditPlayer = new FlashButton.FlashButton();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.FB_EditPlayer = new FlashButton.FlashButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.flashButton1 = new FlashButton.FlashButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.flashButton2 = new FlashButton.FlashButton();
+            this.flashButton3 = new FlashButton.FlashButton();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -62,7 +65,7 @@
             this.toolStripMenuItem4});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(582, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(582, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -72,20 +75,20 @@
             this.ajouterToolStripMenuItem,
             this.modifierToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(59, 20);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(70, 24);
             this.toolStripMenuItem2.Text = "Joueurs";
             // 
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.ajouterToolStripMenuItem.Text = "Ajouter...";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterJoueurToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.modifierToolStripMenuItem.Text = "Modifier...";
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierJoueurToolStripMenuItem_Click);
             // 
@@ -95,27 +98,27 @@
             this.ajouterToolStripMenuItem1,
             this.modifierToolStripMenuItem1});
             this.équipeToolStripMenuItem.Name = "équipeToolStripMenuItem";
-            this.équipeToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.équipeToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.équipeToolStripMenuItem.Text = "Équipes";
             // 
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(175, 24);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(144, 24);
             this.ajouterToolStripMenuItem1.Text = "Ajouter...";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem1
             // 
             this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
-            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(175, 24);
+            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(144, 24);
             this.modifierToolStripMenuItem1.Text = "Modifier...";
             this.modifierToolStripMenuItem1.Click += new System.EventHandler(this.modifEquipeToolStripMenuItem_Click);
             // 
             // divisionToolStripMenuItem
             // 
             this.divisionToolStripMenuItem.Name = "divisionToolStripMenuItem";
-            this.divisionToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.divisionToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.divisionToolStripMenuItem.Text = "Divisions...";
             this.divisionToolStripMenuItem.Click += new System.EventHandler(this.ajoutDivisionToolStripMenuItem_Click);
             // 
@@ -125,13 +128,13 @@
             this.ajoutFicheDeJoueurToolStripMenuItem,
             this.voirPartieToolStripMenuItem});
             this.partiesToolStripMenuItem.Name = "partiesToolStripMenuItem";
-            this.partiesToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.partiesToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.partiesToolStripMenuItem.Text = "Parties";
             // 
             // ajoutFicheDeJoueurToolStripMenuItem
             // 
             this.ajoutFicheDeJoueurToolStripMenuItem.Name = "ajoutFicheDeJoueurToolStripMenuItem";
-            this.ajoutFicheDeJoueurToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.ajoutFicheDeJoueurToolStripMenuItem.Size = new System.Drawing.Size(229, 24);
             this.ajoutFicheDeJoueurToolStripMenuItem.Text = "Ajout Fiche de Joueur...";
             this.ajoutFicheDeJoueurToolStripMenuItem.Click += new System.EventHandler(this.ajoutFicheDeJoueurToolStripMenuItem_Click);
             // 
@@ -145,9 +148,27 @@
             // classementsToolStripMenuItem
             // 
             this.classementsToolStripMenuItem.Name = "classementsToolStripMenuItem";
-            this.classementsToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.classementsToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.classementsToolStripMenuItem.Text = "Classements...";
             this.classementsToolStripMenuItem.Click += new System.EventHandler(this.classementToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Image = global::bdfinal.Properties.Resources.Option_Icon;
+            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(28, 24);
+            this.toolStripMenuItem3.Text = " ";
+            this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Image = global::bdfinal.Properties.Resources.Info_Icon;
+            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(25, 24);
+            this.toolStripMenuItem4.Text = " ";
+            this.toolStripMenuItem4.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
             // FB_EditPlayer
             // 
@@ -163,24 +184,6 @@
             this.FB_EditPlayer.Size = new System.Drawing.Size(75, 70);
             this.FB_EditPlayer.TabIndex = 1;
             // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Image = global::bdfinal.Properties.Resources.Option_Icon;
-            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(28, 20);
-            this.toolStripMenuItem3.Text = " ";
-            this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Image = global::bdfinal.Properties.Resources.Info_Icon;
-            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(22, 20);
-            this.toolStripMenuItem4.Text = " ";
-            this.toolStripMenuItem4.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.flashButton1);
@@ -194,7 +197,7 @@
             // 
             // flashButton1
             // 
-            this.flashButton1.BackgroundImage = global::bdfinal.Properties.Resources.Edit_Player_Profile_icon;
+            this.flashButton1.BackgroundImage = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_icon;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flashButton1.ImageClick = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
             this.flashButton1.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
@@ -208,12 +211,42 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.flashButton2);
+            this.groupBox2.Controls.Add(this.flashButton3);
             this.groupBox2.Location = new System.Drawing.Point(184, 32);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 100);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Équipes";
+            // 
+            // flashButton2
+            // 
+            this.flashButton2.BackgroundImage = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_icon;
+            this.flashButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flashButton2.ImageClick = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
+            this.flashButton2.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
+            this.flashButton2.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_icon;
+            this.flashButton2.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_Hover_icon;
+            this.flashButton2.Location = new System.Drawing.Point(104, 15);
+            this.flashButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flashButton2.Name = "flashButton2";
+            this.flashButton2.Size = new System.Drawing.Size(75, 70);
+            this.flashButton2.TabIndex = 4;
+            // 
+            // flashButton3
+            // 
+            this.flashButton3.BackgroundImage = global::bdfinal.Properties.Resources.Edit_Player_Profile_icon;
+            this.flashButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flashButton3.ImageClick = global::bdfinal.Properties.Resources.Edit_Player_Profile_clickDisabled_icon;
+            this.flashButton3.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_Profile_clickDisabled_icon;
+            this.flashButton3.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_Profile_icon;
+            this.flashButton3.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_Profile_Hover_icon;
+            this.flashButton3.Location = new System.Drawing.Point(21, 15);
+            this.flashButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flashButton3.Name = "flashButton3";
+            this.flashButton3.Size = new System.Drawing.Size(75, 70);
+            this.flashButton3.TabIndex = 3;
             // 
             // Form1
             // 
@@ -227,6 +260,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,6 +301,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private FlashButton.FlashButton flashButton1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private FlashButton.FlashButton flashButton2;
+        private FlashButton.FlashButton flashButton3;
     }
 }
 
