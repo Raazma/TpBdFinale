@@ -57,7 +57,7 @@
             this.toolStripMenuItem4});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(543, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(582, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -126,8 +126,8 @@
             // ajoutFicheDeJoueurToolStripMenuItem
             // 
             this.ajoutFicheDeJoueurToolStripMenuItem.Name = "ajoutFicheDeJoueurToolStripMenuItem";
-            this.ajoutFicheDeJoueurToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
-            this.ajoutFicheDeJoueurToolStripMenuItem.Text = "Ajout Fiche de Partie...";
+            this.ajoutFicheDeJoueurToolStripMenuItem.Size = new System.Drawing.Size(229, 24);
+            this.ajoutFicheDeJoueurToolStripMenuItem.Text = "Ajout Fiche de Joueur...";
             // 
             // voirPartieToolStripMenuItem
             // 
@@ -148,20 +148,22 @@
             this.toolStripMenuItem3.Image = global::bdfinal.Properties.Resources.Option_Icon;
             this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(41, 24);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(28, 24);
             this.toolStripMenuItem3.Text = " ";
+            this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Image = global::bdfinal.Properties.Resources.Info_Icon;
             this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(33, 24);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(25, 24);
             this.toolStripMenuItem4.Text = " ";
+            this.toolStripMenuItem4.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(543, 255);
+            this.ClientSize = new System.Drawing.Size(582, 316);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
