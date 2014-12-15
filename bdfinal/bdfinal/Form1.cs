@@ -127,7 +127,7 @@ namespace bdfinal
 
         private void afficherJoueursToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_AffJoueur form = new Form_AffJoueur();
+            Form_AffJoueur form = new Form_AffJoueur(oraconn);
             form.Show();
         }
 
