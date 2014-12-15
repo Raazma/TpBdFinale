@@ -124,5 +124,17 @@ namespace bdfinal
             Ajout_Match form = new Ajout_Match(oraconn);
             form.Show();
         }
+
+        private void afficherJoueursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_AffJoueur form = new Form_AffJoueur();
+            form.Show();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Form_A_propos form = new Form_A_propos();
+            form.ShowDialog();
+        }
     }
 }

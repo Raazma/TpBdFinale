@@ -40,6 +40,7 @@
             this.Btn_Suivant = new System.Windows.Forms.Button();
             this.Lb_num = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.BT_Supprimer = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,8 +48,8 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.Tb_Nom, 2);
             this.Tb_Nom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_Nom.Location = new System.Drawing.Point(192, 46);
-            this.Tb_Nom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_Nom.Location = new System.Drawing.Point(192, 33);
+            this.Tb_Nom.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Nom.Name = "Tb_Nom";
             this.Tb_Nom.Size = new System.Drawing.Size(140, 22);
             this.Tb_Nom.TabIndex = 0;
@@ -57,8 +58,8 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.Dtp_Date, 2);
             this.Dtp_Date.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Dtp_Date.Location = new System.Drawing.Point(192, 118);
-            this.Dtp_Date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dtp_Date.Location = new System.Drawing.Point(192, 92);
+            this.Dtp_Date.Margin = new System.Windows.Forms.Padding(4);
             this.Dtp_Date.Name = "Dtp_Date";
             this.Dtp_Date.Size = new System.Drawing.Size(140, 22);
             this.Dtp_Date.TabIndex = 1;
@@ -68,7 +69,7 @@
             this.label1.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 2);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(44, 42);
+            this.label1.Location = new System.Drawing.Point(44, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 30);
@@ -81,7 +82,7 @@
             this.label2.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label2, 2);
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(44, 114);
+            this.label2.Location = new System.Drawing.Point(44, 88);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 30);
@@ -91,8 +92,8 @@
             // 
             // Btn_Cancel
             // 
-            this.Btn_Cancel.Location = new System.Drawing.Point(340, 268);
-            this.Btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Cancel.Location = new System.Drawing.Point(340, 216);
+            this.Btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Cancel.Name = "Btn_Cancel";
             this.Btn_Cancel.Size = new System.Drawing.Size(100, 28);
             this.Btn_Cancel.TabIndex = 4;
@@ -101,8 +102,8 @@
             // 
             // Btn_Enregister
             // 
-            this.Btn_Enregister.Location = new System.Drawing.Point(44, 268);
-            this.Btn_Enregister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Enregister.Location = new System.Drawing.Point(44, 216);
+            this.Btn_Enregister.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Enregister.Name = "Btn_Enregister";
             this.Btn_Enregister.Size = new System.Drawing.Size(100, 28);
             this.Btn_Enregister.TabIndex = 5;
@@ -112,8 +113,8 @@
             // 
             // Btn_Modifier
             // 
-            this.Btn_Modifier.Location = new System.Drawing.Point(192, 268);
-            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Modifier.Location = new System.Drawing.Point(192, 216);
+            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Modifier.Name = "Btn_Modifier";
             this.Btn_Modifier.Size = new System.Drawing.Size(100, 28);
             this.Btn_Modifier.TabIndex = 6;
@@ -123,8 +124,8 @@
             // 
             // btn_Nouveau
             // 
-            this.btn_Nouveau.Location = new System.Drawing.Point(44, 190);
-            this.btn_Nouveau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Nouveau.Location = new System.Drawing.Point(44, 151);
+            this.btn_Nouveau.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Nouveau.Name = "btn_Nouveau";
             this.btn_Nouveau.Size = new System.Drawing.Size(100, 28);
             this.btn_Nouveau.TabIndex = 7;
@@ -134,8 +135,8 @@
             // 
             // Btn_Precedent
             // 
-            this.Btn_Precedent.Location = new System.Drawing.Point(192, 190);
-            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Precedent.Location = new System.Drawing.Point(192, 151);
+            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Precedent.Name = "Btn_Precedent";
             this.Btn_Precedent.Size = new System.Drawing.Size(100, 28);
             this.Btn_Precedent.TabIndex = 8;
@@ -145,8 +146,8 @@
             // 
             // Btn_Suivant
             // 
-            this.Btn_Suivant.Location = new System.Drawing.Point(340, 190);
-            this.Btn_Suivant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Suivant.Location = new System.Drawing.Point(340, 151);
+            this.Btn_Suivant.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Suivant.Name = "Btn_Suivant";
             this.Btn_Suivant.Size = new System.Drawing.Size(100, 28);
             this.Btn_Suivant.TabIndex = 9;
@@ -184,21 +185,34 @@
             this.tableLayoutPanel1.Controls.Add(this.btn_Nouveau, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.Tb_Nom, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.Dtp_Date, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BT_Supprimer, 3, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 9;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowCount = 11;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(486, 342);
             this.tableLayoutPanel1.TabIndex = 11;
+            // 
+            // BT_Supprimer
+            // 
+            this.BT_Supprimer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BT_Supprimer.Location = new System.Drawing.Point(191, 280);
+            this.BT_Supprimer.Name = "BT_Supprimer";
+            this.BT_Supprimer.Size = new System.Drawing.Size(102, 28);
+            this.BT_Supprimer.TabIndex = 10;
+            this.BT_Supprimer.Text = "Supprimer";
+            this.BT_Supprimer.UseVisualStyleBackColor = true;
             // 
             // Division
             // 
@@ -207,10 +221,10 @@
             this.ClientSize = new System.Drawing.Size(486, 342);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.Lb_num);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(504, 387);
             this.Name = "Division";
-            this.Text = "Division";
+            this.Text = "Édition de Division";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -232,5 +246,6 @@
         private System.Windows.Forms.Button Btn_Suivant;
         private System.Windows.Forms.Label Lb_num;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button BT_Supprimer;
     }
 }
