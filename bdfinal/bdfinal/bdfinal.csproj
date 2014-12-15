@@ -114,12 +114,6 @@
     <Compile Include="Form_Modif_Joueur.Designer.cs">
       <DependentUpon>Form_Modif_Joueur.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Url.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Url.Designer.cs">
-      <DependentUpon>Form_Url.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Division.resx">
@@ -154,9 +148,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Modif_Joueur.resx">
       <DependentUpon>Form_Modif_Joueur.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_Url.resx">
-      <DependentUpon>Form_Url.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -315,6 +306,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\patFond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418629017_cog.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418629156_cog-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418629357_question_mark-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418629431_question_mark-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418629431_question_mark-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418629431_question_mark-162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418629592_question_mark-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418629700_cog-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418632013_info-16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
