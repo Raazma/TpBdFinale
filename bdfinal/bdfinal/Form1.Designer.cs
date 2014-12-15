@@ -222,9 +222,9 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(72, 61);
+            this.groupBox1.Location = new System.Drawing.Point(69, 61);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(349, 101);
+            this.groupBox1.Size = new System.Drawing.Size(353, 101);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Joueurs";
@@ -249,7 +249,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(343, 72);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(347, 72);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // flashButton9
@@ -260,12 +260,13 @@
             this.flashButton9.ImageDisable = global::bdfinal.Properties.Resources.View_ClickDisabled;
             this.flashButton9.ImageNeutral = global::bdfinal.Properties.Resources.View;
             this.flashButton9.ImageOver = global::bdfinal.Properties.Resources.View_Hover;
-            this.flashButton9.Location = new System.Drawing.Point(239, 1);
+            this.flashButton9.Location = new System.Drawing.Point(242, 1);
             this.flashButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton9.Name = "flashButton9";
             this.flashButton9.Size = new System.Drawing.Size(75, 70);
             this.flashButton9.TabIndex = 7;
             this.TT_JMod.SetToolTip(this.flashButton9, "Affichage des joueurs");
+            this.flashButton9.Click += new System.EventHandler(this.afficherJoueursToolStripMenuItem_Click);
             // 
             // flashButton1
             // 
@@ -275,7 +276,7 @@
             this.flashButton1.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
             this.flashButton1.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_icon;
             this.flashButton1.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_Hover_icon;
-            this.flashButton1.Location = new System.Drawing.Point(133, 1);
+            this.flashButton1.Location = new System.Drawing.Point(135, 1);
             this.flashButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.Size = new System.Drawing.Size(75, 70);
@@ -291,7 +292,7 @@
             this.FB_EditPlayer.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_Profile_clickDisabled_icon;
             this.FB_EditPlayer.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_Profile_icon;
             this.FB_EditPlayer.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_Profile_Hover_icon;
-            this.FB_EditPlayer.Location = new System.Drawing.Point(27, 1);
+            this.FB_EditPlayer.Location = new System.Drawing.Point(28, 1);
             this.FB_EditPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FB_EditPlayer.Name = "FB_EditPlayer";
             this.FB_EditPlayer.Size = new System.Drawing.Size(75, 70);
@@ -305,9 +306,9 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel3);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(497, 61);
+            this.groupBox2.Location = new System.Drawing.Point(495, 61);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(252, 101);
+            this.groupBox2.Size = new System.Drawing.Size(260, 101);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Équipes";
@@ -329,7 +330,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(246, 72);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(254, 72);
             this.tableLayoutPanel3.TabIndex = 8;
             // 
             // flashButton2
@@ -340,7 +341,7 @@
             this.flashButton2.ImageDisable = global::bdfinal.Properties.Resources.Ajouter_ClickDisabled;
             this.flashButton2.ImageNeutral = global::bdfinal.Properties.Resources.Ajouter;
             this.flashButton2.ImageOver = global::bdfinal.Properties.Resources.Ajouter_Hover;
-            this.flashButton2.Location = new System.Drawing.Point(139, 1);
+            this.flashButton2.Location = new System.Drawing.Point(145, 1);
             this.flashButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton2.Name = "flashButton2";
             this.flashButton2.Size = new System.Drawing.Size(75, 70);
@@ -356,7 +357,7 @@
             this.flashButton3.ImageDisable = global::bdfinal.Properties.Resources.Modifier_ClickDisabled;
             this.flashButton3.ImageNeutral = global::bdfinal.Properties.Resources.Modifier;
             this.flashButton3.ImageOver = global::bdfinal.Properties.Resources.Modifier_Hover;
-            this.flashButton3.Location = new System.Drawing.Point(30, 1);
+            this.flashButton3.Location = new System.Drawing.Point(33, 1);
             this.flashButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton3.Name = "flashButton3";
             this.flashButton3.Size = new System.Drawing.Size(75, 70);
@@ -369,7 +370,7 @@
             this.groupBox3.Controls.Add(this.tableLayoutPanel4);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(615, 197);
+            this.groupBox3.Location = new System.Drawing.Point(621, 197);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(134, 100);
             this.groupBox3.TabIndex = 4;
@@ -414,7 +415,7 @@
             this.groupBox4.Controls.Add(this.tableLayoutPanel5);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(72, 197);
+            this.groupBox4.Location = new System.Drawing.Point(69, 197);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(89, 100);
             this.groupBox4.TabIndex = 5;
@@ -460,9 +461,9 @@
             this.groupBox5.Controls.Add(this.tableLayoutPanel6);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(237, 197);
+            this.groupBox5.Location = new System.Drawing.Point(231, 197);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(302, 100);
+            this.groupBox5.Size = new System.Drawing.Size(317, 100);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Parties";
@@ -487,7 +488,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(296, 71);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(311, 71);
             this.tableLayoutPanel6.TabIndex = 8;
             // 
             // flashButton8
@@ -498,7 +499,7 @@
             this.flashButton8.ImageDisable = global::bdfinal.Properties.Resources.View_ClickDisabled;
             this.flashButton8.ImageNeutral = global::bdfinal.Properties.Resources.View;
             this.flashButton8.ImageOver = global::bdfinal.Properties.Resources.View_Hover;
-            this.flashButton8.Location = new System.Drawing.Point(203, 1);
+            this.flashButton8.Location = new System.Drawing.Point(215, 1);
             this.flashButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton8.Name = "flashButton8";
             this.flashButton8.Size = new System.Drawing.Size(75, 70);
@@ -514,7 +515,7 @@
             this.flashButton6.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
             this.flashButton6.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_icon;
             this.flashButton6.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_Hover_icon;
-            this.flashButton6.Location = new System.Drawing.Point(15, 1);
+            this.flashButton6.Location = new System.Drawing.Point(19, 1);
             this.flashButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton6.Name = "flashButton6";
             this.flashButton6.Size = new System.Drawing.Size(75, 70);
@@ -530,7 +531,7 @@
             this.flashButton7.ImageDisable = global::bdfinal.Properties.Resources.Ajouter_ClickDisabled;
             this.flashButton7.ImageNeutral = global::bdfinal.Properties.Resources.Ajouter;
             this.flashButton7.ImageOver = global::bdfinal.Properties.Resources.Ajouter_Hover;
-            this.flashButton7.Location = new System.Drawing.Point(109, 1);
+            this.flashButton7.Location = new System.Drawing.Point(117, 1);
             this.flashButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton7.Name = "flashButton7";
             this.flashButton7.Size = new System.Drawing.Size(75, 70);
