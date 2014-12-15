@@ -488,6 +488,23 @@ commit;
 update joueurs set photo = 'http://img2.wikia.nocookie.net/__cb20060228022700/lotr/images/a/a5/Lotr_movie_gimli.jpg' where numjoueur = 58;
 update joueurs set photo = 'http://img2.timeinc.net/ew/i/2013/FMP/Gallery/Hobbit-The-Desolation-of-Smaug.jpg' where numjoueur = 59;
 
-select * from joueurs where numequipe = 27 ;
+select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe = 'SuperMan';
+
+select joueurs.numjoueur,joueurs.nom,joueurs.prenom, equipe.nomequipe, fichepersonnelle.nombrepasses, Fichepersonnelle.nombrebuts 
+from joueurs 
+inner join equipe
+on joueurs.numequipe = equipe.numequipe 
+inner join fichepersonnelle 
+on fichepersonnelle.numjoueur = joueurs.numjoueur 
+where equipe.nomequipe='Husky';
+
+delete   from joueurs  cascade  where numjoueur = 57 ;
+select * from joueurs;
+
+update joueurs set nom ='eatshit',prenom = 'yolo' , Datenaissance = '2000-12-03' where numjoueur = 57;
+select count(numjoueur) from JOUEURS;
+
+
+select * from joueurs ;
 select * from equipe;
 select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe = 'Husky';
