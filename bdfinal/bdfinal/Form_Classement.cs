@@ -24,20 +24,27 @@ namespace bdfinal
 
         private void Form_Classement_Load(object sender, EventArgs e)
         {
-           
 
-            string com = "select nom from DIVISION";
-            OracleCommand oraclecomm = new OracleCommand(com, oraconn);
-            
-            OracleDataReader oraread = oraclecomm.ExecuteReader();
-            while (oraread.Read())
+            try
             {
-                string ligne = oraread.GetString(0);
-                CB_Division.Items.Add(ligne);
+                string com = "select nom from DIVISION";
+                OracleCommand oraclecomm = new OracleCommand(com, oraconn);
+
+                OracleDataReader oraread = oraclecomm.ExecuteReader();
+                while (oraread.Read())
+                {
+                    string ligne = oraread.GetString(0);
+                    CB_Division.Items.Add(ligne);
+                }
+                oraread.Close();
+                CB_Division.SelectedIndex = 0;
+                CB_Classement.SelectedIndex = 0;
             }
-            oraread.Close();
-            CB_Division.SelectedIndex = 0;
-            CB_Classement.SelectedIndex = 0;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
 
         private void CB_Classement_SelectedIndexChanged(object sender, EventArgs e)
@@ -70,35 +77,56 @@ namespace bdfinal
 
         private void Fill_DGV_Classement_Equipe()
         {
-           
-            string com = "select * from ClassementEquipe where NUMDIVISION = (select numdivision from division where nom = '"+ CB_Division.SelectedItem.ToString() +"')";
-            OracleDataAdapter ODA=new OracleDataAdapter(com,oraconn);
+            try
+            {
+                string com = "select * from ClassementEquipe where NUMDIVISION = (select numdivision from division where nom = '" + CB_Division.SelectedItem.ToString() + "')";
+                OracleDataAdapter ODA = new OracleDataAdapter(com, oraconn);
 
-            ODA.Fill(DS_Classement, "Classement");
-            BindingSource Source = new BindingSource(DS_Classement, "Classement");
-            DGV_Classement.DataSource=Source;
-            
+                ODA.Fill(DS_Classement, "Classement");
+                BindingSource Source = new BindingSource(DS_Classement, "Classement");
+                DGV_Classement.DataSource = Source;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
             
             
         }
         private void Fill_DGV_Classement_Joueurs()
         {
+            try
+            {
+                string com = "select * from ClassementJoueur";
+                OracleDataAdapter ODA = new OracleDataAdapter(com, oraconn);
 
-            string com = "select * from ClassementJoueur";
-            OracleDataAdapter ODA = new OracleDataAdapter(com, oraconn);
+                ODA.Fill(DS_Classement, "Classement");
+                BindingSource Source = new BindingSource(DS_Classement, "Classement");
+                DGV_Classement.DataSource = Source;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
 
-            ODA.Fill(DS_Classement, "Classement");
-            BindingSource Source = new BindingSource(DS_Classement, "Classement");
-            DGV_Classement.DataSource = Source;
+            }
         }
         private void Fill_DGV_Classement_Joueurs_Top3()
         {
-            string com = "select * from Top3Joueur";
-            OracleDataAdapter ODA = new OracleDataAdapter(com, oraconn);
+            try
+            {
+                string com = "select * from Top3Joueur";
+                OracleDataAdapter ODA = new OracleDataAdapter(com, oraconn);
 
-            ODA.Fill(DS_Classement, "Classement");
-            BindingSource Source = new BindingSource(DS_Classement, "Classement");
-            DGV_Classement.DataSource = Source;
+                ODA.Fill(DS_Classement, "Classement");
+                BindingSource Source = new BindingSource(DS_Classement, "Classement");
+                DGV_Classement.DataSource = Source;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
 
         private void CB_Division_SelectedIndexChanged(object sender, EventArgs e)

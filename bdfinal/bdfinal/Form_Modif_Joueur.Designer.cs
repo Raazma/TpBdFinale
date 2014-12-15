@@ -60,7 +60,7 @@
             // 
             this.Tb_nom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_nom.Location = new System.Drawing.Point(161, 182);
-            this.Tb_nom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_nom.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_nom.Name = "Tb_nom";
             this.Tb_nom.Size = new System.Drawing.Size(157, 22);
             this.Tb_nom.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             this.Tb_Prenom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_Prenom.Location = new System.Drawing.Point(161, 255);
-            this.Tb_Prenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_Prenom.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Prenom.Name = "Tb_Prenom";
             this.Tb_Prenom.Size = new System.Drawing.Size(157, 22);
             this.Tb_Prenom.TabIndex = 2;
@@ -78,7 +78,7 @@
             // 
             this.Tb_NumChandail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_NumChandail.Location = new System.Drawing.Point(161, 328);
-            this.Tb_NumChandail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_NumChandail.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_NumChandail.Name = "Tb_NumChandail";
             this.Tb_NumChandail.Size = new System.Drawing.Size(157, 22);
             this.Tb_NumChandail.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             this.Tb_Position.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_Position.Location = new System.Drawing.Point(161, 401);
-            this.Tb_Position.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_Position.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Position.Name = "Tb_Position";
             this.Tb_Position.Size = new System.Drawing.Size(157, 22);
             this.Tb_Position.TabIndex = 4;
@@ -182,7 +182,7 @@
             this.Cb_Equipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Equipe.FormattingEnabled = true;
             this.Cb_Equipe.Location = new System.Drawing.Point(161, 107);
-            this.Cb_Equipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_Equipe.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Equipe.Name = "Cb_Equipe";
             this.Cb_Equipe.Size = new System.Drawing.Size(157, 24);
             this.Cb_Equipe.TabIndex = 15;
@@ -191,7 +191,7 @@
             // 
             this.Btn_Precedent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btn_Precedent.Location = new System.Drawing.Point(-2, 559);
-            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Precedent.Name = "Btn_Precedent";
             this.Btn_Precedent.Size = new System.Drawing.Size(155, 28);
             this.Btn_Precedent.TabIndex = 16;
@@ -203,7 +203,7 @@
             // 
             this.Btn_Suivant.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btn_Suivant.Location = new System.Drawing.Point(161, 559);
-            this.Btn_Suivant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Suivant.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Suivant.Name = "Btn_Suivant";
             this.Btn_Suivant.Size = new System.Drawing.Size(157, 28);
             this.Btn_Suivant.TabIndex = 17;
@@ -214,7 +214,7 @@
             // Btn_Effacer
             // 
             this.Btn_Effacer.Location = new System.Drawing.Point(446, 401);
-            this.Btn_Effacer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Effacer.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Effacer.Name = "Btn_Effacer";
             this.Btn_Effacer.Size = new System.Drawing.Size(100, 28);
             this.Btn_Effacer.TabIndex = 18;
@@ -225,7 +225,7 @@
             // Btn_Modifier
             // 
             this.Btn_Modifier.Location = new System.Drawing.Point(446, 480);
-            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Modifier.Name = "Btn_Modifier";
             this.Btn_Modifier.Size = new System.Drawing.Size(100, 28);
             this.Btn_Modifier.TabIndex = 19;
@@ -236,7 +236,7 @@
             // Btn_Cancel
             // 
             this.Btn_Cancel.Location = new System.Drawing.Point(446, 559);
-            this.Btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Cancel.Name = "Btn_Cancel";
             this.Btn_Cancel.Size = new System.Drawing.Size(100, 28);
             this.Btn_Cancel.TabIndex = 20;
@@ -247,7 +247,7 @@
             // 
             this.Dtp_Naissance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Dtp_Naissance.Location = new System.Drawing.Point(161, 480);
-            this.Dtp_Naissance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dtp_Naissance.Margin = new System.Windows.Forms.Padding(4);
             this.Dtp_Naissance.Name = "Dtp_Naissance";
             this.Dtp_Naissance.Size = new System.Drawing.Size(157, 22);
             this.Dtp_Naissance.TabIndex = 21;
@@ -268,7 +268,7 @@
             // 
             this.tb_Lien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tb_Lien.Location = new System.Drawing.Point(446, 255);
-            this.tb_Lien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Lien.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Lien.Name = "tb_Lien";
             this.tb_Lien.Size = new System.Drawing.Size(219, 22);
             this.tb_Lien.TabIndex = 23;
@@ -362,7 +362,7 @@
             this.ClientSize = new System.Drawing.Size(661, 641);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(677, 676);
             this.Name = "Form_Modif_Joueur";
             this.Text = "Modification de joueurs";

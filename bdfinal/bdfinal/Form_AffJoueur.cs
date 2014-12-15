@@ -31,39 +31,57 @@ namespace bdfinal
         }
         public void RemplirGridView()
         {
-            string commande = "select NUMEROMAILLOT, NOM, PRENOM, POSITION from joueurs inner join equipe on equipe.numequipe = joueurs.numequipe where equipe.nomequipe = '" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
-            OracleDataAdapter adap = new OracleDataAdapter(commande, oracon);
-            adap.Fill(Info, "ResJoueurs");
-            BindingSource TheSOUSSE = new BindingSource(Info,"ResJoueurs");
-            Dgv_Joueurs.DataSource = TheSOUSSE;
+            try
+            {
+                string commande = "select NUMEROMAILLOT, NOM, PRENOM, POSITION from joueurs inner join equipe on equipe.numequipe = joueurs.numequipe where equipe.nomequipe = '" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
+                OracleDataAdapter adap = new OracleDataAdapter(commande, oracon);
+                adap.Fill(Info, "ResJoueurs");
+                BindingSource TheSOUSSE = new BindingSource(Info, "ResJoueurs");
+                Dgv_Joueurs.DataSource = TheSOUSSE;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         
 
         }
         private void RemplirCombobox()
         {
-           string commande = "SELECT NOMEQUIPE FROM EQUIPE";
-            OracleCommand oraclecomm = new OracleCommand(commande, oracon);
-            oraclecomm.CommandType = CommandType.Text;
-            OracleDataReader oraread = oraclecomm.ExecuteReader();
-            while (oraread.Read())
+            try
             {
-                string ligne = oraread.GetString(0);
-                LBX_ChoixEquipe.Items.Add(ligne);
+                string commande = "SELECT NOMEQUIPE FROM EQUIPE";
+                OracleCommand oraclecomm = new OracleCommand(commande, oracon);
+                oraclecomm.CommandType = CommandType.Text;
+                OracleDataReader oraread = oraclecomm.ExecuteReader();
+                while (oraread.Read())
+                {
+                    string ligne = oraread.GetString(0);
+                    LBX_ChoixEquipe.Items.Add(ligne);
+                }
+                oraread.Close();
             }
-            oraread.Close();      
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
      
         private void fillcontrol()
         {
-            ClearBinding();
-            string commande = "select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe ='" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
+            try
+            {
+                ClearBinding();
+                string commande = "select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe ='" + LBX_ChoixEquipe.SelectedItem.ToString() + "'";
                 OracleDataAdapter orDataAdaptr = new OracleDataAdapter(commande, oracon);
 
                 orDataAdaptr.Fill(Info, "resFiches");
 
-              string commandephoto = "select photo from joueurs";
-              OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
-              adapp.Fill(Info, "ResFiches");
+                string commandephoto = "select photo from joueurs";
+                OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
+                adapp.Fill(Info, "ResFiches");
                 BindingSource TheSOUSSE = new BindingSource(Info, "resFiches");
 
                 Lb_Num.DataBindings.Add("TEXT", Info, "resFiches.numJoueur");
@@ -72,9 +90,15 @@ namespace bdfinal
                 Lb_Equipe.DataBindings.Add("TEXT", Info, "resFiches.nomequipe");
                 Lb_NbButs.DataBindings.Add("TEXT", Info, "resFiches.nombrebuts");
                 Lb_Passes.DataBindings.Add("TEXT", Info, "resFiches.nombrepasses");
-                Pb_Equipe.DataBindings.Add("image",Info,"resFiches.logo",true);
+                Pb_Equipe.DataBindings.Add("image", Info, "resFiches.logo", true);
                 this.Pb_Equipe.SizeMode = PictureBoxSizeMode.StretchImage;
                 fillpicturebox();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
              
                           
         }
@@ -130,16 +154,23 @@ namespace bdfinal
         }
         private void fillpicturebox()
         {
-            Info2.Clear();
-            Tb_Lien.DataBindings.Clear();
-            string commandephoto = "select photo from joueurs where numjoueur = " + Lb_Num.Text;
-            OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
-            adapp.Fill(Info2, "ResPhoto");
-            Tb_Lien.DataBindings.Add("text", Info2, "Resphoto.photo");
+            try
+            {
+                Info2.Clear();
+                Tb_Lien.DataBindings.Clear();
+                string commandephoto = "select photo from joueurs where numjoueur = " + Lb_Num.Text;
+                OracleDataAdapter adapp = new OracleDataAdapter(commandephoto, oracon);
+                adapp.Fill(Info2, "ResPhoto");
+                Tb_Lien.DataBindings.Add("text", Info2, "Resphoto.photo");
 
-            Pb_Joueur.ImageLocation = Tb_Lien.Text;
-            this.Pb_Joueur.SizeMode = PictureBoxSizeMode.StretchImage;
-            
+                Pb_Joueur.ImageLocation = Tb_Lien.Text;
+                this.Pb_Joueur.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         
         
         

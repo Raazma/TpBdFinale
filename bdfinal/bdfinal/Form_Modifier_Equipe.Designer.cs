@@ -128,7 +128,7 @@
             this.Cb_Division.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Division.FormattingEnabled = true;
             this.Cb_Division.Location = new System.Drawing.Point(251, 131);
-            this.Cb_Division.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_Division.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Division.Name = "Cb_Division";
             this.Cb_Division.Size = new System.Drawing.Size(119, 24);
             this.Cb_Division.TabIndex = 7;
@@ -137,7 +137,7 @@
             // 
             this.Tb_Name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_Name.Location = new System.Drawing.Point(251, 194);
-            this.Tb_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_Name.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Name.Name = "Tb_Name";
             this.Tb_Name.Size = new System.Drawing.Size(119, 22);
             this.Tb_Name.TabIndex = 8;
@@ -146,7 +146,7 @@
             // 
             this.Tb_ville.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_ville.Location = new System.Drawing.Point(251, 265);
-            this.Tb_ville.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_ville.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_ville.Name = "Tb_ville";
             this.Tb_ville.Size = new System.Drawing.Size(119, 22);
             this.Tb_ville.TabIndex = 9;
@@ -155,7 +155,7 @@
             // 
             this.Btn_mod_photo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btn_mod_photo.Location = new System.Drawing.Point(389, 194);
-            this.Btn_mod_photo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_mod_photo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_mod_photo.Name = "Btn_mod_photo";
             this.Btn_mod_photo.Size = new System.Drawing.Size(165, 32);
             this.Btn_mod_photo.TabIndex = 10;
@@ -167,7 +167,7 @@
             // 
             this.Btn_Precedent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btn_Precedent.Location = new System.Drawing.Point(78, 393);
-            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Precedent.Name = "Btn_Precedent";
             this.Btn_Precedent.Size = new System.Drawing.Size(165, 28);
             this.Btn_Precedent.TabIndex = 11;
@@ -179,7 +179,7 @@
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Location = new System.Drawing.Point(251, 393);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 28);
             this.button3.TabIndex = 12;
@@ -203,7 +203,7 @@
             // 
             this.Dtp_date.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Dtp_date.Location = new System.Drawing.Point(251, 326);
-            this.Dtp_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dtp_date.Margin = new System.Windows.Forms.Padding(4);
             this.Dtp_date.Name = "Dtp_date";
             this.Dtp_date.Size = new System.Drawing.Size(119, 22);
             this.Dtp_date.TabIndex = 14;
@@ -212,7 +212,7 @@
             // 
             this.Btn_Modifier.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btn_Modifier.Location = new System.Drawing.Point(389, 393);
-            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Modifier.Name = "Btn_Modifier";
             this.Btn_Modifier.Size = new System.Drawing.Size(165, 28);
             this.Btn_Modifier.TabIndex = 15;
@@ -224,7 +224,7 @@
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Location = new System.Drawing.Point(389, 326);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(165, 28);
             this.button2.TabIndex = 16;
@@ -300,7 +300,7 @@
             this.ClientSize = new System.Drawing.Size(633, 460);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(649, 495);
             this.Name = "Form_Modifier_Equipe";
             this.Text = "Modification Équipe";

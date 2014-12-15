@@ -48,7 +48,7 @@
             this.Cb_Numatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Numatch.FormattingEnabled = true;
             this.Cb_Numatch.Location = new System.Drawing.Point(132, 35);
-            this.Cb_Numatch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_Numatch.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Numatch.Name = "Cb_Numatch";
             this.Cb_Numatch.Size = new System.Drawing.Size(160, 24);
             this.Cb_Numatch.TabIndex = 0;
@@ -68,7 +68,7 @@
             // tb_Nbut
             // 
             this.tb_Nbut.Location = new System.Drawing.Point(132, 161);
-            this.tb_Nbut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Nbut.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Nbut.Name = "tb_Nbut";
             this.tb_Nbut.Size = new System.Drawing.Size(80, 22);
             this.tb_Nbut.TabIndex = 4;
@@ -76,7 +76,7 @@
             // Tb_nbpasse
             // 
             this.Tb_nbpasse.Location = new System.Drawing.Point(439, 161);
-            this.Tb_nbpasse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_nbpasse.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_nbpasse.Name = "Tb_nbpasse";
             this.Tb_nbpasse.Size = new System.Drawing.Size(104, 22);
             this.Tb_nbpasse.TabIndex = 5;
@@ -122,7 +122,7 @@
             this.Cb_Numjoueur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Numjoueur.FormattingEnabled = true;
             this.Cb_Numjoueur.Location = new System.Drawing.Point(132, 98);
-            this.Cb_Numjoueur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_Numjoueur.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Numjoueur.Name = "Cb_Numjoueur";
             this.Cb_Numjoueur.Size = new System.Drawing.Size(160, 24);
             this.Cb_Numjoueur.TabIndex = 12;
@@ -130,7 +130,7 @@
             // Btn_cancel
             // 
             this.Btn_cancel.Location = new System.Drawing.Point(303, 222);
-            this.Btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_cancel.Name = "Btn_cancel";
             this.Btn_cancel.Size = new System.Drawing.Size(100, 32);
             this.Btn_cancel.TabIndex = 13;
@@ -141,7 +141,7 @@
             // 
             this.Btn_Ajouter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_Ajouter.Location = new System.Drawing.Point(192, 222);
-            this.Btn_Ajouter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Ajouter.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Ajouter.Name = "Btn_Ajouter";
             this.Btn_Ajouter.Size = new System.Drawing.Size(100, 28);
             this.Btn_Ajouter.TabIndex = 14;
@@ -192,7 +192,7 @@
             this.ClientSize = new System.Drawing.Size(551, 293);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(569, 338);
             this.Name = "Form_Ajout_Fiche";
             this.Text = "Form_Ajout_Fiche";

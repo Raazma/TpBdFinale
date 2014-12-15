@@ -31,51 +31,67 @@ namespace bdfinal
 
         private void FilledComboBox()
         {
-            string commande = "SELECT NOM FROM division";
-            OracleCommand oraclecomm = new OracleCommand(commande, orac);
-            oraclecomm.CommandType = CommandType.Text;
-            OracleDataReader oraread = oraclecomm.ExecuteReader();
-            while (oraread.Read())
+            try
             {
-                string ligne = oraread.GetString(0);
-                Cb_Division.Items.Add(ligne);
+                string commande = "SELECT NOM FROM division";
+                OracleCommand oraclecomm = new OracleCommand(commande, orac);
+                oraclecomm.CommandType = CommandType.Text;
+                OracleDataReader oraread = oraclecomm.ExecuteReader();
+                while (oraread.Read())
+                {
+                    string ligne = oraread.GetString(0);
+                    Cb_Division.Items.Add(ligne);
+                }
+                oraread.Close();
             }
-            oraread.Close();             
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             if (Cb_Division.SelectedItem != null)
             {
+                try
+                {
 
-                FileStream Streamp = new FileStream(filename, FileMode.Open, FileAccess.Read);
-                byte[] buffer1 = new byte[Streamp.Length];
-                Streamp.Read(buffer1, 0, System.Convert.ToInt32(Streamp.Length));
-                Streamp.Close();
-                string commande = "insert into  equipe(  NumDivision   ,  DateIntroduction, Logo, Ville , NomEquipe) Values((select   NumDivision   from division where nom = :Numero ), :laDate ,:thelogo, :theVille , :thenom)";
-                OracleCommand orcom = new OracleCommand(commande, orac);
+                    FileStream Streamp = new FileStream(filename, FileMode.Open, FileAccess.Read);
+                    byte[] buffer1 = new byte[Streamp.Length];
+                    Streamp.Read(buffer1, 0, System.Convert.ToInt32(Streamp.Length));
+                    Streamp.Close();
+                    string commande = "insert into  equipe(  NumDivision   ,  DateIntroduction, Logo, Ville , NomEquipe) Values((select   NumDivision   from division where nom = :Numero ), :laDate ,:thelogo, :theVille , :thenom)";
+                    OracleCommand orcom = new OracleCommand(commande, orac);
 
-                OracleParameter Numdiv = new OracleParameter(":Numero", OracleDbType.Varchar2, 40);
-                OracleParameter logo = new OracleParameter(":thelogo", OracleDbType.Blob);
-                OracleParameter Date = new OracleParameter(":laDate", OracleDbType.Date);
-                OracleParameter Ville = new OracleParameter(":theVille", OracleDbType.Varchar2, 30);
-                OracleParameter Nom = new OracleParameter(":thenom", OracleDbType.Varchar2, 20);
+                    OracleParameter Numdiv = new OracleParameter(":Numero", OracleDbType.Varchar2, 40);
+                    OracleParameter logo = new OracleParameter(":thelogo", OracleDbType.Blob);
+                    OracleParameter Date = new OracleParameter(":laDate", OracleDbType.Date);
+                    OracleParameter Ville = new OracleParameter(":theVille", OracleDbType.Varchar2, 30);
+                    OracleParameter Nom = new OracleParameter(":thenom", OracleDbType.Varchar2, 20);
 
 
-                Numdiv.Value = Cb_Division.SelectedItem.ToString();
-                Date.Value = DTP_Intro.Value;
-                Ville.Value = Tb_Ville.Text;
-                logo.Value = buffer1;
-                Nom.Value = Tb_Nom.Text;
-                orcom.Parameters.Add(Numdiv);
-                orcom.Parameters.Add(Date);
-                orcom.Parameters.Add(logo);
-                orcom.Parameters.Add(Ville);
-                orcom.Parameters.Add(Nom);
-                
-                int laligne = orcom.ExecuteNonQuery();
+                    Numdiv.Value = Cb_Division.SelectedItem.ToString();
+                    Date.Value = DTP_Intro.Value;
+                    Ville.Value = Tb_Ville.Text;
+                    logo.Value = buffer1;
+                    Nom.Value = Tb_Nom.Text;
+                    orcom.Parameters.Add(Numdiv);
+                    orcom.Parameters.Add(Date);
+                    orcom.Parameters.Add(logo);
+                    orcom.Parameters.Add(Ville);
+                    orcom.Parameters.Add(Nom);
 
-                MessageBox.Show(laligne.ToString());
+                    int laligne = orcom.ExecuteNonQuery();
+
+                    MessageBox.Show(laligne.ToString());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+
+                }
               
             }
         }

@@ -29,74 +29,120 @@ namespace bdfinal
 
         private void FilledBoxes()
         {
-            string commande = "select * from joueurs";
-            OracleDataAdapter adp = new OracleDataAdapter(commande, orac);
-            adp.Fill(source, "ResJoueurs");
-            Lb_Num.DataBindings.Add("text", source, "ResJoueurs.numjoueur");
-            Tb_nom.DataBindings.Add("text", source, "ResJoueurs.nom");
-            Tb_Prenom.DataBindings.Add("text", source, "ResJoueurs.prenom");
-            Tb_NumChandail.DataBindings.Add("text", source, "ResJoueurs.NumeroMaillot");
-            Tb_Position.DataBindings.Add("text", source, "ResJoueurs.Position");
-            Dtp_Naissance.DataBindings.Add("Value", source, "ResJoueurs.DateNaissance");
-            tb_Lien.DataBindings.Add("text", source, "ResJoueurs.photo");
-            Pb_Logo.ImageLocation = tb_Lien.Text;
-            this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+            try
+            {
+                string commande = "select * from joueurs";
+                OracleDataAdapter adp = new OracleDataAdapter(commande, orac);
+                adp.Fill(source, "ResJoueurs");
+                Lb_Num.DataBindings.Add("text", source, "ResJoueurs.numjoueur");
+                Tb_nom.DataBindings.Add("text", source, "ResJoueurs.nom");
+                Tb_Prenom.DataBindings.Add("text", source, "ResJoueurs.prenom");
+                Tb_NumChandail.DataBindings.Add("text", source, "ResJoueurs.NumeroMaillot");
+                Tb_Position.DataBindings.Add("text", source, "ResJoueurs.Position");
+                Dtp_Naissance.DataBindings.Add("Value", source, "ResJoueurs.DateNaissance");
+                tb_Lien.DataBindings.Add("text", source, "ResJoueurs.photo");
+                Pb_Logo.ImageLocation = tb_Lien.Text;
+                this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
            
 
         }
         private void FilComboBox()
         {
-            string commande = "SELECT nomequipe from equipe";
-            OracleCommand oraclecomm = new OracleCommand(commande, orac);
-            oraclecomm.CommandType = CommandType.Text;
-            OracleDataReader oraread = oraclecomm.ExecuteReader();
-            while (oraread.Read())
+            try
             {
-                string ligne = oraread.GetString(0);
-                Cb_Equipe.Items.Add(ligne);
+                string commande = "SELECT nomequipe from equipe";
+                OracleCommand oraclecomm = new OracleCommand(commande, orac);
+                oraclecomm.CommandType = CommandType.Text;
+                OracleDataReader oraread = oraclecomm.ExecuteReader();
+                while (oraread.Read())
+                {
+                    string ligne = oraread.GetString(0);
+                    Cb_Equipe.Items.Add(ligne);
+                }
+                oraread.Close();
             }
-            oraread.Close();    
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
 
         private void Btn_Suivant_Click(object sender, EventArgs e)
         {
-            this.BindingContext[source, "ResJoueurs"].Position += 1;
-            Pb_Logo.ImageLocation = tb_Lien.Text;
-            this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+            try
+            {
+                this.BindingContext[source, "ResJoueurs"].Position += 1;
+                Pb_Logo.ImageLocation = tb_Lien.Text;
+                this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
 
         private void Btn_Precedent_Click(object sender, EventArgs e)
         {
-            this.BindingContext[source, "ResJoueurs"].Position -= 1;
-            Pb_Logo.ImageLocation = tb_Lien.Text;
-            this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+            try
+            {
+                this.BindingContext[source, "ResJoueurs"].Position -= 1;
+                Pb_Logo.ImageLocation = tb_Lien.Text;
+                this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
 
         private void Btn_Modifier_Click(object sender, EventArgs e)
         {
-            string commande = "Update Joueurs SET nom = '" + Tb_nom.Text + "'" + ", prenom = '" + Tb_Prenom.Text + "'" + ", DateNaissance = :LaDate " + ",numeromaillot = '" + 
-                             Tb_NumChandail.Text + "'" + " ,photo = '" +tb_Lien.Text + "',Position = '" + Tb_Position.Text + "'" +  "where numjoueur = " + Lb_Num.Text;
+            try
+            {
+                string commande = "Update Joueurs SET nom = '" + Tb_nom.Text + "'" + ", prenom = '" + Tb_Prenom.Text + "'" + ", DateNaissance = :LaDate " + ",numeromaillot = '" +
+                                 Tb_NumChandail.Text + "'" + " ,photo = '" + tb_Lien.Text + "',Position = '" + Tb_Position.Text + "'" + "where numjoueur = " + Lb_Num.Text;
 
-               OracleCommand com = new OracleCommand(commande,orac);
-               OracleParameter ladate = new OracleParameter(":LaDate", OracleDbType.Date);
-               ladate.Value = Dtp_Naissance.Value;
-               com.CommandType = CommandType.Text;
-               com.Parameters.Add(ladate);
-               int i =  com.ExecuteNonQuery();
-               MessageBox.Show(i.ToString() + " Ligne Modifier");
+                OracleCommand com = new OracleCommand(commande, orac);
+                OracleParameter ladate = new OracleParameter(":LaDate", OracleDbType.Date);
+                ladate.Value = Dtp_Naissance.Value;
+                com.CommandType = CommandType.Text;
+                com.Parameters.Add(ladate);
+                int i = com.ExecuteNonQuery();
+                MessageBox.Show(i.ToString() + " Ligne Modifier");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
 
         private void Btn_Effacer_Click(object sender, EventArgs e)
         {
-           
-         
-            string commande = "delete from joueurs where numjoueur = " + Lb_Num.Text;
 
-            OracleCommand com = new OracleCommand(commande, orac);
-            com.CommandType = CommandType.Text;
-            int i = com.ExecuteNonQuery();
-            MessageBox.Show(i.ToString() + " Ligne effacer");
+            try
+            {
+                string commande = "delete from joueurs where numjoueur = " + Lb_Num.Text;
 
+                OracleCommand com = new OracleCommand(commande, orac);
+                com.CommandType = CommandType.Text;
+                int i = com.ExecuteNonQuery();
+                MessageBox.Show(i.ToString() + " Ligne effacer");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
            
            
         }
