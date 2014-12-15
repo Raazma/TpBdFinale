@@ -39,35 +39,35 @@ namespace bdfinal
             oraread.Close();
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            commande = "select DATEHEURE from match";
-            try
-            {
-                OracleCommand oraclecom = new OracleCommand(commande, orac);
-                oraclecom.CommandType = CommandType.Text;
-                OracleDataReader orareadd = oraclecom.ExecuteReader();
-                while (orareadd.Read())
-                {
-                    DateTime ligne = DateTime.Parse(orareadd.GetDateTime(0).ToShortDateString());
-                    Cb_Date.Items.Add(ligne);
-                }
-                orareadd.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }        
+            //commande = "select DATEHEURE from match";
+            //try
+            //{
+            //    OracleCommand oraclecom = new OracleCommand(commande, orac);
+            //    oraclecom.CommandType = CommandType.Text;
+            //    OracleDataReader orareadd = oraclecom.ExecuteReader();
+            //    while (orareadd.Read())
+            //    {
+            //        DateTime ligne = DateTime.Parse(orareadd.GetDateTime(0).ToShortDateString());
+            //        Cb_Date.Items.Add(ligne);
+            //    }
+            //    orareadd.Close();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.ToString());
+            //}        
         }
 
         private void Cb_Date_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string commande = "select * from match where Dateheure = ' " + Convert.ToDateTime(Cb_Date.SelectedItem.ToString()).ToShortDateString() +"'"; // where DateHeure = '" + Cb_Date.SelectedItem.ToString() + "'";
+           // string commande = "select * from match where Dateheure = ' " + Convert.ToDateTime(Cb_Date.SelectedItem.ToString()).ToShortDateString() +"'"; // where DateHeure = '" + Cb_Date.SelectedItem.ToString() + "'";
 
            
-            OracleDataAdapter adap = new OracleDataAdapter(commande, orac);            
-            DataSet Mels= new DataSet();
-            adap.Fill(Mels, "ResMatch");
-            BindingSource TheSOUSSE = new BindingSource(Mels, "Resmatch");
-           DGV_Match.DataSource = TheSOUSSE;
+           // OracleDataAdapter adap = new OracleDataAdapter(commande, orac);            
+           // DataSet Mels= new DataSet();
+           // adap.Fill(Mels, "ResMatch");
+           // BindingSource TheSOUSSE = new BindingSource(Mels, "Resmatch");
+           //DGV_Match.DataSource = TheSOUSSE;
         }
 
 
@@ -86,6 +86,17 @@ namespace bdfinal
             adapp.Fill(leset, "resMatchs");
             BindingSource data = new BindingSource(leset, "resMatchs");
             DGV_Match.DataSource = data;
+        }
+
+        private void Dtp_Match_ValueChanged(object sender, EventArgs e)
+        {
+            string commande = "Select * from match where dateheure >= '" + Dtp_Match.Value+ "'";
+            OracleDataAdapter adap = new OracleDataAdapter(commande, orac);
+            DataSet Mels = new DataSet();
+            adap.Fill(Mels, "ResMatch");
+            BindingSource TheSOUSSE = new BindingSource(Mels, "ResMatch");
+            DGV_Match.DataSource = TheSOUSSE;
+     
         }
     }
 }
