@@ -106,7 +106,7 @@
             this.Cb_Equipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Equipe.FormattingEnabled = true;
             this.Cb_Equipe.Location = new System.Drawing.Point(149, 130);
-            this.Cb_Equipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_Equipe.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Equipe.Name = "Cb_Equipe";
             this.Cb_Equipe.Size = new System.Drawing.Size(141, 24);
             this.Cb_Equipe.TabIndex = 8;
@@ -145,7 +145,7 @@
             "Defenseur",
             "Gardien"});
             this.Cb_Position.Location = new System.Drawing.Point(149, 234);
-            this.Cb_Position.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_Position.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Position.Name = "Cb_Position";
             this.Cb_Position.Size = new System.Drawing.Size(141, 24);
             this.Cb_Position.TabIndex = 3;
@@ -154,7 +154,7 @@
             // 
             this.Tb_Prenom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_Prenom.Location = new System.Drawing.Point(149, 78);
-            this.Tb_Prenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_Prenom.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Prenom.Name = "Tb_Prenom";
             this.Tb_Prenom.Size = new System.Drawing.Size(141, 22);
             this.Tb_Prenom.TabIndex = 1;
@@ -163,7 +163,7 @@
             // 
             this.Tb_Nom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_Nom.Location = new System.Drawing.Point(149, 26);
-            this.Tb_Nom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_Nom.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Nom.Name = "Tb_Nom";
             this.Tb_Nom.Size = new System.Drawing.Size(141, 22);
             this.Tb_Nom.TabIndex = 0;
@@ -172,7 +172,7 @@
             // 
             this.Dt_Fete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Dt_Fete.Location = new System.Drawing.Point(149, 286);
-            this.Dt_Fete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dt_Fete.Margin = new System.Windows.Forms.Padding(4);
             this.Dt_Fete.Name = "Dt_Fete";
             this.Dt_Fete.Size = new System.Drawing.Size(141, 22);
             this.Dt_Fete.TabIndex = 20;
@@ -194,7 +194,7 @@
             // 
             this.Tb_Num.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_Num.Location = new System.Drawing.Point(149, 182);
-            this.Tb_Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_Num.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Num.Name = "Tb_Num";
             this.Tb_Num.Size = new System.Drawing.Size(141, 22);
             this.Tb_Num.TabIndex = 7;
@@ -206,9 +206,9 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.ForeColor = System.Drawing.Color.Turquoise;
             this.groupBox1.Location = new System.Drawing.Point(4, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(340, 358);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
@@ -295,7 +295,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Location = new System.Drawing.Point(81, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(167, 158);
             this.pictureBox1.TabIndex = 14;
@@ -305,7 +305,7 @@
             // 
             this.tb_Lien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tb_Lien.Location = new System.Drawing.Point(81, 172);
-            this.tb_Lien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Lien.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Lien.Name = "tb_Lien";
             this.tb_Lien.Size = new System.Drawing.Size(167, 22);
             this.tb_Lien.TabIndex = 24;
@@ -355,7 +355,7 @@
             this.Fb_Accept.ImageNeutral = global::bdfinal.Properties.Resources.ICON_Accepter_Neutral;
             this.Fb_Accept.ImageOver = global::bdfinal.Properties.Resources.ICON_Accepter_Over;
             this.Fb_Accept.Location = new System.Drawing.Point(214, 91);
-            this.Fb_Accept.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Fb_Accept.Margin = new System.Windows.Forms.Padding(5);
             this.Fb_Accept.Name = "Fb_Accept";
             this.Fb_Accept.Size = new System.Drawing.Size(41, 24);
             this.Fb_Accept.TabIndex = 18;
@@ -372,7 +372,7 @@
             this.flashButton1.ImageNeutral = global::bdfinal.Properties.Resources.ICON_Annuler_Neutral;
             this.flashButton1.ImageOver = global::bdfinal.Properties.Resources.ICON_Annuler_Over;
             this.flashButton1.Location = new System.Drawing.Point(267, 91);
-            this.flashButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.flashButton1.Margin = new System.Windows.Forms.Padding(5);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.Size = new System.Drawing.Size(41, 24);
             this.flashButton1.TabIndex = 19;
@@ -421,7 +421,7 @@
             this.ClientSize = new System.Drawing.Size(701, 366);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(717, 402);
             this.Name = "Form_Ajout_joueur";
             this.Text = "Form_Ajout_joueur";

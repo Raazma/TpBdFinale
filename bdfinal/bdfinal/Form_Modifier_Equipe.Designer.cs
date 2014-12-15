@@ -45,10 +45,10 @@
             this.Dtp_date = new System.Windows.Forms.DateTimePicker();
             this.Btn_Modifier = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pb_Logo = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
+            this.pb_Logo = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -232,18 +232,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pb_Logo
-            // 
-            this.pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pb_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_Logo.Location = new System.Drawing.Point(389, 52);
-            this.pb_Logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pb_Logo.Name = "pb_Logo";
-            this.tableLayoutPanel1.SetRowSpan(this.pb_Logo, 5);
-            this.pb_Logo.Size = new System.Drawing.Size(165, 134);
-            this.pb_Logo.TabIndex = 6;
-            this.pb_Logo.TabStop = false;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 6;
@@ -293,6 +281,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(633, 460);
             this.tableLayoutPanel1.TabIndex = 17;
             // 
+            // pb_Logo
+            // 
+            this.pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pb_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pb_Logo.Location = new System.Drawing.Point(389, 52);
+            this.pb_Logo.Margin = new System.Windows.Forms.Padding(4);
+            this.pb_Logo.Name = "pb_Logo";
+            this.tableLayoutPanel1.SetRowSpan(this.pb_Logo, 5);
+            this.pb_Logo.Size = new System.Drawing.Size(165, 134);
+            this.pb_Logo.TabIndex = 6;
+            this.pb_Logo.TabStop = false;
+            // 
             // Form_Modifier_Equipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -304,9 +304,9 @@
             this.MinimumSize = new System.Drawing.Size(649, 495);
             this.Name = "Form_Modifier_Equipe";
             this.Text = "Modification Équipe";
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();
             this.ResumeLayout(false);
 
         }

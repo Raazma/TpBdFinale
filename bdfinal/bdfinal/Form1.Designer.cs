@@ -209,7 +209,7 @@
             this.groupBox4.Controls.Add(this.flashButton5);
             this.groupBox4.Location = new System.Drawing.Point(12, 138);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(115, 100);
+            this.groupBox4.Size = new System.Drawing.Size(82, 100);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Divisions";
@@ -219,7 +219,7 @@
             this.groupBox5.Controls.Add(this.flashButton8);
             this.groupBox5.Controls.Add(this.flashButton7);
             this.groupBox5.Controls.Add(this.flashButton6);
-            this.groupBox5.Location = new System.Drawing.Point(133, 138);
+            this.groupBox5.Location = new System.Drawing.Point(101, 138);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(266, 100);
             this.groupBox5.TabIndex = 6;
@@ -239,6 +239,7 @@
             this.flashButton8.Name = "flashButton8";
             this.flashButton8.Size = new System.Drawing.Size(75, 70);
             this.flashButton8.TabIndex = 6;
+            this.flashButton8.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
             // 
             // flashButton7
             // 
@@ -253,6 +254,7 @@
             this.flashButton7.Name = "flashButton7";
             this.flashButton7.Size = new System.Drawing.Size(75, 70);
             this.flashButton7.TabIndex = 5;
+            this.flashButton7.Click += new System.EventHandler(this.ajoutMatchToolStripMenuItem_Click);
             // 
             // flashButton6
             // 
@@ -267,6 +269,7 @@
             this.flashButton6.Name = "flashButton6";
             this.flashButton6.Size = new System.Drawing.Size(75, 70);
             this.flashButton6.TabIndex = 3;
+            this.flashButton6.Click += new System.EventHandler(this.ajoutFicheDeJoueurToolStripMenuItem_Click);
             // 
             // flashButton5
             // 
@@ -276,11 +279,12 @@
             this.flashButton5.ImageDisable = global::bdfinal.Properties.Resources.Edit_ClickDisabled;
             this.flashButton5.ImageNeutral = global::bdfinal.Properties.Resources.Edit;
             this.flashButton5.ImageOver = global::bdfinal.Properties.Resources.Edit_Hover;
-            this.flashButton5.Location = new System.Drawing.Point(20, 22);
+            this.flashButton5.Location = new System.Drawing.Point(7, 23);
             this.flashButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton5.Name = "flashButton5";
             this.flashButton5.Size = new System.Drawing.Size(75, 70);
             this.flashButton5.TabIndex = 6;
+            this.flashButton5.Click += new System.EventHandler(this.ajoutDivisionToolStripMenuItem_Click);
             // 
             // flashButton4
             // 
@@ -295,6 +299,7 @@
             this.flashButton4.Name = "flashButton4";
             this.flashButton4.Size = new System.Drawing.Size(75, 70);
             this.flashButton4.TabIndex = 5;
+            this.flashButton4.Click += new System.EventHandler(this.classementToolStripMenuItem_Click);
             // 
             // flashButton2
             // 
@@ -309,6 +314,7 @@
             this.flashButton2.Name = "flashButton2";
             this.flashButton2.Size = new System.Drawing.Size(75, 70);
             this.flashButton2.TabIndex = 4;
+            this.flashButton2.Click += new System.EventHandler(this.ajoutEquipeToolStripMenuItem_Click);
             // 
             // flashButton3
             // 
@@ -323,6 +329,7 @@
             this.flashButton3.Name = "flashButton3";
             this.flashButton3.Size = new System.Drawing.Size(75, 70);
             this.flashButton3.TabIndex = 3;
+            this.flashButton3.Click += new System.EventHandler(this.modifEquipeToolStripMenuItem_Click);
             // 
             // flashButton1
             // 
@@ -337,6 +344,7 @@
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.Size = new System.Drawing.Size(75, 70);
             this.flashButton1.TabIndex = 2;
+            this.flashButton1.Click += new System.EventHandler(this.ajouterJoueurToolStripMenuItem_Click);
             // 
             // FB_EditPlayer
             // 
@@ -351,6 +359,7 @@
             this.FB_EditPlayer.Name = "FB_EditPlayer";
             this.FB_EditPlayer.Size = new System.Drawing.Size(75, 70);
             this.FB_EditPlayer.TabIndex = 1;
+            this.FB_EditPlayer.Click += new System.EventHandler(this.modifierJoueurToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 

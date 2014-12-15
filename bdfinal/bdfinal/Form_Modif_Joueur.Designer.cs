@@ -40,7 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Lb_Num = new System.Windows.Forms.Label();
-            this.Pb_Logo = new System.Windows.Forms.PictureBox();
             this.Cb_Equipe = new System.Windows.Forms.ComboBox();
             this.Btn_Precedent = new System.Windows.Forms.Button();
             this.Btn_Suivant = new System.Windows.Forms.Button();
@@ -52,8 +51,9 @@
             this.tb_Lien = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).BeginInit();
+            this.Pb_Logo = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Tb_nom
@@ -175,18 +175,6 @@
             this.Lb_Num.TabIndex = 12;
             this.Lb_Num.Text = "label7";
             this.Lb_Num.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Pb_Logo
-            // 
-            this.Pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Pb_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pb_Logo.Location = new System.Drawing.Point(446, 47);
-            this.Pb_Logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Pb_Logo.Name = "Pb_Logo";
-            this.tableLayoutPanel1.SetRowSpan(this.Pb_Logo, 6);
-            this.Pb_Logo.Size = new System.Drawing.Size(219, 200);
-            this.Pb_Logo.TabIndex = 13;
-            this.Pb_Logo.TabStop = false;
             // 
             // Cb_Equipe
             // 
@@ -355,6 +343,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(661, 641);
             this.tableLayoutPanel1.TabIndex = 25;
             // 
+            // Pb_Logo
+            // 
+            this.Pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pb_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pb_Logo.Location = new System.Drawing.Point(446, 47);
+            this.Pb_Logo.Margin = new System.Windows.Forms.Padding(4);
+            this.Pb_Logo.Name = "Pb_Logo";
+            this.tableLayoutPanel1.SetRowSpan(this.Pb_Logo, 6);
+            this.Pb_Logo.Size = new System.Drawing.Size(219, 200);
+            this.Pb_Logo.TabIndex = 13;
+            this.Pb_Logo.TabStop = false;
+            // 
             // Form_Modif_Joueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -366,9 +366,9 @@
             this.MinimumSize = new System.Drawing.Size(677, 676);
             this.Name = "Form_Modif_Joueur";
             this.Text = "Modification de joueurs";
-            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).EndInit();
             this.ResumeLayout(false);
 
         }
