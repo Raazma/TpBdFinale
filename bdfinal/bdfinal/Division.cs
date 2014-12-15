@@ -24,7 +24,7 @@ namespace bdfinal
 
         private void Btn_Enregister_Click(object sender, EventArgs e)
         {
-            string commande = "  INSERT INTO DIVISION (NOM , DATEINSCRIPTION VALUES(:LENOM , :LADATE))";
+            string commande = "  INSERT INTO DIVISION (NOM , DATEINSCRIPTION )VALUES(:LENOM , :LADATE)";
             OracleCommand orcom = new OracleCommand(commande, oracon);
             OracleParameter lenom = new OracleParameter(":LENOM", OracleDbType.Varchar2, 40);
             OracleParameter ladate = new OracleParameter(":LADATE", OracleDbType.Date);
@@ -49,13 +49,22 @@ namespace bdfinal
 
         private void FilledInfo()
         {
+            try
+            {
 
-            string commande = "select * from division";
-            OracleDataAdapter adp = new OracleDataAdapter(commande, oracon);
-            adp.Fill(Imsetting, "ResDiv");
-            Tb_Nom.DataBindings.Add("text", Imsetting, "ResDiv.Nom");
-            Dtp_Date.DataBindings.Add("Value", Imsetting, "ResDiv.DateInscription");
-            Lb_num.DataBindings.Add("text", Imsetting, "ResDiv.NumDivision");
+                string commande = "select * from division";
+                OracleDataAdapter adp = new OracleDataAdapter(commande, oracon);
+                adp.Fill(Imsetting, "ResDiv");
+                Tb_Nom.DataBindings.Add("text", Imsetting, "ResDiv.Nom");
+                Dtp_Date.DataBindings.Add("Value", Imsetting, "ResDiv.DateInscription");
+                Lb_num.DataBindings.Add("text", Imsetting, "ResDiv.NumDivision");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message.ToString());
+            
+            }
 
         }
 
@@ -82,6 +91,23 @@ namespace bdfinal
             MessageBox.Show(i.ToString() + " Ligne modifier");
             
 
+        }
+
+        private void BT_Supprimer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string commande = "delete from division where numdivision =" + Lb_num.Text;
+                OracleCommand com = new OracleCommand(commande, oracon);
+                int i = com.ExecuteNonQuery();
+                MessageBox.Show(i.ToString() + " nombre ligne effacer");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message.ToString());
+            }
+            
         }
 
     }
