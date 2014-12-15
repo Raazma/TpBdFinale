@@ -32,17 +32,25 @@ namespace bdfinal
 
         private void FillComboBox()
         {
-            string commande = "SELECT NOMEQUIPE FROM EQUIPE";
-
-            OracleCommand oraclecomm = new OracleCommand(commande, oracon);
-            oraclecomm.CommandType = CommandType.Text;
-            OracleDataReader oraread = oraclecomm.ExecuteReader();
-            while (oraread.Read())
+            try
             {
-                string ligne = oraread.GetString(0);
-                Cb_Equipe.Items.Add(ligne);
+                string commande = "SELECT NOMEQUIPE FROM EQUIPE";
+
+                OracleCommand oraclecomm = new OracleCommand(commande, oracon);
+                oraclecomm.CommandType = CommandType.Text;
+                OracleDataReader oraread = oraclecomm.ExecuteReader();
+                while (oraread.Read())
+                {
+                    string ligne = oraread.GetString(0);
+                    Cb_Equipe.Items.Add(ligne);
+                }
+                oraread.Close();
             }
-            oraread.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }
 
         private void Fb_Accept_Click(object sender, EventArgs e)
@@ -111,8 +119,16 @@ namespace bdfinal
 
         private void tb_Lien_TextChanged(object sender, EventArgs e)
         {
-            pictureBox1.ImageLocation = tb_Lien.Text;
-            this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            try
+            {
+                pictureBox1.ImageLocation = tb_Lien.Text;
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
         }     
     }
 }
