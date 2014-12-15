@@ -361,6 +361,51 @@
   <ItemGroup>
     <None Include="Resources\Edit_Player_ProfileAdd_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajouter_ClickDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajouter_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modifier_ClickDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modifier_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajouter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stat_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stat_ClickDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_ClickDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View_ClickDisabled.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
