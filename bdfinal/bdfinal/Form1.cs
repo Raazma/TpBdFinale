@@ -118,5 +118,11 @@ namespace bdfinal
             Form_Ajout_Fiche form = new Form_Ajout_Fiche(oraconn);
             form.Show();
         }
+
+        private void ajoutMatchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ajout_Match form = new Ajout_Match(oraconn);
+            form.Show();
+        }
     }
 }

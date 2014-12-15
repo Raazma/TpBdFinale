@@ -86,11 +86,11 @@
             this.DGV_Match.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.DGV_Match, 3);
             this.DGV_Match.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGV_Match.Location = new System.Drawing.Point(93, 94);
+            this.DGV_Match.Location = new System.Drawing.Point(94, 94);
             this.DGV_Match.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DGV_Match.Name = "DGV_Match";
             this.DGV_Match.RowHeadersVisible = false;
-            this.DGV_Match.Size = new System.Drawing.Size(321, 199);
+            this.DGV_Match.Size = new System.Drawing.Size(319, 199);
             this.DGV_Match.TabIndex = 4;
             // 
             // DGV_Joueurs
@@ -98,11 +98,11 @@
             this.DGV_Joueurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.DGV_Joueurs, 3);
             this.DGV_Joueurs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGV_Joueurs.Location = new System.Drawing.Point(93, 323);
+            this.DGV_Joueurs.Location = new System.Drawing.Point(94, 323);
             this.DGV_Joueurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DGV_Joueurs.Name = "DGV_Joueurs";
             this.DGV_Joueurs.RowHeadersVisible = false;
-            this.DGV_Joueurs.Size = new System.Drawing.Size(321, 199);
+            this.DGV_Joueurs.Size = new System.Drawing.Size(319, 199);
             this.DGV_Joueurs.TabIndex = 5;
             // 
             // tableLayoutPanel1
@@ -187,7 +187,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MinimumSize = new System.Drawing.Size(525, 587);
+            this.MinimumSize = new System.Drawing.Size(525, 585);
             this.Name = "Form_Match";
             this.Text = "Form_Match";
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Match)).EndInit();

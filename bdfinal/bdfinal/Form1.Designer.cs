@@ -46,6 +46,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.flashButton1 = new FlashButton.FlashButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ajoutMatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flashButton2 = new FlashButton.FlashButton();
             this.flashButton3 = new FlashButton.FlashButton();
             this.menuStrip1.SuspendLayout();
@@ -126,7 +127,8 @@
             // 
             this.partiesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajoutFicheDeJoueurToolStripMenuItem,
-            this.voirPartieToolStripMenuItem});
+            this.voirPartieToolStripMenuItem,
+            this.ajoutMatchToolStripMenuItem});
             this.partiesToolStripMenuItem.Name = "partiesToolStripMenuItem";
             this.partiesToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.partiesToolStripMenuItem.Text = "Parties";
@@ -141,7 +143,7 @@
             // voirPartieToolStripMenuItem
             // 
             this.voirPartieToolStripMenuItem.Name = "voirPartieToolStripMenuItem";
-            this.voirPartieToolStripMenuItem.Size = new System.Drawing.Size(229, 24);
+            this.voirPartieToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.voirPartieToolStripMenuItem.Text = "Voir Partie...";
             this.voirPartieToolStripMenuItem.Click += new System.EventHandler(this.matchToolStripMenuItem_Click);
             // 
@@ -204,7 +206,7 @@
             this.flashButton1.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_icon;
             this.flashButton1.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_Hover_icon;
             this.flashButton1.Location = new System.Drawing.Point(90, 22);
-            this.flashButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flashButton1.Margin = new System.Windows.Forms.Padding(4);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.Size = new System.Drawing.Size(75, 70);
             this.flashButton1.TabIndex = 2;
@@ -247,6 +249,13 @@
             this.flashButton3.Name = "flashButton3";
             this.flashButton3.Size = new System.Drawing.Size(75, 70);
             this.flashButton3.TabIndex = 3;
+            // 
+            // ajoutMatchToolStripMenuItem
+            // 
+            this.ajoutMatchToolStripMenuItem.Name = "ajoutMatchToolStripMenuItem";
+            this.ajoutMatchToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.ajoutMatchToolStripMenuItem.Text = "Ajout match...";
+            this.ajoutMatchToolStripMenuItem.Click += new System.EventHandler(this.ajoutMatchToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -301,6 +310,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private FlashButton.FlashButton flashButton1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ToolStripMenuItem ajoutMatchToolStripMenuItem;
         private FlashButton.FlashButton flashButton2;
         private FlashButton.FlashButton flashButton3;
     }

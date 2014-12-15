@@ -360,7 +360,7 @@ Values ('TheElf','Legolas','1980-12-24',97,'Gardien',35);
 --Insertion des Match
 
     
-    select * from equipe;
+select * from equipe;
 alter table match
 modify Heure Varchar2(5);
 INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
