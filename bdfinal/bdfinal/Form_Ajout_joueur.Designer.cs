@@ -46,12 +46,13 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Btn_ChoisirLogo = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.Fb_Accept = new FlashButton.FlashButton();
             this.flashButton1 = new FlashButton.FlashButton();
+            this.tb_Lien = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -272,7 +273,8 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 175F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.Btn_ChoisirLogo, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.tb_Lien, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 18);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -294,16 +296,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(167, 158);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
-            // 
-            // Btn_ChoisirLogo
-            // 
-            this.Btn_ChoisirLogo.Location = new System.Drawing.Point(206, 170);
-            this.Btn_ChoisirLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.Btn_ChoisirLogo.Name = "Btn_ChoisirLogo";
-            this.Btn_ChoisirLogo.Size = new System.Drawing.Size(167, 27);
-            this.Btn_ChoisirLogo.TabIndex = 15;
-            this.Btn_ChoisirLogo.Text = "Choisir Logo...";
-            this.Btn_ChoisirLogo.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -392,6 +384,27 @@
             this.flashButton1.TabIndex = 19;
             this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
             // 
+            // tb_Lien
+            // 
+            this.tb_Lien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tb_Lien.Location = new System.Drawing.Point(206, 170);
+            this.tb_Lien.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Lien.Name = "tb_Lien";
+            this.tb_Lien.Size = new System.Drawing.Size(167, 22);
+            this.tb_Lien.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(4, 166);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(194, 35);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Lien de la photo :";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form_Ajout_joueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -410,6 +423,7 @@
             this.tableLayoutPanel4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -437,11 +451,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Btn_ChoisirLogo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TextBox tb_Lien;
+        private System.Windows.Forms.Label label4;
     }
 }
