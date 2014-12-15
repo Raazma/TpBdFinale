@@ -168,6 +168,7 @@
             this.btn_Accept.TabIndex = 14;
             this.btn_Accept.Text = "Ajouter";
             this.btn_Accept.UseVisualStyleBackColor = true;
+            this.btn_Accept.Click += new System.EventHandler(this.btn_Accept_Click);
             // 
             // Btn_annuler
             // 
