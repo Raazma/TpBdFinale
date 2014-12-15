@@ -83,7 +83,8 @@ namespace bdfinal
         {
             try
             {
-                string commande = "select *  from joueurs where numjoueur in (select numjoueur from FICHEMATCHJOUEUR where nummatch =" + Cb_NumMatch.SelectedItem.ToString() + ")";
+               // string commande = "select *  from joueurs where numjoueur in (select numjoueur from FICHEMATCHJOUEUR where nummatch =" + Cb_NumMatch.SelectedItem.ToString() + ")";
+                string commande = "select * from fichematchjoueur where nummatch = " + Cb_NumMatch.SelectedItem.ToString();
                 OracleDataAdapter adap = new OracleDataAdapter(commande, orac);
                 DataSet Mels = new DataSet();
                 adap.Fill(Mels, "ResMatch");

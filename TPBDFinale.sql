@@ -396,3 +396,4 @@ values(9,53,0,0);
 INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
 values(9,54,0,0);
 
+COMMIT;
