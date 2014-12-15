@@ -73,6 +73,66 @@ namespace bdfinal.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Edit_Player_Profile_clickDisabled_icon {
+            get {
+                object obj = ResourceManager.GetObject("Edit_Player_Profile_clickDisabled_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_Player_Profile_Hover_icon {
+            get {
+                object obj = ResourceManager.GetObject("Edit_Player_Profile_Hover_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_Player_Profile_icon {
+            get {
+                object obj = ResourceManager.GetObject("Edit_Player_Profile_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_Player_ProfileAdd_ClickDisabled_icon {
+            get {
+                object obj = ResourceManager.GetObject("Edit_Player_ProfileAdd_ClickDisabled_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_Player_ProfileAdd_Hover_icon {
+            get {
+                object obj = ResourceManager.GetObject("Edit_Player_ProfileAdd_Hover_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit_Player_ProfileAdd_icon {
+            get {
+                object obj = ResourceManager.GetObject("Edit_Player_ProfileAdd_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_Accepter_Click {
             get {
                 object obj = ResourceManager.GetObject("ICON_Accepter_Click", resourceCulture);
