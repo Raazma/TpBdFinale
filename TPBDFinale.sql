@@ -47,6 +47,7 @@ CREATE TABLE FicheMatchJoueur
 alter table FICHEMATCHJOUEUR
 add  TempPunition number(3);
 
+
 CREATE TABLE Joueurs
   (
     NumJoueur     NUMBER (4) NOT NULL ,
@@ -64,7 +65,6 @@ alter table joueurs
 drop column photo ;
 alter table joueurs 
 add  photo VARCHAR2 (50) ;
-commit;
 alter table joueurs modify photo varchar2(400);
 
 CREATE TABLE MATCH
@@ -77,7 +77,10 @@ CREATE TABLE MATCH
     ScoreFinaleV    NUMBER (2) ,
     ScoreFinaleR    NUMBER (2)
   );
-  
+alter table  match 
+add  Heure Varchar2(5);
+
+
 ALTER TABLE MATCH ADD CONSTRAINT Match_PK PRIMARY KEY ( NumMatch ) ;
 
 ALTER TABLE Equipe ADD CONSTRAINT Equipe_Division_FK FOREIGN KEY ( NumDivision ) REFERENCES Division ( NumDivision ) ;
@@ -94,9 +97,9 @@ ALTER TABLE MATCH ADD CONSTRAINT Match_Equipe_FKv1 FOREIGN KEY ( EquipeVisiteuse
 
 CREATE SYNONYM SYNJOUEURS FOR JOUEURS;
 GRANT SELECT ON SYNJOUEURS TO PUBLIC;
- GRANT ALL ON SYNJOUEURS TO LEMAIREF;
+GRANT ALL ON SYNJOUEURS TO LEMAIREF;
 
-drop view Fichepersonnelle;
+
 CREATE VIEW FichePersonnelle AS(
 select J.NUMJOUEUR,
 sum(FMJ.NBBUTS) as NombreButs,
@@ -107,15 +110,6 @@ from FICHEMATCHJOUEUR FMJ
 inner join Joueurs J on FMJ.NUMJOUEUR = J.NUMJOUEUR
 inner join EQUIPE E on J.NUMEQUIPE = E.NUMEQUIPE 
 group by J.nom, J.PRENOM, E.NOMEQUIPE,J.NUMJOUEUR
---SELECT JOUEURS.NUMJOUEUR,nom,prenom , equipe.nomequipe ,count(fichematchjoueur.nbbuts) as Nombrebuts,count(nbpasses) as nombrepasses
---FROM JOUEURS
---INNER JOIN EQUIPE
---ON EQUIPE.NUMEQUIPE = JOUEURS.NUMEQUIPE
---INNER JOIN MATCH
---ON MATCH.EQUIPERECEVEUSE = EQUIPE.NUMEQUIPE OR MATCH.EQUIPEVISITEUSE =EQUIPE.NUMEQUIPE
---INNER JOIN FICHEMATCHJOUEUR
---ON FICHEMATCHJOUEUR.NUMMATCH = MATCH.NUMMATCH
---GROUP BY JOUEURS.NUMJOUEUR ,NOM,PRENOM , EQUIPE.NOMEQUIPE
  );
 
 CREATE INDEX NUMERODELEQUIPE
@@ -125,75 +119,6 @@ CREATE INDEX DATEETHEURE
 ON MATCH (DATEHEURE);
 
 ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY MM DD';
-
-select * from division;
-
-INSERT INTO EQUIPE (NUMDIVISION, DateIntroduction,VILLE,NOMEQUIPE)
-VALUES(2,'2003-09-03','saskatoune','LesRequins');
-
-INSERT INTO EQUIPE (NUMDIVISION, DateIntroduction,VILLE,NOMEQUIPE)
-VALUES(2,'2000-04-17','Quebec','LesLynx');
-select* from equipe;
-
-delete from equipe where numequipe = 7;
-
-select * from DIVISION;
-
-commit;
-
-select * from joueurs;
- 
-commit;
-insert into match( EquipeReceveuse,EquipeVisiteuse,  Dateheure, Lieu, ScoreFinaleV, ScoreFinaleR)
-values(11,9,'2014-04-23','Quebec',3,2);
-select * from match;
-
-alter table FICHEMATCHJOUEUR
-add  TempPunition number(3);
-
-    insert into fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts,tempPunition)
-    Values (1,14,0,0,0);
- 
- insert into fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts,tempPunition)
-    Values (1,15,1,0,0);
-    
-    select * from equipe;
-select * from  Fichepersonnelle where nomequipe ='LesLynx';
-
-select * from match;
-
-select numjoueur,nom,prenom
-from joueurs 
-inner join equipe 
-on equipe.numequipe = joueurs.numequipe;
-
-select nummatch from match;
-
-select DATEHEURE from match;
-
-select * from match where DateHeure = '2014-04-23';
-
-select * from match;
-
-select *
-from joueurs
-where numjoueur in (select numjoueur from FICHEMATCHJOUEUR where nummatch = 1);
-
-select * from FICHEMATCHJOUEUR where nummatch = 1;
-
-select * from joueurs;
-
-select * from equipe;
-select * from joueurs;
- 
-insert into equipe (NumDivision,DateIntroduction,Ville,NomEquipe)
-values(1,'2000-04-14','Chibougamo','The Team');
-commit;
-select * from equipe;
-
-update equipe
-set NOMEQUIPE = 'test',ville = 'testencore'
-where numequipe = 11;
 
 
 --Division
@@ -359,8 +284,6 @@ Values ('TheElf','Legolas','1980-12-24',97,'Gardien',35);
 
 --Insertion des Match
 
-    
-select * from equipe;
 alter table match
 modify Heure Varchar2(5);
 INSERT INTO MATCH (EquipeReceveuse , EquipeVisiteuse , DateHeure , Lieu , ScoreFinaleV , ScoreFinaleR, Heure )
@@ -473,20 +396,4 @@ values(9,53,0,0);
 INSERT INTO fichematchjoueur(nummatch,numjoueur,nbpasses,nbbuts)
 values(9,54,0,0);
 
-commit;
-select * from match;
-
-
-
-select * from fichepersonelle;
-select * from division;
-Update division set nom ='LAVAL' WHERE numdivision = 2;
-
-update joueurs set photo = 'http://im.ziffdavisinternational.com/t/ign_za/articlepage/s/sir-ian-mckellen-says-goodbye-to-gandalf/sir-ian-mckellen-says-goodbye-to-gandalf_pys4.1920.jpg' where numjoueur = 57;
-commit;
-update joueurs set photo = 'http://img2.wikia.nocookie.net/__cb20060228022700/lotr/images/a/a5/Lotr_movie_gimli.jpg' where numjoueur = 58;
-update joueurs set photo = 'http://img2.timeinc.net/ew/i/2013/FMP/Gallery/Hobbit-The-Desolation-of-Smaug.jpg' where numjoueur = 59;
-
-select * from joueurs where numequipe = 27 ;
-select * from equipe;
-select numjoueur,nom,prenom,Fichepersonnelle.nomequipe,nombrebuts,nombrepasses, equipe.logo  from  Fichepersonnelle inner join equipe on equipe.nomequipe = Fichepersonnelle.nomequipe where Fichepersonnelle.nomequipe = 'Husky';
+COMMIT;
