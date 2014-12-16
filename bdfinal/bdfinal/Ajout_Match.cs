@@ -78,6 +78,11 @@ namespace bdfinal
                 com.Parameters.Add(h);
                 int i = com.ExecuteNonQuery();
                 MessageBox.Show(i.ToString() + " Ligne inserer");
+                Tb_Heure.Clear();
+                Tb_ScoreR.Clear();
+                Tb_ScoreV.Clear();
+                Tb_ville.Clear();
+              
             }
             catch (Exception ex)
             {

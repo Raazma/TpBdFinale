@@ -38,20 +38,22 @@ namespace bdfinal
           int updater =  orcom.ExecuteNonQuery();
 
           MessageBox.Show(updater.ToString() + " Ligne Inserer");
+         FilledInfo();
+            
 
         }
 
         private void btn_Nouveau_Click(object sender, EventArgs e)
         {
-            Tb_Nom.Clear();
-            Imsetting.Clear();
+            ClearBinding();
+           
         }
 
         private void FilledInfo()
         {
             try
             {
-
+                ClearBinding();
                 string commande = "select * from division";
                 OracleDataAdapter adp = new OracleDataAdapter(commande, oracon);
                 adp.Fill(Imsetting, "ResDiv");
@@ -79,8 +81,7 @@ namespace bdfinal
         }
 
         private void Btn_Modifier_Click(object sender, EventArgs e)
-        {
-         
+        {        
             string commande = "update division set nom ='" + Tb_Nom.Text +"', DateInscription = :LaDate where numdivision =" + Lb_num.Text;
             OracleParameter ladate = new OracleParameter(":LaDate", OracleDbType.Date);
             OracleCommand com = new OracleCommand(commande, oracon);
@@ -89,10 +90,18 @@ namespace bdfinal
             int i = com.ExecuteNonQuery();
 
             MessageBox.Show(i.ToString() + " Ligne modifier");
-            
-
+            FilledInfo();
         }
 
+        private void ClearBinding()
+        {
+            Tb_Nom.DataBindings.Clear();
+            Dtp_Date.DataBindings.Clear();
+            Lb_num.DataBindings.Clear();
+            Imsetting.Clear();
+            Tb_Nom.Clear();
+                 
+        }
         private void BT_Supprimer_Click(object sender, EventArgs e)
         {
             try
@@ -101,6 +110,7 @@ namespace bdfinal
                 OracleCommand com = new OracleCommand(commande, oracon);
                 int i = com.ExecuteNonQuery();
                 MessageBox.Show(i.ToString() + " nombre ligne effacer");
+                FilledInfo();
             }
             catch (Exception ex)
             {
@@ -108,6 +118,11 @@ namespace bdfinal
                 MessageBox.Show(ex.Message.ToString());
             }
             
+        }
+
+        private void Btn_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }

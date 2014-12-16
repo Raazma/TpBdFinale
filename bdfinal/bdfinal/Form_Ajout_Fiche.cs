@@ -36,6 +36,7 @@ namespace bdfinal
                     Cb_Numatch.Items.Add(ligne.ToString());
                 }
                 oraread.Close();
+                Cb_Numatch.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -49,18 +50,19 @@ namespace bdfinal
         {
             try
             {
-                string commande = "SELECT numjoueur from joueurs";
+                string commande = "SELECT nom from joueurs";
 
                 OracleCommand oraclecomm = new OracleCommand(commande, oracon);
                 oraclecomm.CommandType = CommandType.Text;
                 OracleDataReader oraread = oraclecomm.ExecuteReader();
                 while (oraread.Read())
                 {
-                    int ligne = oraread.GetInt32(0);
+                    string ligne = oraread.GetString(0);
 
                     Cb_Numjoueur.Items.Add(ligne.ToString());
                 }
                 oraread.Close();
+                Cb_Numjoueur.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -75,10 +77,10 @@ namespace bdfinal
             try
             {
                 string commande = "INSERT INTO FICHEMATCHJOUEUR (NUMMATCH,NUMJOUEUR,NBPASSES,NBBUTS)" +
-                                     "values (:lenumM,:lenumJ,:passes,:buts) ";
+                                     "values (:lenumM,(select numjoueur from joueurs where nom = :lenumJ),:passes,:buts) ";
                 OracleCommand oraclecomm = new OracleCommand(commande, oracon);
                 OracleParameter numM = new OracleParameter(":lenumM", OracleDbType.Int32);
-                OracleParameter numJ = new OracleParameter(":lenumJ", OracleDbType.Int32);
+                OracleParameter numJ = new OracleParameter(":lenumJ", OracleDbType.Varchar2);
                 OracleParameter passe = new OracleParameter(":passes", OracleDbType.Int32);
                 OracleParameter but = new OracleParameter(":buts", OracleDbType.Int32);
                 numM.Value = Cb_Numatch.SelectedItem.ToString();
@@ -92,12 +94,20 @@ namespace bdfinal
 
                 int i = oraclecomm.ExecuteNonQuery();
                 MessageBox.Show(i.ToString() + " Ligne Inserer");
+
+                tb_Nbut.Clear();
+                Tb_nbpasse.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
 
             }
+        }
+
+        private void Btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
