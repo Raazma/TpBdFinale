@@ -30,27 +30,27 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Classement));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PN_Head = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.CB_Division = new System.Windows.Forms.ComboBox();
             this.LB_Division = new System.Windows.Forms.Label();
             this.CB_Classement = new System.Windows.Forms.ComboBox();
             this.DGV_Classement = new System.Windows.Forms.DataGridView();
-            this.panel1.SuspendLayout();
+            this.PN_Head.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Classement)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // PN_Head
             // 
-            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(856, 100);
-            this.panel1.TabIndex = 0;
+            this.PN_Head.BackColor = System.Drawing.Color.PowderBlue;
+            this.PN_Head.Controls.Add(this.tableLayoutPanel1);
+            this.PN_Head.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PN_Head.Location = new System.Drawing.Point(0, 0);
+            this.PN_Head.Name = "PN_Head";
+            this.PN_Head.Size = new System.Drawing.Size(856, 100);
+            this.PN_Head.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -160,13 +160,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 498);
             this.Controls.Add(this.DGV_Classement);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PN_Head);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Classement";
             this.Text = "Classements";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Classement_FormClosing);
             this.Load += new System.EventHandler(this.Form_Classement_Load);
-            this.panel1.ResumeLayout(false);
+            this.PN_Head.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Classement)).EndInit();
@@ -176,7 +176,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PN_Head;
         private System.Windows.Forms.ComboBox CB_Classement;
         private System.Windows.Forms.DataGridView DGV_Classement;
         private System.Windows.Forms.ComboBox CB_Division;

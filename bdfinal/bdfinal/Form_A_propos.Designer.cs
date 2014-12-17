@@ -35,13 +35,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.PN_Head = new System.Windows.Forms.Panel();
+            this.PN_Head.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 9);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(520, 46);
@@ -98,17 +101,26 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Application simplifiant la gestion d\'une organisation de \r\nHockey Amateur.";
             // 
+            // PN_Head
+            // 
+            this.PN_Head.Controls.Add(this.label1);
+            this.PN_Head.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PN_Head.Location = new System.Drawing.Point(0, 0);
+            this.PN_Head.Name = "PN_Head";
+            this.PN_Head.Size = new System.Drawing.Size(547, 77);
+            this.PN_Head.TabIndex = 6;
+            // 
             // Form_A_propos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 253);
+            this.Controls.Add(this.PN_Head);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -117,6 +129,8 @@
             this.Text = "À propos";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_A_propos_FormClosing);
             this.Load += new System.EventHandler(this.Form_A_propos_Load);
+            this.PN_Head.ResumeLayout(false);
+            this.PN_Head.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,5 +144,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel PN_Head;
     }
 }

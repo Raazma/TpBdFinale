@@ -35,13 +35,13 @@
             this.DGV_Match = new System.Windows.Forms.DataGridView();
             this.DGV_Joueurs = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PN_Head = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Dtp_Match = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Match)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Joueurs)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.PN_Head.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,7 +135,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.25F));
             this.tableLayoutPanel1.Controls.Add(this.DGV_Joueurs, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.DGV_Match, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.PN_Head, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -155,18 +155,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(509, 551);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
-            // panel1
+            // PN_Head
             // 
-            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
-            this.tableLayoutPanel1.SetColumnSpan(this.panel1, 5);
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.tableLayoutPanel1.SetRowSpan(this.panel1, 5);
-            this.panel1.Size = new System.Drawing.Size(503, 86);
-            this.panel1.TabIndex = 6;
+            this.PN_Head.BackColor = System.Drawing.Color.PowderBlue;
+            this.tableLayoutPanel1.SetColumnSpan(this.PN_Head, 5);
+            this.PN_Head.Controls.Add(this.tableLayoutPanel2);
+            this.PN_Head.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PN_Head.Location = new System.Drawing.Point(3, 2);
+            this.PN_Head.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PN_Head.Name = "PN_Head";
+            this.tableLayoutPanel1.SetRowSpan(this.PN_Head, 5);
+            this.PN_Head.Size = new System.Drawing.Size(503, 86);
+            this.PN_Head.TabIndex = 6;
             // 
             // tableLayoutPanel2
             // 
@@ -215,7 +215,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Match)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Joueurs)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.PN_Head.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -230,7 +230,7 @@
         private System.Windows.Forms.DataGridView DGV_Match;
         private System.Windows.Forms.DataGridView DGV_Joueurs;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PN_Head;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.DateTimePicker Dtp_Match;
     }

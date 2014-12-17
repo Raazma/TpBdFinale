@@ -29,6 +29,7 @@ namespace bdfinal
             this.ForeColor = Properties.Settings.Default.Text_Color;
             DGV_Classement.AlternatingRowsDefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Alt_Color;
             DGV_Classement.DefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Def_Color;
+            PN_Head.BackColor = Properties.Settings.Default.Header_Color;
             try
             {
                 string com = "select nom from DIVISION";

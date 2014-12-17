@@ -21,6 +21,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.A_Propos_Pos;
             this.Size = Properties.Settings.Default.A_Propos_Size;
+            PN_Head.BackColor = Properties.Settings.Default.Header_Color;
             this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 

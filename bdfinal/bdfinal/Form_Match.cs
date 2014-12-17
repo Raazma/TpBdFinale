@@ -150,6 +150,7 @@ namespace bdfinal
 
             DGV_Match.AlternatingRowsDefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Alt_Color;
             DGV_Match.DefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Def_Color;
+            PN_Head.BackColor = Properties.Settings.Default.Header_Color;
 
             //.AlternatingRowsDefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Alt_Color;
             //.DefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Def_Color;
