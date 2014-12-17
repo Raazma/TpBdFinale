@@ -47,8 +47,8 @@
             // 
             this.Cb_Numatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Numatch.FormattingEnabled = true;
-            this.Cb_Numatch.Location = new System.Drawing.Point(132, 37);
-            this.Cb_Numatch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_Numatch.Location = new System.Drawing.Point(132, 36);
+            this.Cb_Numatch.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Numatch.Name = "Cb_Numatch";
             this.Cb_Numatch.Size = new System.Drawing.Size(160, 24);
             this.Cb_Numatch.TabIndex = 0;
@@ -57,26 +57,26 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(7, 33);
+            this.label1.Location = new System.Drawing.Point(7, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 32);
+            this.label1.Size = new System.Drawing.Size(117, 33);
             this.label1.TabIndex = 2;
             this.label1.Text = "Numéro Partie :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tb_Nbut
             // 
-            this.tb_Nbut.Location = new System.Drawing.Point(132, 167);
-            this.tb_Nbut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Nbut.Location = new System.Drawing.Point(132, 166);
+            this.tb_Nbut.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Nbut.Name = "tb_Nbut";
             this.tb_Nbut.Size = new System.Drawing.Size(80, 22);
             this.tb_Nbut.TabIndex = 4;
             // 
             // Tb_nbpasse
             // 
-            this.Tb_nbpasse.Location = new System.Drawing.Point(440, 167);
-            this.Tb_nbpasse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_nbpasse.Location = new System.Drawing.Point(440, 166);
+            this.Tb_nbpasse.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_nbpasse.Name = "Tb_nbpasse";
             this.Tb_nbpasse.Size = new System.Drawing.Size(104, 22);
             this.Tb_nbpasse.TabIndex = 5;
@@ -85,10 +85,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(7, 98);
+            this.label3.Location = new System.Drawing.Point(7, 97);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 32);
+            this.label3.Size = new System.Drawing.Size(117, 33);
             this.label3.TabIndex = 6;
             this.label3.Text = "Numéro joueur :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -97,7 +97,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(304, 163);
+            this.label4.Location = new System.Drawing.Point(304, 162);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 30);
@@ -109,7 +109,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(7, 163);
+            this.label5.Location = new System.Drawing.Point(7, 162);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 30);
@@ -121,16 +121,16 @@
             // 
             this.Cb_Numjoueur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Numjoueur.FormattingEnabled = true;
-            this.Cb_Numjoueur.Location = new System.Drawing.Point(132, 102);
-            this.Cb_Numjoueur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_Numjoueur.Location = new System.Drawing.Point(132, 101);
+            this.Cb_Numjoueur.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Numjoueur.Name = "Cb_Numjoueur";
             this.Cb_Numjoueur.Size = new System.Drawing.Size(160, 24);
             this.Cb_Numjoueur.TabIndex = 12;
             // 
             // Btn_cancel
             // 
-            this.Btn_cancel.Location = new System.Drawing.Point(304, 230);
-            this.Btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_cancel.Location = new System.Drawing.Point(304, 228);
+            this.Btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_cancel.Name = "Btn_cancel";
             this.Btn_cancel.Size = new System.Drawing.Size(100, 32);
             this.Btn_cancel.TabIndex = 13;
@@ -141,8 +141,8 @@
             // Btn_Ajouter
             // 
             this.Btn_Ajouter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Ajouter.Location = new System.Drawing.Point(192, 230);
-            this.Btn_Ajouter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Ajouter.Location = new System.Drawing.Point(192, 228);
+            this.Btn_Ajouter.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Ajouter.Name = "Btn_Ajouter";
             this.Btn_Ajouter.Size = new System.Drawing.Size(100, 28);
             this.Btn_Ajouter.TabIndex = 14;
@@ -194,7 +194,7 @@
             this.ClientSize = new System.Drawing.Size(553, 300);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(569, 337);
             this.Name = "Form_Ajout_Fiche";
             this.Text = "Form_Ajout_Fiche";

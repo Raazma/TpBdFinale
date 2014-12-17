@@ -21,6 +21,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.A_Propos_Pos;
             this.Size = Properties.Settings.Default.A_Propos_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 
         private void Form_A_propos_FormClosing(object sender, FormClosingEventArgs e)

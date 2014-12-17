@@ -81,13 +81,16 @@
             // 
             // Dgv_Joueurs
             // 
+            this.Dgv_Joueurs.AllowUserToAddRows = false;
+            this.Dgv_Joueurs.AllowUserToDeleteRows = false;
+            this.Dgv_Joueurs.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dgv_Joueurs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Dgv_Joueurs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Dgv_Joueurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_Joueurs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Dgv_Joueurs.Location = new System.Drawing.Point(3, 25);
-            this.Dgv_Joueurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dgv_Joueurs.Margin = new System.Windows.Forms.Padding(4);
             this.Dgv_Joueurs.MultiSelect = false;
             this.Dgv_Joueurs.Name = "Dgv_Joueurs";
             this.Dgv_Joueurs.ReadOnly = true;
@@ -237,7 +240,7 @@
             // 
             this.Btn_Precendent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_Precendent.Location = new System.Drawing.Point(193, 4);
-            this.Btn_Precendent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Precendent.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Precendent.Name = "Btn_Precendent";
             this.Btn_Precendent.Size = new System.Drawing.Size(100, 27);
             this.Btn_Precendent.TabIndex = 15;
@@ -248,7 +251,7 @@
             // Btn_Suivant
             // 
             this.Btn_Suivant.Location = new System.Drawing.Point(301, 4);
-            this.Btn_Suivant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Suivant.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Suivant.Name = "Btn_Suivant";
             this.Btn_Suivant.Size = new System.Drawing.Size(100, 27);
             this.Btn_Suivant.TabIndex = 16;
@@ -260,7 +263,7 @@
             // 
             this.Pb_Joueur.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Pb_Joueur.Location = new System.Drawing.Point(295, 4);
-            this.Pb_Joueur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pb_Joueur.Margin = new System.Windows.Forms.Padding(4);
             this.Pb_Joueur.Name = "Pb_Joueur";
             this.Pb_Joueur.Size = new System.Drawing.Size(133, 119);
             this.Pb_Joueur.TabIndex = 8;
@@ -309,7 +312,7 @@
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(583, 161);
             this.tableLayoutPanel6.TabIndex = 22;
             // 
@@ -420,7 +423,7 @@
             // 
             this.Pb_Equipe.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Pb_Equipe.Location = new System.Drawing.Point(295, 4);
-            this.Pb_Equipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pb_Equipe.Margin = new System.Windows.Forms.Padding(4);
             this.Pb_Equipe.Name = "Pb_Equipe";
             this.Pb_Equipe.Size = new System.Drawing.Size(131, 124);
             this.Pb_Equipe.TabIndex = 23;
@@ -509,7 +512,7 @@
             this.ClientSize = new System.Drawing.Size(1224, 594);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1239, 631);
             this.Name = "Form_AffJoueur";
             this.Text = "Form_AffJoueur";

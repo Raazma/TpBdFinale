@@ -96,6 +96,7 @@ namespace bdfinal
         {
             this.Size = Properties.Settings.Default.A_Match_Size;
             this.Location = Properties.Settings.Default.A_Match_Pos;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 
         private void Ajout_Match_FormClosing(object sender, FormClosingEventArgs e)

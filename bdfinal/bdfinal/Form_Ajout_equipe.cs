@@ -104,6 +104,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.A_Equipe_Pos;
             this.Size = Properties.Settings.Default.A_Equipe_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 
         private void Btn_ChoisirLogo_Click(object sender, EventArgs e)

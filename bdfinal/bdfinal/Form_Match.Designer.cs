@@ -51,7 +51,7 @@
             this.Cb_NumMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_NumMatch.FormattingEnabled = true;
             this.Cb_NumMatch.Location = new System.Drawing.Point(63, 47);
-            this.Cb_NumMatch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_NumMatch.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_NumMatch.Name = "Cb_NumMatch";
             this.Cb_NumMatch.Size = new System.Drawing.Size(159, 24);
             this.Cb_NumMatch.TabIndex = 0;
@@ -83,25 +83,45 @@
             // 
             // DGV_Match
             // 
+            this.DGV_Match.AllowUserToAddRows = false;
+            this.DGV_Match.AllowUserToDeleteRows = false;
+            this.DGV_Match.AllowUserToResizeRows = false;
+            this.DGV_Match.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV_Match.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.DGV_Match, 3);
             this.DGV_Match.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Match.Location = new System.Drawing.Point(94, 94);
-            this.DGV_Match.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DGV_Match.Margin = new System.Windows.Forms.Padding(4);
+            this.DGV_Match.MultiSelect = false;
             this.DGV_Match.Name = "DGV_Match";
             this.DGV_Match.RowHeadersVisible = false;
+            this.DGV_Match.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV_Match.ShowCellErrors = false;
+            this.DGV_Match.ShowCellToolTips = false;
+            this.DGV_Match.ShowEditingIcon = false;
+            this.DGV_Match.ShowRowErrors = false;
             this.DGV_Match.Size = new System.Drawing.Size(319, 199);
             this.DGV_Match.TabIndex = 4;
             // 
             // DGV_Joueurs
             // 
+            this.DGV_Joueurs.AllowUserToAddRows = false;
+            this.DGV_Joueurs.AllowUserToDeleteRows = false;
+            this.DGV_Joueurs.AllowUserToResizeRows = false;
+            this.DGV_Joueurs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV_Joueurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.DGV_Joueurs, 3);
             this.DGV_Joueurs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Joueurs.Location = new System.Drawing.Point(94, 323);
-            this.DGV_Joueurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DGV_Joueurs.Margin = new System.Windows.Forms.Padding(4);
+            this.DGV_Joueurs.MultiSelect = false;
             this.DGV_Joueurs.Name = "DGV_Joueurs";
             this.DGV_Joueurs.RowHeadersVisible = false;
+            this.DGV_Joueurs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV_Joueurs.ShowCellErrors = false;
+            this.DGV_Joueurs.ShowCellToolTips = false;
+            this.DGV_Joueurs.ShowEditingIcon = false;
+            this.DGV_Joueurs.ShowRowErrors = false;
             this.DGV_Joueurs.Size = new System.Drawing.Size(319, 199);
             this.DGV_Joueurs.TabIndex = 5;
             // 
@@ -173,7 +193,7 @@
             // Dtp_Match
             // 
             this.Dtp_Match.Location = new System.Drawing.Point(300, 47);
-            this.Dtp_Match.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dtp_Match.Margin = new System.Windows.Forms.Padding(4);
             this.Dtp_Match.Name = "Dtp_Match";
             this.Dtp_Match.Size = new System.Drawing.Size(139, 22);
             this.Dtp_Match.TabIndex = 3;
@@ -186,7 +206,7 @@
             this.ClientSize = new System.Drawing.Size(509, 551);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(525, 582);
             this.Name = "Form_Match";
             this.Text = "Form_Match";

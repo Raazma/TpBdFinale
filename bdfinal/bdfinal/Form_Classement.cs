@@ -26,6 +26,9 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.Classement_Pos;
             this.Size = Properties.Settings.Default.Classement_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
+            DGV_Classement.AlternatingRowsDefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Alt_Color;
+            DGV_Classement.DefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Def_Color;
             try
             {
                 string com = "select nom from DIVISION";

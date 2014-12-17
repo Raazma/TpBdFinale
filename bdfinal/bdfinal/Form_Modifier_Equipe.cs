@@ -177,6 +177,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.Mod_Equipe_Pos;
             this.Size = Properties.Settings.Default.Mod_Equipe_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 
         private void Form_Modifier_Equipe_FormClosing(object sender, FormClosingEventArgs e)

@@ -129,6 +129,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.Division_Pos;
             this.Size = Properties.Settings.Default.Division_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 
         private void Division_FormClosing(object sender, FormClosingEventArgs e)

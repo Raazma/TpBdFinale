@@ -402,5 +402,16 @@ namespace bdfinal.Properties {
                 this["Colors"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color Text_Color {
+            get {
+                return ((global::System.Drawing.Color)(this["Text_Color"]));
+            }
+            set {
+                this["Text_Color"] = value;
+            }
+        }
     }
 }

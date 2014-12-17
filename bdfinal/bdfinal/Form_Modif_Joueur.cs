@@ -44,7 +44,7 @@ namespace bdfinal
                 tb_Lien.DataBindings.Add("text", source, "ResJoueurs.photo");
                 Pb_Logo.ImageLocation = tb_Lien.Text;
                 this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
-                dgv_del.DataSource = source.Tables[0];
+                
             }
             catch (Exception ex)
             {
@@ -168,6 +168,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.Mod_Joueur_Pos;
             this.Size = Properties.Settings.Default.Mod_Joueur_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 
         private void Form_Modif_Joueur_FormClosing(object sender, FormClosingEventArgs e)

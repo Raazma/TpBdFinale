@@ -168,6 +168,9 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.AffJoueur_Pos;
             this.Size = Properties.Settings.Default.AffJoueur_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
+            Dgv_Joueurs.AlternatingRowsDefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Alt_Color;
+            Dgv_Joueurs.DefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Def_Color;
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)

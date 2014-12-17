@@ -134,6 +134,7 @@
             // 
             this.DGV_Classement.AllowUserToAddRows = false;
             this.DGV_Classement.AllowUserToDeleteRows = false;
+            this.DGV_Classement.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
             this.DGV_Classement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGV_Classement.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;

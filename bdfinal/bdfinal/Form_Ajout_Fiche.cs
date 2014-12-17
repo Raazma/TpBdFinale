@@ -114,6 +114,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.A_Fiche_Pos;
             this.Size = Properties.Settings.Default.A_Fiche_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 
         private void Form_Ajout_Fiche_FormClosing(object sender, FormClosingEventArgs e)

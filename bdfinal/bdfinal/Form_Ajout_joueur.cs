@@ -29,6 +29,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.A_Joueur_Pos;
             this.Size = Properties.Settings.Default.A_Joueur_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
         }
 
         private void FillComboBox()

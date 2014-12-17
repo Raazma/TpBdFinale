@@ -144,6 +144,15 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.Match_Pos;
             this.Size = Properties.Settings.Default.Match_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
+            DGV_Joueurs.AlternatingRowsDefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Alt_Color;
+            DGV_Joueurs.DefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Def_Color;
+
+            DGV_Match.AlternatingRowsDefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Alt_Color;
+            DGV_Match.DefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Def_Color;
+
+            //.AlternatingRowsDefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Alt_Color;
+            //.DefaultCellStyle.BackColor = Properties.Settings.Default.DGV_Def_Color;
         }
 
         private void Form_Match_FormClosing(object sender, FormClosingEventArgs e)

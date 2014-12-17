@@ -22,6 +22,7 @@ namespace bdfinal
         {
             this.Location = Properties.Settings.Default.Form1_Pos;
             this.Size = Properties.Settings.Default.Form1_Size;
+            this.ForeColor = Properties.Settings.Default.Text_Color;
             Connect();        
         }
 
@@ -148,7 +149,7 @@ namespace bdfinal
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Form_Settings form = new Form_Settings(oraconn);
+            Option form = new Option(oraconn);
             form.ShowDialog();
         }
     }
