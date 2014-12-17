@@ -80,8 +80,8 @@ namespace bdfinal
         {
             try
             {
-                MessageBox.Show(this.BindingContext[source, "ResJoueurs"].Count.ToString() + ", " + this.BindingContext[source, "ResJoueurs"].Position.ToString());
-                this.BindingContext[source, "ResJoueurs"].Position += this.BindingContext[source, "ResJoueurs"].Count - 1;//1;
+                
+                this.BindingContext[source, "ResJoueurs"].Position += 1;
                 Pb_Logo.ImageLocation = tb_Lien.Text;
                 this.Pb_Logo.SizeMode = PictureBoxSizeMode.StretchImage;
             }

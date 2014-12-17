@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Division));
             this.Tb_Nom = new System.Windows.Forms.TextBox();
             this.Dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +51,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.Tb_Nom, 2);
             this.Tb_Nom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tb_Nom.Location = new System.Drawing.Point(192, 34);
-            this.Tb_Nom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tb_Nom.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Nom.Name = "Tb_Nom";
             this.Tb_Nom.Size = new System.Drawing.Size(141, 22);
             this.Tb_Nom.TabIndex = 1;
@@ -60,7 +61,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.Dtp_Date, 2);
             this.Dtp_Date.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Dtp_Date.Location = new System.Drawing.Point(192, 94);
-            this.Dtp_Date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dtp_Date.Margin = new System.Windows.Forms.Padding(4);
             this.Dtp_Date.Name = "Dtp_Date";
             this.Dtp_Date.Size = new System.Drawing.Size(141, 22);
             this.Dtp_Date.TabIndex = 3;
@@ -94,7 +95,7 @@
             // Btn_Cancel
             // 
             this.Btn_Cancel.Location = new System.Drawing.Point(341, 220);
-            this.Btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Cancel.Name = "Btn_Cancel";
             this.Btn_Cancel.Size = new System.Drawing.Size(100, 28);
             this.Btn_Cancel.TabIndex = 9;
@@ -105,7 +106,7 @@
             // Btn_Enregister
             // 
             this.Btn_Enregister.Location = new System.Drawing.Point(44, 220);
-            this.Btn_Enregister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Enregister.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Enregister.Name = "Btn_Enregister";
             this.Btn_Enregister.Size = new System.Drawing.Size(100, 28);
             this.Btn_Enregister.TabIndex = 7;
@@ -116,7 +117,7 @@
             // Btn_Modifier
             // 
             this.Btn_Modifier.Location = new System.Drawing.Point(192, 220);
-            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Modifier.Name = "Btn_Modifier";
             this.Btn_Modifier.Size = new System.Drawing.Size(100, 28);
             this.Btn_Modifier.TabIndex = 8;
@@ -127,7 +128,7 @@
             // btn_Nouveau
             // 
             this.btn_Nouveau.Location = new System.Drawing.Point(44, 154);
-            this.btn_Nouveau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Nouveau.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Nouveau.Name = "btn_Nouveau";
             this.btn_Nouveau.Size = new System.Drawing.Size(100, 28);
             this.btn_Nouveau.TabIndex = 4;
@@ -138,7 +139,7 @@
             // Btn_Precedent
             // 
             this.Btn_Precedent.Location = new System.Drawing.Point(192, 154);
-            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Precedent.Name = "Btn_Precedent";
             this.Btn_Precedent.Size = new System.Drawing.Size(100, 28);
             this.Btn_Precedent.TabIndex = 5;
@@ -149,7 +150,7 @@
             // Btn_Suivant
             // 
             this.Btn_Suivant.Location = new System.Drawing.Point(341, 154);
-            this.Btn_Suivant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Suivant.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Suivant.Name = "Btn_Suivant";
             this.Btn_Suivant.Size = new System.Drawing.Size(100, 28);
             this.Btn_Suivant.TabIndex = 6;
@@ -236,7 +237,8 @@
             this.ClientSize = new System.Drawing.Size(488, 350);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.Lb_num);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(503, 386);
             this.Name = "Division";
             this.Text = "Édition de Division";

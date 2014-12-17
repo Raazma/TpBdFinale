@@ -85,7 +85,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
         public global::System.Drawing.Size A_Propos_Size {
             get {
                 return ((global::System.Drawing.Size)(this["A_Propos_Size"]));

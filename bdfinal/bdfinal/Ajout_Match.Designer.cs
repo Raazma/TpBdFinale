@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ajout_Match));
             this.Cb_equipeR = new System.Windows.Forms.ComboBox();
             this.Cb_EquipeV = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -269,6 +270,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 500);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(654, 545);
             this.Name = "Ajout_Match";

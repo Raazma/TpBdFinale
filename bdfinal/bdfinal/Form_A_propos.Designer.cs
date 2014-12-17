@@ -124,8 +124,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(565, 293);
             this.MinimumSize = new System.Drawing.Size(565, 293);
             this.Name = "Form_A_propos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "À propos";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_A_propos_FormClosing);
             this.Load += new System.EventHandler(this.Form_A_propos_Load);
