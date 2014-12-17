@@ -515,7 +515,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1239, 631);
             this.Name = "Form_AffJoueur";
-            this.Text = "Form_AffJoueur";
+            this.Text = "Affichage des Joueurs";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_AffJoueur_FormClosing);
             this.Load += new System.EventHandler(this.Form_AffJoueur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Joueurs)).EndInit();

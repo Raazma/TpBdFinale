@@ -177,6 +177,9 @@
     <EmbeddedResource Include="Form_Settings.resx">
       <DependentUpon>Form_Settings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HLSColorPicker.resx">
+      <DependentUpon>HLSColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

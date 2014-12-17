@@ -59,7 +59,7 @@ namespace bdfinal
             this.TKBR_Hue.Location = new System.Drawing.Point(6, 28);
             this.TKBR_Hue.Maximum = 1000;
             this.TKBR_Hue.Name = "TKBR_Hue";
-            this.TKBR_Hue.Size = new System.Drawing.Size(320, 45);
+            this.TKBR_Hue.Size = new System.Drawing.Size(320, 56);
             this.TKBR_Hue.TabIndex = 0;
             this.TKBR_Hue.ValueChanged += new System.EventHandler(this.TKBR_Hue_ValueChanged);
             this.TKBR_Hue.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TKBR_Hue_MouseDown);
@@ -79,7 +79,7 @@ namespace bdfinal
             this.TKBR_Luminosity.Location = new System.Drawing.Point(4, 91);
             this.TKBR_Luminosity.Maximum = 1000;
             this.TKBR_Luminosity.Name = "TKBR_Luminosity";
-            this.TKBR_Luminosity.Size = new System.Drawing.Size(320, 45);
+            this.TKBR_Luminosity.Size = new System.Drawing.Size(320, 56);
             this.TKBR_Luminosity.TabIndex = 3;
             this.TKBR_Luminosity.ValueChanged += new System.EventHandler(this.TKBR_Luminosity_ValueChanged);
             this.TKBR_Luminosity.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TKBR_Hue_MouseDown);
@@ -92,7 +92,7 @@ namespace bdfinal
             this.TKBR_Saturation.Location = new System.Drawing.Point(4, 155);
             this.TKBR_Saturation.Maximum = 1000;
             this.TKBR_Saturation.Name = "TKBR_Saturation";
-            this.TKBR_Saturation.Size = new System.Drawing.Size(320, 45);
+            this.TKBR_Saturation.Size = new System.Drawing.Size(320, 56);
             this.TKBR_Saturation.TabIndex = 5;
             this.TKBR_Saturation.ValueChanged += new System.EventHandler(this.TKBR_Saturation_ValueChanged);
             this.TKBR_Saturation.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TKBR_Hue_MouseDown);
@@ -124,7 +124,7 @@ namespace bdfinal
             this.LB_Hue.AutoSize = true;
             this.LB_Hue.Location = new System.Drawing.Point(292, 12);
             this.LB_Hue.Name = "LB_Hue";
-            this.LB_Hue.Size = new System.Drawing.Size(28, 13);
+            this.LB_Hue.Size = new System.Drawing.Size(36, 17);
             this.LB_Hue.TabIndex = 8;
             this.LB_Hue.Text = "0.00";
             this.LB_Hue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -134,7 +134,7 @@ namespace bdfinal
             this.LB_Luminosity.AutoSize = true;
             this.LB_Luminosity.Location = new System.Drawing.Point(292, 76);
             this.LB_Luminosity.Name = "LB_Luminosity";
-            this.LB_Luminosity.Size = new System.Drawing.Size(28, 13);
+            this.LB_Luminosity.Size = new System.Drawing.Size(36, 17);
             this.LB_Luminosity.TabIndex = 8;
             this.LB_Luminosity.Text = "0.00";
             this.LB_Luminosity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -144,7 +144,7 @@ namespace bdfinal
             this.LB_Saturaiton.AutoSize = true;
             this.LB_Saturaiton.Location = new System.Drawing.Point(292, 140);
             this.LB_Saturaiton.Name = "LB_Saturaiton";
-            this.LB_Saturaiton.Size = new System.Drawing.Size(28, 13);
+            this.LB_Saturaiton.Size = new System.Drawing.Size(36, 17);
             this.LB_Saturaiton.TabIndex = 8;
             this.LB_Saturaiton.Text = "0.00";
             this.LB_Saturaiton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,7 +154,7 @@ namespace bdfinal
             this.LB_Teinte.AutoSize = true;
             this.LB_Teinte.Location = new System.Drawing.Point(9, 12);
             this.LB_Teinte.Name = "LB_Teinte";
-            this.LB_Teinte.Size = new System.Drawing.Size(37, 13);
+            this.LB_Teinte.Size = new System.Drawing.Size(48, 17);
             this.LB_Teinte.TabIndex = 8;
             this.LB_Teinte.Text = "Teinte";
             this.LB_Teinte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,7 +164,7 @@ namespace bdfinal
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(9, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(76, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "Luminosité";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -174,7 +174,7 @@ namespace bdfinal
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 140);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(73, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Saturation";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,7 +229,7 @@ namespace bdfinal
             this.PN_Hue.DoubleClick += new System.EventHandler(this.PN_Hue_DoubleClick);
             this.PN_Hue.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PN_Hue_MouseDown);
             // 
-            // FORM_BackColor
+            // HLSColorPicker
             // 
             this.AcceptButton = this.BTN_Ok;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -252,9 +252,9 @@ namespace bdfinal
             this.Controls.Add(this.PN_ColorPreview);
             this.Controls.Add(this.TKBR_Hue);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "HLSColorPicker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Name = "FORM_BackColor";
-            this.Text = "Couleur de fond...";
+            this.Text = "Choisir une couleur...";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FORM_BackColor_FormClosing);
             this.Load += new System.EventHandler(this.FORM_BackColor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TKBR_Hue)).EndInit();

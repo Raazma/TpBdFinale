@@ -204,7 +204,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.tableLayoutPanel4);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.ForeColor = System.Drawing.Color.Turquoise;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(4, 4);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
@@ -424,7 +424,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(717, 401);
             this.Name = "Form_Ajout_joueur";
-            this.Text = "Form_Ajout_joueur";
+            this.Text = "Ajout d\'un joueur";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Ajout_joueur_FormClosing);
             this.Load += new System.EventHandler(this.Form_Ajout_joueur_Load);
             this.groupBox1.ResumeLayout(false);

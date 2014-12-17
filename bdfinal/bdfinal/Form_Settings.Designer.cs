@@ -205,7 +205,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(722, 470);
             this.Name = "Option";
-            this.Text = "Form_Settings";
+            this.Text = "Option";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Settings_FormClosing);
             this.Load += new System.EventHandler(this.Form_Settings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Demo)).EndInit();
