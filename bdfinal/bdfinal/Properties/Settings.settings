@@ -3,103 +3,103 @@
   <Profiles />
   <Settings>
     <Setting Name="A_Match_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Match_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Division_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Division_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Propos_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Propos_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="AffJoueur_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="AffJoueur_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Fiche_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Fiche_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Joueur_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Joueur_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Classement_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Classement_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Match_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Match_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Mod_Joueur_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Mod_Joueur_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Mod_Equipe_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Mod_Equipe_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Settings_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Setting_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Form1_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Form1_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Equipe_Pos" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="A_Equipe_Size" Type="System.Drawing.Size" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="DGV_Alt_Color" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">DarkGray</Value>
     </Setting>
     <Setting Name="DGV_Def_Color" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Header_Color" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">LightCyan</Value>
     </Setting>
     <Setting Name="Form_BG_Color" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="BackColorFormLocation" Type="System.Drawing.Point" Scope="User">
-      <Value Profile="(Default)">0, 0</Value>
+      <Value Profile="(Default)">400, 400</Value>
     </Setting>
     <Setting Name="Colors" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Text_Color" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">Black</Value>
     </Setting>
   </Settings>
 </SettingsFile>

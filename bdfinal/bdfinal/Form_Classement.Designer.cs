@@ -49,7 +49,7 @@
             this.PN_Head.Dock = System.Windows.Forms.DockStyle.Top;
             this.PN_Head.Location = new System.Drawing.Point(0, 0);
             this.PN_Head.Name = "PN_Head";
-            this.PN_Head.Size = new System.Drawing.Size(856, 100);
+            this.PN_Head.Size = new System.Drawing.Size(520, 100);
             this.PN_Head.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -75,14 +75,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.990099F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.50495F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(856, 100);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(520, 100);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(85, 34);
+            this.label1.Location = new System.Drawing.Point(3, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 30);
             this.label1.TabIndex = 2;
@@ -95,7 +95,7 @@
             this.CB_Division.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_Division.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_Division.FormattingEnabled = true;
-            this.CB_Division.Location = new System.Drawing.Point(587, 37);
+            this.CB_Division.Location = new System.Drawing.Point(333, 37);
             this.CB_Division.Name = "CB_Division";
             this.CB_Division.Size = new System.Drawing.Size(182, 24);
             this.CB_Division.TabIndex = 1;
@@ -105,7 +105,7 @@
             // 
             this.LB_Division.AutoSize = true;
             this.LB_Division.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LB_Division.Location = new System.Drawing.Point(516, 34);
+            this.LB_Division.Location = new System.Drawing.Point(262, 34);
             this.LB_Division.Name = "LB_Division";
             this.LB_Division.Size = new System.Drawing.Size(65, 30);
             this.LB_Division.TabIndex = 3;
@@ -123,7 +123,7 @@
             "Équipes",
             "Joueurs",
             "3 Meilleurs"});
-            this.CB_Classement.Location = new System.Drawing.Point(155, 37);
+            this.CB_Classement.Location = new System.Drawing.Point(73, 37);
             this.CB_Classement.MaxDropDownItems = 2;
             this.CB_Classement.Name = "CB_Classement";
             this.CB_Classement.Size = new System.Drawing.Size(182, 24);
@@ -151,17 +151,18 @@
             this.DGV_Classement.ShowCellToolTips = false;
             this.DGV_Classement.ShowEditingIcon = false;
             this.DGV_Classement.ShowRowErrors = false;
-            this.DGV_Classement.Size = new System.Drawing.Size(856, 398);
+            this.DGV_Classement.Size = new System.Drawing.Size(520, 277);
             this.DGV_Classement.TabIndex = 1;
             // 
             // Form_Classement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 498);
+            this.ClientSize = new System.Drawing.Size(520, 377);
             this.Controls.Add(this.DGV_Classement);
             this.Controls.Add(this.PN_Head);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(538, 422);
             this.Name = "Form_Classement";
             this.Text = "Classements";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Classement_FormClosing);

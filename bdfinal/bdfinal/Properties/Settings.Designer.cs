@@ -25,7 +25,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point A_Match_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["A_Match_Pos"]));
@@ -37,7 +37,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size A_Match_Size {
             get {
                 return ((global::System.Drawing.Size)(this["A_Match_Size"]));
@@ -49,7 +49,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point Division_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["Division_Pos"]));
@@ -61,7 +61,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size Division_Size {
             get {
                 return ((global::System.Drawing.Size)(this["Division_Size"]));
@@ -73,7 +73,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point A_Propos_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["A_Propos_Pos"]));
@@ -85,7 +85,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size A_Propos_Size {
             get {
                 return ((global::System.Drawing.Size)(this["A_Propos_Size"]));
@@ -97,7 +97,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point AffJoueur_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["AffJoueur_Pos"]));
@@ -109,7 +109,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size AffJoueur_Size {
             get {
                 return ((global::System.Drawing.Size)(this["AffJoueur_Size"]));
@@ -121,7 +121,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point A_Fiche_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["A_Fiche_Pos"]));
@@ -133,7 +133,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size A_Fiche_Size {
             get {
                 return ((global::System.Drawing.Size)(this["A_Fiche_Size"]));
@@ -145,7 +145,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point A_Joueur_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["A_Joueur_Pos"]));
@@ -157,7 +157,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size A_Joueur_Size {
             get {
                 return ((global::System.Drawing.Size)(this["A_Joueur_Size"]));
@@ -169,7 +169,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point Classement_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["Classement_Pos"]));
@@ -181,7 +181,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size Classement_Size {
             get {
                 return ((global::System.Drawing.Size)(this["Classement_Size"]));
@@ -193,7 +193,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point Match_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["Match_Pos"]));
@@ -205,7 +205,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size Match_Size {
             get {
                 return ((global::System.Drawing.Size)(this["Match_Size"]));
@@ -217,7 +217,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point Mod_Joueur_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["Mod_Joueur_Pos"]));
@@ -229,7 +229,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size Mod_Joueur_Size {
             get {
                 return ((global::System.Drawing.Size)(this["Mod_Joueur_Size"]));
@@ -241,7 +241,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point Mod_Equipe_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["Mod_Equipe_Pos"]));
@@ -253,7 +253,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size Mod_Equipe_Size {
             get {
                 return ((global::System.Drawing.Size)(this["Mod_Equipe_Size"]));
@@ -265,7 +265,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point Settings_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["Settings_Pos"]));
@@ -277,7 +277,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size Setting_Size {
             get {
                 return ((global::System.Drawing.Size)(this["Setting_Size"]));
@@ -289,7 +289,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point Form1_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["Form1_Pos"]));
@@ -301,7 +301,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size Form1_Size {
             get {
                 return ((global::System.Drawing.Size)(this["Form1_Size"]));
@@ -313,7 +313,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point A_Equipe_Pos {
             get {
                 return ((global::System.Drawing.Point)(this["A_Equipe_Pos"]));
@@ -325,7 +325,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Size A_Equipe_Size {
             get {
                 return ((global::System.Drawing.Size)(this["A_Equipe_Size"]));
@@ -337,6 +337,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("DarkGray")]
         public global::System.Drawing.Color DGV_Alt_Color {
             get {
                 return ((global::System.Drawing.Color)(this["DGV_Alt_Color"]));
@@ -359,6 +360,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("LightCyan")]
         public global::System.Drawing.Color Header_Color {
             get {
                 return ((global::System.Drawing.Color)(this["Header_Color"]));
@@ -382,7 +384,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("400, 400")]
         public global::System.Drawing.Point BackColorFormLocation {
             get {
                 return ((global::System.Drawing.Point)(this["BackColorFormLocation"]));
@@ -405,6 +407,7 @@ namespace bdfinal.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
         public global::System.Drawing.Color Text_Color {
             get {
                 return ((global::System.Drawing.Color)(this["Text_Color"]));
