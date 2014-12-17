@@ -26,12 +26,12 @@ namespace bdfinal.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public global::System.Drawing.Point A_Mattch_Pos {
+        public global::System.Drawing.Point A_Match_Pos {
             get {
-                return ((global::System.Drawing.Point)(this["A_Mattch_Pos"]));
+                return ((global::System.Drawing.Point)(this["A_Match_Pos"]));
             }
             set {
-                this["A_Mattch_Pos"] = value;
+                this["A_Match_Pos"] = value;
             }
         }
         
@@ -308,6 +308,98 @@ namespace bdfinal.Properties {
             }
             set {
                 this["Form1_Size"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        public global::System.Drawing.Point A_Equipe_Pos {
+            get {
+                return ((global::System.Drawing.Point)(this["A_Equipe_Pos"]));
+            }
+            set {
+                this["A_Equipe_Pos"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        public global::System.Drawing.Size A_Equipe_Size {
+            get {
+                return ((global::System.Drawing.Size)(this["A_Equipe_Size"]));
+            }
+            set {
+                this["A_Equipe_Size"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color DGV_Alt_Color {
+            get {
+                return ((global::System.Drawing.Color)(this["DGV_Alt_Color"]));
+            }
+            set {
+                this["DGV_Alt_Color"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color DGV_Def_Color {
+            get {
+                return ((global::System.Drawing.Color)(this["DGV_Def_Color"]));
+            }
+            set {
+                this["DGV_Def_Color"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color Header_Color {
+            get {
+                return ((global::System.Drawing.Color)(this["Header_Color"]));
+            }
+            set {
+                this["Header_Color"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Form_BG_Color {
+            get {
+                return ((string)(this["Form_BG_Color"]));
+            }
+            set {
+                this["Form_BG_Color"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        public global::System.Drawing.Point BackColorFormLocation {
+            get {
+                return ((global::System.Drawing.Point)(this["BackColorFormLocation"]));
+            }
+            set {
+                this["BackColorFormLocation"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.Specialized.StringCollection Colors {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["Colors"]));
+            }
+            set {
+                this["Colors"] = value;
             }
         }
     }

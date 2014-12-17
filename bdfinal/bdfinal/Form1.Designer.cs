@@ -205,6 +205,7 @@
             this.toolStripMenuItem3.Size = new System.Drawing.Size(28, 24);
             this.toolStripMenuItem3.Text = " ";
             this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
@@ -222,7 +223,7 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(69, 61);
+            this.groupBox1.Location = new System.Drawing.Point(68, 61);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(353, 101);
             this.groupBox1.TabIndex = 2;
@@ -306,9 +307,9 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel3);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(495, 61);
+            this.groupBox2.Location = new System.Drawing.Point(493, 61);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(260, 101);
+            this.groupBox2.Size = new System.Drawing.Size(264, 101);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Équipes";
@@ -330,7 +331,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(254, 72);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(258, 72);
             this.tableLayoutPanel3.TabIndex = 8;
             // 
             // flashButton2
@@ -341,7 +342,7 @@
             this.flashButton2.ImageDisable = global::bdfinal.Properties.Resources.Ajouter_ClickDisabled;
             this.flashButton2.ImageNeutral = global::bdfinal.Properties.Resources.Ajouter;
             this.flashButton2.ImageOver = global::bdfinal.Properties.Resources.Ajouter_Hover;
-            this.flashButton2.Location = new System.Drawing.Point(145, 1);
+            this.flashButton2.Location = new System.Drawing.Point(147, 1);
             this.flashButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton2.Name = "flashButton2";
             this.flashButton2.Size = new System.Drawing.Size(75, 70);
@@ -357,7 +358,7 @@
             this.flashButton3.ImageDisable = global::bdfinal.Properties.Resources.Modifier_ClickDisabled;
             this.flashButton3.ImageNeutral = global::bdfinal.Properties.Resources.Modifier;
             this.flashButton3.ImageOver = global::bdfinal.Properties.Resources.Modifier_Hover;
-            this.flashButton3.Location = new System.Drawing.Point(33, 1);
+            this.flashButton3.Location = new System.Drawing.Point(34, 1);
             this.flashButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton3.Name = "flashButton3";
             this.flashButton3.Size = new System.Drawing.Size(75, 70);
@@ -370,7 +371,7 @@
             this.groupBox3.Controls.Add(this.tableLayoutPanel4);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(621, 197);
+            this.groupBox3.Location = new System.Drawing.Point(623, 197);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(134, 100);
             this.groupBox3.TabIndex = 4;
@@ -415,7 +416,7 @@
             this.groupBox4.Controls.Add(this.tableLayoutPanel5);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(69, 197);
+            this.groupBox4.Location = new System.Drawing.Point(68, 197);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(89, 100);
             this.groupBox4.TabIndex = 5;
@@ -461,9 +462,9 @@
             this.groupBox5.Controls.Add(this.tableLayoutPanel6);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(231, 197);
+            this.groupBox5.Location = new System.Drawing.Point(229, 197);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(317, 100);
+            this.groupBox5.Size = new System.Drawing.Size(322, 100);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Parties";
@@ -488,7 +489,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(311, 71);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(316, 71);
             this.tableLayoutPanel6.TabIndex = 8;
             // 
             // flashButton8
@@ -499,7 +500,7 @@
             this.flashButton8.ImageDisable = global::bdfinal.Properties.Resources.View_ClickDisabled;
             this.flashButton8.ImageNeutral = global::bdfinal.Properties.Resources.View;
             this.flashButton8.ImageOver = global::bdfinal.Properties.Resources.View_Hover;
-            this.flashButton8.Location = new System.Drawing.Point(215, 1);
+            this.flashButton8.Location = new System.Drawing.Point(218, 1);
             this.flashButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton8.Name = "flashButton8";
             this.flashButton8.Size = new System.Drawing.Size(75, 70);
@@ -515,7 +516,7 @@
             this.flashButton6.ImageDisable = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_ClickDisabled_icon;
             this.flashButton6.ImageNeutral = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_icon;
             this.flashButton6.ImageOver = global::bdfinal.Properties.Resources.Edit_Player_ProfileAdd_Hover_icon;
-            this.flashButton6.Location = new System.Drawing.Point(19, 1);
+            this.flashButton6.Location = new System.Drawing.Point(20, 1);
             this.flashButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton6.Name = "flashButton6";
             this.flashButton6.Size = new System.Drawing.Size(75, 70);
@@ -531,7 +532,7 @@
             this.flashButton7.ImageDisable = global::bdfinal.Properties.Resources.Ajouter_ClickDisabled;
             this.flashButton7.ImageNeutral = global::bdfinal.Properties.Resources.Ajouter;
             this.flashButton7.ImageOver = global::bdfinal.Properties.Resources.Ajouter_Hover;
-            this.flashButton7.Location = new System.Drawing.Point(117, 1);
+            this.flashButton7.Location = new System.Drawing.Point(119, 1);
             this.flashButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flashButton7.Name = "flashButton7";
             this.flashButton7.Size = new System.Drawing.Size(75, 70);
@@ -582,6 +583,7 @@
             this.MinimumSize = new System.Drawing.Size(911, 433);
             this.Name = "Form1";
             this.Text = "Hockey Plus";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

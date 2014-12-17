@@ -75,7 +75,7 @@
             this.label1.Location = new System.Drawing.Point(9, 56);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 33);
+            this.label1.Size = new System.Drawing.Size(125, 32);
             this.label1.TabIndex = 2;
             this.label1.Text = "Equipe Receveur :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -84,7 +84,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(346, 231);
+            this.label2.Location = new System.Drawing.Point(346, 230);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 30);
@@ -95,7 +95,7 @@
             // Dtp_date
             // 
             this.Dtp_date.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Dtp_date.Location = new System.Drawing.Point(142, 149);
+            this.Dtp_date.Location = new System.Drawing.Point(142, 148);
             this.Dtp_date.Margin = new System.Windows.Forms.Padding(4);
             this.Dtp_date.Name = "Dtp_date";
             this.Dtp_date.Size = new System.Drawing.Size(191, 22);
@@ -104,7 +104,7 @@
             // Tb_ville
             // 
             this.Tb_ville.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_ville.Location = new System.Drawing.Point(465, 149);
+            this.Tb_ville.Location = new System.Drawing.Point(465, 148);
             this.Tb_ville.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_ville.Name = "Tb_ville";
             this.Tb_ville.Size = new System.Drawing.Size(160, 22);
@@ -114,7 +114,7 @@
             // 
             this.Date.AutoSize = true;
             this.Date.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Date.Location = new System.Drawing.Point(9, 145);
+            this.Date.Location = new System.Drawing.Point(9, 144);
             this.Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(125, 30);
@@ -125,7 +125,7 @@
             // Tb_ScoreR
             // 
             this.Tb_ScoreR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_ScoreR.Location = new System.Drawing.Point(142, 235);
+            this.Tb_ScoreR.Location = new System.Drawing.Point(142, 234);
             this.Tb_ScoreR.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_ScoreR.Name = "Tb_ScoreR";
             this.Tb_ScoreR.Size = new System.Drawing.Size(191, 22);
@@ -135,7 +135,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(9, 231);
+            this.label4.Location = new System.Drawing.Point(9, 230);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 30);
@@ -146,7 +146,7 @@
             // Tb_ScoreV
             // 
             this.Tb_ScoreV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_ScoreV.Location = new System.Drawing.Point(465, 235);
+            this.Tb_ScoreV.Location = new System.Drawing.Point(465, 234);
             this.Tb_ScoreV.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_ScoreV.Name = "Tb_ScoreV";
             this.Tb_ScoreV.Size = new System.Drawing.Size(160, 22);
@@ -155,7 +155,7 @@
             // Tb_Heure
             // 
             this.Tb_Heure.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_Heure.Location = new System.Drawing.Point(142, 321);
+            this.Tb_Heure.Location = new System.Drawing.Point(142, 320);
             this.Tb_Heure.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Heure.Name = "Tb_Heure";
             this.Tb_Heure.Size = new System.Drawing.Size(191, 22);
@@ -165,7 +165,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(9, 317);
+            this.label5.Location = new System.Drawing.Point(9, 316);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 30);
@@ -180,7 +180,7 @@
             this.label6.Location = new System.Drawing.Point(346, 56);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 33);
+            this.label6.Size = new System.Drawing.Size(111, 32);
             this.label6.TabIndex = 12;
             this.label6.Text = "Equipe Visiteur :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -189,7 +189,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(346, 145);
+            this.label7.Location = new System.Drawing.Point(346, 144);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 30);
@@ -200,7 +200,7 @@
             // btn_Accept
             // 
             this.btn_Accept.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Accept.Location = new System.Drawing.Point(233, 407);
+            this.btn_Accept.Location = new System.Drawing.Point(233, 406);
             this.btn_Accept.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Accept.Name = "btn_Accept";
             this.btn_Accept.Size = new System.Drawing.Size(100, 28);
@@ -211,7 +211,7 @@
             // 
             // Btn_annuler
             // 
-            this.Btn_annuler.Location = new System.Drawing.Point(346, 407);
+            this.Btn_annuler.Location = new System.Drawing.Point(346, 406);
             this.Btn_annuler.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_annuler.Name = "Btn_annuler";
             this.Btn_annuler.Size = new System.Drawing.Size(100, 28);
@@ -273,6 +273,8 @@
             this.MinimumSize = new System.Drawing.Size(654, 545);
             this.Name = "Ajout_Match";
             this.Text = "Ajout Partie";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ajout_Match_FormClosing);
+            this.Load += new System.EventHandler(this.Ajout_Match_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

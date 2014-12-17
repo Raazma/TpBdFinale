@@ -125,5 +125,18 @@ namespace bdfinal
             this.Close();
         }
 
+        private void Division_Load(object sender, EventArgs e)
+        {
+            this.Location = Properties.Settings.Default.Division_Pos;
+            this.Size = Properties.Settings.Default.Division_Size;
+        }
+
+        private void Division_FormClosing(object sender, FormClosingEventArgs e)
+        {
+             Properties.Settings.Default.Division_Pos=this.Location ;
+             Properties.Settings.Default.Division_Size=this.Size ;
+             Properties.Settings.Default.Save();
+        }
+
     }
 }

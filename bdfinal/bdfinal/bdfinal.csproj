@@ -60,6 +60,9 @@
     <Compile Include="Division.Designer.cs">
       <DependentUpon>Division.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoubleBufferPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +128,13 @@
     </Compile>
     <Compile Include="Form_Settings.Designer.cs">
       <DependentUpon>Form_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HLSColor.cs" />
+    <Compile Include="HLSColorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HLSColorPicker.Designer.cs">
+      <DependentUpon>HLSColorPicker.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -414,6 +424,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\View_ClickDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -109,5 +109,18 @@ namespace bdfinal
         {
             this.Close();
         }
+
+        private void Form_Ajout_Fiche_Load(object sender, EventArgs e)
+        {
+            this.Location = Properties.Settings.Default.A_Fiche_Pos;
+            this.Size = Properties.Settings.Default.A_Fiche_Size;
+        }
+
+        private void Form_Ajout_Fiche_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.A_Fiche_Pos = this.Location;
+            Properties.Settings.Default.A_Fiche_Size = this.Size;
+            Properties.Settings.Default.Save();
+        }
     }
 }

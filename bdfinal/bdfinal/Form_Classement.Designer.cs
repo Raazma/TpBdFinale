@@ -31,15 +31,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Classement));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LB_Division = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.CB_Division = new System.Windows.Forms.ComboBox();
+            this.LB_Division = new System.Windows.Forms.Label();
             this.CB_Classement = new System.Windows.Forms.ComboBox();
             this.DGV_Classement = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_Classement)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Classement)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -52,16 +52,31 @@
             this.panel1.Size = new System.Drawing.Size(856, 100);
             this.panel1.TabIndex = 0;
             // 
-            // LB_Division
+            // tableLayoutPanel1
             // 
-            this.LB_Division.AutoSize = true;
-            this.LB_Division.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LB_Division.Location = new System.Drawing.Point(516, 34);
-            this.LB_Division.Name = "LB_Division";
-            this.LB_Division.Size = new System.Drawing.Size(65, 30);
-            this.LB_Division.TabIndex = 3;
-            this.LB_Division.Text = "Division :";
-            this.LB_Division.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tableLayoutPanel1.ColumnCount = 7;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.39024F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.21952F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.39025F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CB_Division, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LB_Division, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CB_Classement, 2, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.50495F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.990099F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.50495F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(856, 100);
+            this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label1
             // 
@@ -85,6 +100,17 @@
             this.CB_Division.Size = new System.Drawing.Size(182, 24);
             this.CB_Division.TabIndex = 1;
             this.CB_Division.SelectedIndexChanged += new System.EventHandler(this.CB_Division_SelectedIndexChanged);
+            // 
+            // LB_Division
+            // 
+            this.LB_Division.AutoSize = true;
+            this.LB_Division.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LB_Division.Location = new System.Drawing.Point(516, 34);
+            this.LB_Division.Name = "LB_Division";
+            this.LB_Division.Size = new System.Drawing.Size(65, 30);
+            this.LB_Division.TabIndex = 3;
+            this.LB_Division.Text = "Division :";
+            this.LB_Division.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_Classement
             // 
@@ -127,32 +153,6 @@
             this.DGV_Classement.Size = new System.Drawing.Size(856, 398);
             this.DGV_Classement.TabIndex = 1;
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 7;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.39024F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.21952F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.39025F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CB_Division, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.LB_Division, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CB_Classement, 2, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.50495F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.990099F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.50495F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(856, 100);
-            this.tableLayoutPanel1.TabIndex = 4;
-            // 
             // Form_Classement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -163,11 +163,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Classement";
             this.Text = "Classements";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Classement_FormClosing);
             this.Load += new System.EventHandler(this.Form_Classement_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_Classement)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Classement)).EndInit();
             this.ResumeLayout(false);
 
         }

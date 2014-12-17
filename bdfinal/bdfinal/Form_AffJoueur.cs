@@ -166,7 +166,8 @@ namespace bdfinal
         }
         private void Form_AffJoueur_Load(object sender, EventArgs e)
         {
-
+            this.Location = Properties.Settings.Default.AffJoueur_Pos;
+            this.Size = Properties.Settings.Default.AffJoueur_Size;
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -177,6 +178,13 @@ namespace bdfinal
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form_AffJoueur_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.AffJoueur_Pos = this.Location;
+            Properties.Settings.Default.A_Propos_Size = this.Size;
+            Properties.Settings.Default.Save();
         }
     }
 }

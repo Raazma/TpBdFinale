@@ -55,9 +55,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(58, 63);
+            this.label1.Location = new System.Drawing.Point(77, 79);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 13);
+            this.label1.Size = new System.Drawing.Size(165, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Num Equipe :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -66,9 +67,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(58, 101);
+            this.label2.Location = new System.Drawing.Point(77, 127);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 27);
+            this.label2.Size = new System.Drawing.Size(165, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Division :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -77,9 +79,10 @@
             // 
             this.Lb_Num.AutoSize = true;
             this.Lb_Num.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Lb_Num.Location = new System.Drawing.Point(188, 63);
+            this.Lb_Num.Location = new System.Drawing.Point(250, 79);
+            this.Lb_Num.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lb_Num.Name = "Lb_Num";
-            this.Lb_Num.Size = new System.Drawing.Size(90, 13);
+            this.Lb_Num.Size = new System.Drawing.Size(120, 17);
             this.Lb_Num.TabIndex = 2;
             this.Lb_Num.Text = "label3";
             // 
@@ -87,9 +90,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(58, 210);
+            this.label4.Location = new System.Drawing.Point(77, 261);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 26);
+            this.label4.Size = new System.Drawing.Size(165, 30);
             this.label4.TabIndex = 3;
             this.label4.Text = "Ville :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -98,9 +102,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(58, 153);
+            this.label5.Location = new System.Drawing.Point(77, 190);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 32);
+            this.label5.Size = new System.Drawing.Size(165, 40);
             this.label5.TabIndex = 4;
             this.label5.Text = "Nom :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -109,9 +114,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(292, 25);
+            this.label6.Location = new System.Drawing.Point(389, 31);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 13);
+            this.label6.Size = new System.Drawing.Size(165, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "Logo";
             this.label6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -121,33 +127,37 @@
             this.Cb_Division.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Cb_Division.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_Division.FormattingEnabled = true;
-            this.Cb_Division.Location = new System.Drawing.Point(188, 104);
+            this.Cb_Division.Location = new System.Drawing.Point(250, 131);
+            this.Cb_Division.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_Division.Name = "Cb_Division";
-            this.Cb_Division.Size = new System.Drawing.Size(90, 21);
+            this.Cb_Division.Size = new System.Drawing.Size(120, 24);
             this.Cb_Division.TabIndex = 7;
             // 
             // Tb_Name
             // 
             this.Tb_Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_Name.Location = new System.Drawing.Point(188, 156);
+            this.Tb_Name.Location = new System.Drawing.Point(250, 194);
+            this.Tb_Name.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_Name.Name = "Tb_Name";
-            this.Tb_Name.Size = new System.Drawing.Size(90, 20);
+            this.Tb_Name.Size = new System.Drawing.Size(120, 22);
             this.Tb_Name.TabIndex = 8;
             // 
             // Tb_ville
             // 
             this.Tb_ville.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tb_ville.Location = new System.Drawing.Point(188, 213);
+            this.Tb_ville.Location = new System.Drawing.Point(250, 265);
+            this.Tb_ville.Margin = new System.Windows.Forms.Padding(4);
             this.Tb_ville.Name = "Tb_ville";
-            this.Tb_ville.Size = new System.Drawing.Size(90, 20);
+            this.Tb_ville.Size = new System.Drawing.Size(120, 22);
             this.Tb_ville.TabIndex = 9;
             // 
             // Btn_mod_photo
             // 
             this.Btn_mod_photo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Btn_mod_photo.Location = new System.Drawing.Point(292, 156);
+            this.Btn_mod_photo.Location = new System.Drawing.Point(389, 194);
+            this.Btn_mod_photo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_mod_photo.Name = "Btn_mod_photo";
-            this.Btn_mod_photo.Size = new System.Drawing.Size(124, 26);
+            this.Btn_mod_photo.Size = new System.Drawing.Size(165, 32);
             this.Btn_mod_photo.TabIndex = 10;
             this.Btn_mod_photo.Text = "Changer Logo";
             this.Btn_mod_photo.UseVisualStyleBackColor = true;
@@ -156,9 +166,10 @@
             // Btn_Precedent
             // 
             this.Btn_Precedent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Btn_Precedent.Location = new System.Drawing.Point(58, 318);
+            this.Btn_Precedent.Location = new System.Drawing.Point(77, 393);
+            this.Btn_Precedent.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Precedent.Name = "Btn_Precedent";
-            this.Btn_Precedent.Size = new System.Drawing.Size(124, 23);
+            this.Btn_Precedent.Size = new System.Drawing.Size(165, 28);
             this.Btn_Precedent.TabIndex = 11;
             this.Btn_Precedent.Text = "Precedent";
             this.Btn_Precedent.UseVisualStyleBackColor = true;
@@ -167,9 +178,10 @@
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(188, 318);
+            this.button3.Location = new System.Drawing.Point(250, 393);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 23);
+            this.button3.Size = new System.Drawing.Size(120, 28);
             this.button3.TabIndex = 12;
             this.button3.Text = "Suivant";
             this.button3.UseVisualStyleBackColor = true;
@@ -179,9 +191,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(58, 261);
+            this.label7.Location = new System.Drawing.Point(77, 322);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 29);
+            this.label7.Size = new System.Drawing.Size(165, 36);
             this.label7.TabIndex = 13;
             this.label7.Text = "Date Introduction :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -189,17 +202,19 @@
             // Dtp_date
             // 
             this.Dtp_date.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Dtp_date.Location = new System.Drawing.Point(188, 264);
+            this.Dtp_date.Location = new System.Drawing.Point(250, 326);
+            this.Dtp_date.Margin = new System.Windows.Forms.Padding(4);
             this.Dtp_date.Name = "Dtp_date";
-            this.Dtp_date.Size = new System.Drawing.Size(90, 20);
+            this.Dtp_date.Size = new System.Drawing.Size(120, 22);
             this.Dtp_date.TabIndex = 14;
             // 
             // Btn_Modifier
             // 
             this.Btn_Modifier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Btn_Modifier.Location = new System.Drawing.Point(292, 318);
+            this.Btn_Modifier.Location = new System.Drawing.Point(389, 393);
+            this.Btn_Modifier.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Modifier.Name = "Btn_Modifier";
-            this.Btn_Modifier.Size = new System.Drawing.Size(124, 23);
+            this.Btn_Modifier.Size = new System.Drawing.Size(165, 28);
             this.Btn_Modifier.TabIndex = 15;
             this.Btn_Modifier.Text = "Modifier";
             this.Btn_Modifier.UseVisualStyleBackColor = true;
@@ -208,9 +223,10 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(292, 264);
+            this.button2.Location = new System.Drawing.Point(389, 326);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 23);
+            this.button2.Size = new System.Drawing.Size(165, 28);
             this.button2.TabIndex = 16;
             this.button2.Text = "Effacer";
             this.button2.UseVisualStyleBackColor = true;
@@ -244,7 +260,7 @@
             this.tableLayoutPanel1.Controls.Add(this.Tb_ville, 2, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 15;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -262,30 +278,34 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(475, 374);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(633, 460);
             this.tableLayoutPanel1.TabIndex = 17;
             // 
             // pb_Logo
             // 
             this.pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pb_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_Logo.Location = new System.Drawing.Point(292, 41);
+            this.pb_Logo.Location = new System.Drawing.Point(389, 52);
+            this.pb_Logo.Margin = new System.Windows.Forms.Padding(4);
             this.pb_Logo.Name = "pb_Logo";
             this.tableLayoutPanel1.SetRowSpan(this.pb_Logo, 5);
-            this.pb_Logo.Size = new System.Drawing.Size(124, 109);
+            this.pb_Logo.Size = new System.Drawing.Size(165, 134);
             this.pb_Logo.TabIndex = 6;
             this.pb_Logo.TabStop = false;
             // 
             // Form_Modifier_Equipe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 374);
+            this.ClientSize = new System.Drawing.Size(633, 460);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(491, 409);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(649, 493);
             this.Name = "Form_Modifier_Equipe";
             this.Text = "Modification Équipe";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Modifier_Equipe_FormClosing);
+            this.Load += new System.EventHandler(this.Form_Modifier_Equipe_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();

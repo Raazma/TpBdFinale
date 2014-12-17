@@ -24,7 +24,8 @@ namespace bdfinal
 
         private void Form_Classement_Load(object sender, EventArgs e)
         {
-
+            this.Location = Properties.Settings.Default.Classement_Pos;
+            this.Size = Properties.Settings.Default.Classement_Size;
             try
             {
                 string com = "select nom from DIVISION";
@@ -139,6 +140,13 @@ namespace bdfinal
             DGV_Classement.DataSource = null;
             DS_Classement.Tables.Clear();
             DGV_Classement.Columns.Clear();
+        }
+
+        private void Form_Classement_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Classement_Pos = this.Location;
+            Properties.Settings.Default.Classement_Size = this.Size;
+            Properties.Settings.Default.Save();
         }
         
     }

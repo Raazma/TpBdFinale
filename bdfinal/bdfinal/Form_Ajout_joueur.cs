@@ -27,7 +27,8 @@ namespace bdfinal
         }
         private void Form_Ajout_joueur_Load(object sender, EventArgs e)
         {
-
+            this.Location = Properties.Settings.Default.A_Joueur_Pos;
+            this.Size = Properties.Settings.Default.A_Joueur_Size;
         }
 
         private void FillComboBox()
@@ -138,6 +139,13 @@ namespace bdfinal
                 MessageBox.Show(ex.Message.ToString());
 
             }
+        }
+
+        private void Form_Ajout_joueur_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.A_Joueur_Pos = this.Location;
+            Properties.Settings.Default.A_Joueur_Size = this.Size;
+            Properties.Settings.Default.Save();
         }     
     }
 }

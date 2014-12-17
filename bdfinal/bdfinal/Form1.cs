@@ -20,6 +20,8 @@ namespace bdfinal
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Location = Properties.Settings.Default.Form1_Pos;
+            this.Size = Properties.Settings.Default.Form1_Size;
             Connect();        
         }
 
@@ -134,6 +136,19 @@ namespace bdfinal
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
             Form_A_propos form = new Form_A_propos();
+            form.ShowDialog();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Form1_Pos = this.Location;
+            Properties.Settings.Default.Form1_Size = this.Size;
+            Properties.Settings.Default.Save();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form_Settings form = new Form_Settings(oraconn);
             form.ShowDialog();
         }
     }

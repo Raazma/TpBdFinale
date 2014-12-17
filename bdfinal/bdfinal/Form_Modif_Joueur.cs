@@ -162,6 +162,19 @@ namespace bdfinal
         private void Btn_Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form_Modif_Joueur_Load(object sender, EventArgs e)
+        {
+            this.Location = Properties.Settings.Default.Mod_Joueur_Pos;
+            this.Size = Properties.Settings.Default.Mod_Joueur_Size;
+        }
+
+        private void Form_Modif_Joueur_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Mod_Joueur_Pos = this.Location;
+            Properties.Settings.Default.Mod_Joueur_Size = this.Size;
+            Properties.Settings.Default.Save();
         } 
     }
 }

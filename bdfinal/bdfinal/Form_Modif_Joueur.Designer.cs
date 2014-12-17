@@ -51,11 +51,11 @@
             this.tb_Lien = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.Pb_Logo = new System.Windows.Forms.PictureBox();
             this.dgv_del = new System.Windows.Forms.DataGridView();
+            this.Pb_Logo = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_del)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Tb_nom
@@ -347,18 +347,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(661, 641);
             this.tableLayoutPanel1.TabIndex = 25;
             // 
-            // Pb_Logo
-            // 
-            this.Pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Pb_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pb_Logo.Location = new System.Drawing.Point(512, 26);
-            this.Pb_Logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Pb_Logo.Name = "Pb_Logo";
-            this.tableLayoutPanel1.SetRowSpan(this.Pb_Logo, 6);
-            this.Pb_Logo.Size = new System.Drawing.Size(220, 137);
-            this.Pb_Logo.TabIndex = 13;
-            this.Pb_Logo.TabStop = false;
-            // 
             // dgv_del
             // 
             this.dgv_del.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -367,6 +355,18 @@
             this.dgv_del.Name = "dgv_del";
             this.dgv_del.Size = new System.Drawing.Size(320, 212);
             this.dgv_del.TabIndex = 25;
+            // 
+            // Pb_Logo
+            // 
+            this.Pb_Logo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pb_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pb_Logo.Location = new System.Drawing.Point(512, 26);
+            this.Pb_Logo.Margin = new System.Windows.Forms.Padding(4);
+            this.Pb_Logo.Name = "Pb_Logo";
+            this.tableLayoutPanel1.SetRowSpan(this.Pb_Logo, 6);
+            this.Pb_Logo.Size = new System.Drawing.Size(220, 137);
+            this.Pb_Logo.TabIndex = 13;
+            this.Pb_Logo.TabStop = false;
             // 
             // Form_Modif_Joueur
             // 
@@ -379,10 +379,12 @@
             this.MinimumSize = new System.Drawing.Size(677, 674);
             this.Name = "Form_Modif_Joueur";
             this.Text = "Modification de joueurs";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Modif_Joueur_FormClosing);
+            this.Load += new System.EventHandler(this.Form_Modif_Joueur_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_del)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Logo)).EndInit();
             this.ResumeLayout(false);
 
         }

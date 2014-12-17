@@ -91,6 +91,19 @@ namespace bdfinal
             }
              
         }
+
+        private void Ajout_Match_Load(object sender, EventArgs e)
+        {
+            this.Size = Properties.Settings.Default.A_Match_Size;
+            this.Location = Properties.Settings.Default.A_Match_Pos;
+        }
+
+        private void Ajout_Match_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.A_Match_Size = this.Size;
+            Properties.Settings.Default.A_Match_Pos = this.Location;
+            Properties.Settings.Default.Save();
+        }
         
         }
        

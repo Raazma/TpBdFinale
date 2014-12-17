@@ -102,7 +102,8 @@ namespace bdfinal
 
         private void Form_Ajout_equipe_Load(object sender, EventArgs e)
         {
-
+            this.Location = Properties.Settings.Default.A_Equipe_Pos;
+            this.Size = Properties.Settings.Default.A_Equipe_Size;
         }
 
         private void Btn_ChoisirLogo_Click(object sender, EventArgs e)
@@ -124,6 +125,13 @@ namespace bdfinal
         private void BT_Annule_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form_Ajout_equipe_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.A_Equipe_Pos = this.Location;
+            Properties.Settings.Default.A_Equipe_Size = this.Size;
+            Properties.Settings.Default.Save();
         }
 
         

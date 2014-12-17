@@ -65,7 +65,7 @@ namespace bdfinal
                 Dtp_date.DataBindings.Add("Value", theSet, "ResEquipes.DateIntroduction");
                 pb_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 
-                MessageBox.Show(orac.State.ToString());
+               // MessageBox.Show(orac.State.ToString());
             }
             catch (Exception ex)
             {
@@ -108,7 +108,7 @@ namespace bdfinal
                     com.Parameters.Add(ladate);
 
                     int i = com.ExecuteNonQuery();
-                    MessageBox.Show(i.ToString() + " Ligne Modifier");
+                    //MessageBox.Show(i.ToString() + " Ligne Modifier");
                 }
                 catch (Exception ex)
                 {
@@ -129,7 +129,7 @@ namespace bdfinal
                     com.Parameters.Add(ladate);
 
                     int i = com.ExecuteNonQuery();
-                    MessageBox.Show(i.ToString() + " Ligne Modifier");
+                   // MessageBox.Show(i.ToString() + " Ligne Modifier");
                 }
                 catch (Exception ex)
                 {
@@ -163,7 +163,7 @@ namespace bdfinal
 
 
                 int i = com.ExecuteNonQuery();
-                MessageBox.Show(i.ToString() + " Ligne Effacer");
+               // MessageBox.Show(i.ToString() + " Ligne Effacer");
             }
             catch (Exception ex)
             {
@@ -171,6 +171,19 @@ namespace bdfinal
 
             }
 
+        }
+
+        private void Form_Modifier_Equipe_Load(object sender, EventArgs e)
+        {
+            this.Location = Properties.Settings.Default.Mod_Equipe_Pos;
+            this.Size = Properties.Settings.Default.Mod_Equipe_Size;
+        }
+
+        private void Form_Modifier_Equipe_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Mod_Equipe_Pos = this.Location;
+            Properties.Settings.Default.Mod_Equipe_Size = this.Size;
+            Properties.Settings.Default.Save();
         }   
     }
 }
